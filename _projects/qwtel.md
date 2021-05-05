@@ -1,20 +1,20 @@
 ---
 layout: project
-title: '@qwtel'
-caption: How I use Hydejack on my personal site.
+title: 'Data Comics for Reporting Controlled User Studies in Human-Computer Interaction'
+caption: Making papers and other scientific reports easier to read (VIS 2020)
+
 description: >
-  This is how I use Hydejack on my personal site. 
-  Much of the development is informed from my experience of using it myself, creating a tight feedback loop.
-date: 1 Jun 2020
+Data Comics for Reporting Controlled User Studies in Human-Computer Interaction: Zezhong Wang, Jacob Ritchie, Jingtao Zhou, Fanny Chevalier, Benjamin Bach IEEE Transactions on Visualization and Computer Graphics (TVCG) 2021 (IEEE VIS, 2020))
+date: 2020
 image: 
   path: /assets/img/projects/qwtel.jpg
   srcset: 
-    1920w: /assets/img/projects/qwtel.jpg
-    960w:  /assets/img/projects/qwtel@0,5x.jpg
-    480w:  /assets/img/projects/qwtel@0,25x.jpg
+    1920w: /assets/img/projects/StatsComics.jpg
+    960w:  /assets/img/projects/StatsComics@0,5x.jpg
+    480w:  /assets/img/projects/StatsComics@0,25x.jpg
 links:
-  - title: Link
-    url: https://qwtel.com/
+  - title: Project Website 
+    url: https://statscomics.github.io/
 accent_color: '#4fb1ba'
 accent_image:
   background: '#193747'
@@ -22,18 +22,8 @@ theme_color: '#193747'
 sitemap: false
 ---
 
-For my personal site I've toned it down a bit. Instead of a flashy sidebar image, I chose a solid background color.
-However, I've given [certain](https://qwtel.com/projects/ducky-hunting/) [pages](https://qwtel.com/projects/blocky-blocks/) big sidebar images, and let Hydejack blend back to normal when the user navigates away.
+Inspired by data comics, this paper introduces a novel format for reporting controlled studies in the domain of human-computer interaction (HCI). While many studies in HCI follow similar steps in explaining hypotheses, laying out a study design, and reporting results, many of these decisions are buried in blocks of dense scientific text. We propose leveraging data comics as study reports to provide an open and glanceable view of studies by tightly integrating text and images, illustrating design decisions and key insights visually, resulting in visual narratives that can be compelling to non-scientists and researchers alike. Use cases of data comics study reports range from illustrations for non-scientific audiences to graphical abstracts, study summaries, technical talks, textbooks, teaching, blogs, supplementary submission material, and inclusion in scientific articles. This paper provides examples of data comics study reports alongside a graphical repertoire of examples, embedded in a framework of guidelines for creating comics reports which was iterated upon and evaluated through a series of collaborative design sessions.
 
-While I love the font used for Hydejack's headings, for my personal site I felt less of a need to control the typesetting.
-That's why I'm not using Google Fonts, and instead use whatever is the default for the reader's operating system.
 
-```yml
-google_fonts: false
-font:         false
-font_heading: false
-font_code:    false
-```
-
-The configuration I use to enable the system font on my site. Feel free to copy!
+---
 {:.figcaption}

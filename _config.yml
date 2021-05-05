@@ -364,9 +364,9 @@ plugins:
 
 # Used on index and about sites
 # social:
-#   name:                <firstname> <lastname>
+#   name:                <Zezhong> <Wang>
 #   links:
-#     - https://twitter.com/<username>
+#     - https://twitter.com/zezhong_w
 #     - https://github.com/<username>
 
 

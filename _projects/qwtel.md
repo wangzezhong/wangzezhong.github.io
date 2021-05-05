@@ -5,7 +5,7 @@ caption: Making papers and other scientific reports easier to read (VIS 2020)
 
 description: >
 Data Comics for Reporting Controlled User Studies in Human-Computer Interaction: Zezhong Wang, Jacob Ritchie, Jingtao Zhou, Fanny Chevalier, Benjamin Bach IEEE Transactions on Visualization and Computer Graphics (TVCG) 2021 (IEEE VIS, 2020))
-date: 2020
+date: 17 October 2020
 image: 
   path: /assets/img/projects/qwtel.jpg
   srcset: 

@@ -6,7 +6,7 @@ caption: Telling compelling data stories to achieve effective communication.
 description: >
  
 image: 
-  path: /assets/img/projects/statsCover.png
+  path: /assets/img/projects/DCCover.png
   srcset: 
     1920w: /assets/img/projects/DCCover.png
     960w:  /assets/img/projects/DCCover@0,5.png

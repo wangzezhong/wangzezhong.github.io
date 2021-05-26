@@ -1,7 +1,7 @@
 ---
 layout: project
 title: 'Cheat Sheets for Data Visualization Techniques'
-caption: A set of consise graphical explanation to support undersdanding data visualization techniques (CHI 2020).
+caption: A set of consise graphical explanation to support undersdanding data visualization techniques (CHI 2020)
 
 description: > 
 

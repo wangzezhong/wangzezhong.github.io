@@ -9,9 +9,9 @@ date: 17 October 2020
 image: 
   path: /assets/img/projects/StatsComics.jpg
   srcset: 
-    1920w: /assets/img/projects/statsCover.jpg
-    960w:  /assets/img/projects/statsCover@0,5.jpg
-    480w:  /assets/img/projects/statsCover@0,25.jpg
+    1920w: assets/img/projects/statsCover.png
+    960w:  /assets/img/projects/statsCover@0,5.png
+    480w:  /assets/img/projects/statsCover@0,25.png
 links:
   - title: Project Website 
     url: https://statscomics.github.io/

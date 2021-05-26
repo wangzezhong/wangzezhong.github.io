@@ -1,7 +1,7 @@
 ---
 layout: project
 title: 'Data Comics for Reporting Controlled User Studies in Human-Computer Interaction'
-caption: Making data comics for illustrating reports of controlled studies (VIS 2020)
+caption: Making data comics for illustrating reports of controlled studies (VIS 2020).
 
 description: > 
 

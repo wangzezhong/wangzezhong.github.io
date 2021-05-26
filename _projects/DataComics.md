@@ -4,7 +4,7 @@ title: 'Data Comics'
 caption: Telling compelling data stories to achieve effective communication.
 
 description: >
- 
+date: 1 May 2018
 image: 
   path: /assets/img/projects/DCCover.png
   srcset: 

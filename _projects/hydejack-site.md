@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: project
 title: 'Hydejack Site'
 caption: Dogfooding Hydejack to sell Hydejack.
@@ -16,3 +16,4 @@ links:
     url: https://hydejack.com/
 sitemap: false
 ---
+ -->

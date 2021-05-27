@@ -1,6 +1,6 @@
 ---
 layout: projects
-title: Projects
+title: Publications
 
 show_collection: projects
 description: >

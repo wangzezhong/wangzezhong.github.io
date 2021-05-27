@@ -1,7 +1,12 @@
 ---
 layout: welcome
-title:  Welcome
-cover:  true
+title:  
+cover:  false
+selected_projects:
+  - _projects/DataComics.md
+  - _projects/CheatSheets.md
+  - _projects/CheatSheets.md
+featured: false
 ---
 
 

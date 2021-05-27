@@ -2,11 +2,11 @@
 
 layout: welcome
 title:  Welcome
-cover:  true
+cover:  false
 selected_projects:
   - _projects/DataComics.md
   - _projects/CheatSheets.md
-  - _projects/CheatSheets.md
+  - _projects/StatsComics.md
 featured: false
 ---
 

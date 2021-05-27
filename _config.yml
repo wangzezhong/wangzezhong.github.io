@@ -3,7 +3,7 @@
 
 # Uncomment and set the URL of your site (with protocol, e.g. `https://`)
 # NOTE: You don't need to provide this property when hosting on GitHub Pages or Netlify.
-# url:                   https://username.github.io
+url:                   https://wangzezhong.github.io/
 
 # Uncomment and set the "base URL" of your site.
 # When your site is in a subdirectory, set to `/<name of directory>`,
@@ -25,13 +25,14 @@ title:                 Zezhong Wang
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  Ph.D. candidate at the University of Edinburgh
+  Personal Website of Zezhong Wang - Ph.D. Student in University of Edinburgh
 
 # A shorter description for the sidebar.
-tagline:               University of Edinburgh
+tagline: |              
+  Ph.D. Student in University of Edinburgh
 
 # A list of keywords for your blog
-keywords:              []
+keywords:              [Zezhong, Wang, Data, Comics, Data-driven, storytelling]
 
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
@@ -44,7 +45,7 @@ author:
   name:                <Zezhong> <Wang>
   email:               <zezhong.wang@ed.ac.uk>
   # # Used by `jekyll-seo-tag`:
-  # twitter:             <username>
+  twitter:             zezhong_w
 
 # Add links to the sidebar.
 menu:

@@ -1,10 +1,3 @@
-<!-- ---
-layout: page
-title: 
-sitemap: false
-
---- -->
-
 ---
 layout: welcome
 title:  Welcome
@@ -21,3 +14,10 @@ selected_projects:
   - _projects/CheatSheets.md
 featured: false
 ---
+
+<!-- ---
+layout: page
+title: 
+sitemap: false
+
+--- -->

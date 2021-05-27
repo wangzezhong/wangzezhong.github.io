@@ -8,11 +8,7 @@ author1:
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    
-    Open `_data/authors.yml` to edit this text.
+    Zezhong Wang, Ph.D. student in University of Edinburgh, his research focuces on data-driven storytelling and data visualization.
 
   # This photo will be used in the about section
   picture:
@@ -31,7 +27,7 @@ author1:
     email:           <zezhong.wang@ed.ac.uk>
     # rss:             https://<url>/feed.xml
     # facebook:        <username>
-    google:          https://scholar.google.com/citations?user=EJ8drhwAAAAJ&hl=en&oi=ao
+    googlescholar:    EJ8drhwAAAAJ&hl=en&oi=ao
     # vk:              <username>
     # youtube:         <string_string_string>
     # vimeo:           <username>

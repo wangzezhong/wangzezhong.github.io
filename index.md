@@ -5,7 +5,7 @@ title:  Hi!
 cover:  false
 selected_projects:
   - _projects/DataComics.md
-  - _projects/Interactive.md
+  - _projects/InteractiveComics.md
   - _projects/CheatSheets.md
   - _projects/StatsComics.md
 featured: false

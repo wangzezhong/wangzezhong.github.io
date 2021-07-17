@@ -28,6 +28,9 @@
 .icon-book:before {
   content: "\e91f";
 }
+.icon-googlescholar:before {
+  content: "\e900";
+}
 .icon-library:before {
   content: "\e921";
 }

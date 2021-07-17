@@ -2,7 +2,8 @@
 layout: project
 title: 'Data Comics'
 caption: Telling compelling data stories to achieve effective communication
-description: > Data Comic gallery, Workshop Plans, Publications
+description: > 
+  Click the project website to find a collection of data Comics, the workshop Plan and related publications.
 date: 1 May 2018
 image: 
   path: /assets/img/projects/DCCover.png

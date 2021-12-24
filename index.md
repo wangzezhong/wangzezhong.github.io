@@ -14,8 +14,8 @@ featured: false
 
 I'm Zezhong Wang (王 泽中), currently a Ph.D. student at the [University of Edinburgh](https://www.ed.ac.uk/), [Visual+Interactive Data Lab (VisHub)](https://vishub.net/) with an interdisciplinary team, supervised by [Dr. Benjamin Bach](https://visualinteractivedata.github.io/bach.html) and [Dr. Dave Murray-Rust](http://dave.murray-rust.org/). My Ph.D. investigates [Data Comics](https://datacomics.github.io/), PhD thesis entitled Creating Data Comics for Data-Driven Storytelling.
 
-<!-- [Design Informatics](https://www.designinformatics.org/) -->
-<!--projects-->
+
+* **Wang, Z.**, Romat, H., Chevalier, F., Henry Riche, N., Murray-Rust, D. and Bach, B. [Interactive Data Comics](){:target="_blank"}. *IEEE Transactions on Visualization and Computer Graphics (VIS 2021)*.
 
 <!-- ---
 layout: page

@@ -25,7 +25,7 @@ title:                 Zezhong Wang
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  Personal Website of Zezhong Wang - Ph.D. Student in University of Edinburgh
+  Personal Website of Zezhong Wang - Ph.D. at University of Edinburgh
 
 # A shorter description for the sidebar.
 tagline: |              
@@ -51,8 +51,10 @@ author:
 menu:
 #   - title:             Blog
 #     url:               /blog/
-  - title:             Projects
-    url:               /projects/
+#   - title:             Projects
+#    url:               /projects/
+#   - title:             Publications
+#    url:               /projects/
 #   - title:             Résumé*
 #     url:               /resume/
 #   - title:             Documentation
@@ -355,7 +357,7 @@ plugins:
 
 # Used for twitter cards
 # twitter:
-#   username:            <username>
+#   username:            <zezhong_w>
 
 # Used for facebook open graph
 # facebook:

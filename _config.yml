@@ -54,7 +54,7 @@ menu:
 #   - title:             Projects
 #    url:               /projects/
    - title:             Publications
-     url:               _includes/paper.html
+     url:               /papers/
 #   - title:             Résumé*
 #     url:               /resume/
 #   - title:             Documentation

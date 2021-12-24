@@ -17,9 +17,9 @@ I'm Zezhong Wang (王 泽中), currently a Ph.D. student at the [University of E
 <!-- [Design Informatics](https://www.designinformatics.org/) -->
 <!--projects-->
 
-* **Wang, Z.**, Romat, H., Chevalier, F., Henry Riche, N., Murray-Rust, D. and Bach, B. [Interactive Data Comics](){:target="_blank"}. *IEEE Transactions on Visualization and Computer Graphics (VIS 2021)*.
 
-## Current Research
+
+## Publication
 
 <ul>
 {% for paper in site.data.papers.papers %}

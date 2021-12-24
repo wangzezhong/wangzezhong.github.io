@@ -53,8 +53,8 @@ menu:
 #     url:               /blog/
 #   - title:             Projects
 #    url:               /projects/
-#   - title:             Publications
-#    url:               /projects/
+   - title:             Publications
+     url:               /_includes/paper.html
 #   - title:             Résumé*
 #     url:               /resume/
 #   - title:             Documentation

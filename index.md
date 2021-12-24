@@ -19,6 +19,20 @@ I'm Zezhong Wang (王 泽中), currently a Ph.D. student at the [University of E
 
 * **Wang, Z.**, Romat, H., Chevalier, F., Henry Riche, N., Murray-Rust, D. and Bach, B. [Interactive Data Comics](){:target="_blank"}. *IEEE Transactions on Visualization and Computer Graphics (VIS 2021)*.
 
+## Current Research
+
+<ul>
+{% for paper in site.data.papers.papers %}
+  {% if paper.selected %}
+  <li>
+  {% include paper.html paper=paper %}
+  </li>
+  {% endif %}
+{% endfor %}
+</ul>
+
+
+
 <!-- ---
 layout: page
 title: 

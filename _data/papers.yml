@@ -1,0 +1,44 @@
+papers:
+  - layout: paper
+    year: 2020
+    paper-type: inproceedings
+    selected: yes
+    title: "Cheat Sheets for Data Visualization Techniques"
+    authors: "Zezhong Wang, Lovisa Sundin, Dave Murray-Rust, Benjamin Bach"
+    booktitle: ACM Conference on Human Factors in Computing Systems (CHI)
+    booktitle-url: 
+    doc-url: https://www.researchgate.net/publication/338657160_Cheat_Sheets_for_Data_Visualization_Techniques
+    venue: Conference
+  - layout: paper
+    year: 2019
+    paper-type: inproceedings
+    selected: yes
+    title: "Comparing Effectiveness and Engagement of Data Comics and Infographics"
+    authors: "Zezhong Wang, Shunming Wang, Matteo Farinella, Dave Murray-Rust, Nathalie Henry Riche, Benjamin Bach"
+    booktitle: ACM Conference on Human Factors in Computing Systems (CHI)
+    booktitle-url: 
+    doc-url: https://www.researchgate.net/profile/Benjamin_Bach2/publication/331357753_Comparing_Effectiveness_and_Engagement_of_Data_Comics_and_Infographics/links/5cb859aaa6fdcc1d499cc3b1/Comparing-Effectiveness-and-Engagement-of-Data-Comics-and-Infographics.pdf
+    venue: Conference
+  - layout: paper
+    year: 2019
+    paper-type: inproceedings
+    selected: yes
+    title: "Teaching Data Visualization and Storytelling with Data Comic Workshops"
+    authors: "Zezhong Wang, Harvey Dingwall, Benjamin Bach"
+    booktitle: ACM Conference on Human Factors in Computing Systems (CHI), Extended Abstracts
+    booktitle-url: 
+    doc-url: https://dl.acm.org/doi/pdf/10.1145/3290607.3299043
+    venue: Conference
+  - layout: paper
+    year: 2018
+    paper-type: inproceedings
+    selected: yes
+    title: "Design Patterns for Data Comics"
+    authors: "Benjamin Bach, Zezhong Wang, Matteo Farinella, Dave Murray-Rust, Nathalie Henry Riche"
+    booktitle: ACM Conference on Human Factors in Computing Systems (CHI)
+    doc-url: https://aviz.fr/~bbach/datacomics/Bach2018designpatterns.pdf
+    venue: Conference
+    
+  
+ 
+ 

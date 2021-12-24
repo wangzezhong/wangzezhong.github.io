@@ -19,20 +19,6 @@ I'm Zezhong Wang (王 泽中), currently a Ph.D. student at the [University of E
 
 
 
-## Publication
-
-<ul>
-{% for paper in site.data.papers.papers %}
-  {% if paper.selected %}
-  <li>
-  {% include paper.html paper=paper %}
-  </li>
-  {% endif %}
-{% endfor %}
-</ul>
-
-
-
 <!-- ---
 layout: page
 title: 

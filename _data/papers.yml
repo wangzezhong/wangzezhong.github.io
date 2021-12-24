@@ -1,5 +1,25 @@
 papers:
   - layout: paper
+    year: 2021
+    paper-type: inproceedings
+    selected: yes
+    title: "Interactive Data Comics"
+    authors: "Zezhong Wang, Hugo Romat, Fanny Chevalier, Nathalie Henry Riche, Dave Murray-Rust, Benjamin Bach"
+    booktitle: IEEE Transactions on Visualization and Computer Graphics (TVCG)
+    booktitle-url: 
+    doc-url: https://www.researchgate.net/publication/353825597_Interactive_Data_Comics
+    venue: Conference
+  - layout: paper
+    year: 2020
+    paper-type: inproceedings
+    selected: yes
+    title: "Data Comics for Reporting Controlled User Studies in Human-Computer Interaction"
+    authors: "Zezhong Wang, Jacob Ritchie, Jingtao Zhou, Fanny Chevalier, Benjamin Bach"
+    booktitle: IEEE Transactions on Visualization and Computer Graphics (TVCG)
+    booktitle-url: 
+    doc-url: https://www.researchgate.net/publication/344163702_Data_Comics_for_Reporting_Controlled_User_Studies_in_Human-Computer_Interaction
+    venue: Conference
+  - layout: paper
     year: 2020
     paper-type: inproceedings
     selected: yes

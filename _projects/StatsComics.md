@@ -14,7 +14,7 @@ links:
   - title: Project Website 
     url: https://statscomics.github.io/
 accent_color: '#4fb1ba'
-accent_image: /assets/img/projects/statsCover.png
+accent_image: /assets/img/projects/statsCover-blur.png
 theme_color: '#193747'
 sitemap: false
 ---

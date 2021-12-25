@@ -14,7 +14,7 @@ links:
   - title: Project Website 
     url: https://interactivedatacomics.github.io/
 accent_color: '#4fb1ba'
-accent_image: /assets/img/projects/Interactive.png
+accent_image: /assets/img/projects/Interactive-blur.png
 theme_color: '#193747'
 sitemap: false
 ---

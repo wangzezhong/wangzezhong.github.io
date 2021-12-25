@@ -15,7 +15,7 @@ links:
   - title: Data Comics Website 
     url: https://datacomics.github.io/
 accent_color: '#4fb1ba'
-accent_image: /assets/img/projects/DCCover.png
+accent_image: /assets/img/projects/DCCover-blur.png
 theme_color: '#193747'
 sitemap: false
 ---

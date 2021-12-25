@@ -14,7 +14,7 @@ links:
   - title: Project Website 
     url: https://visualizationcheatsheets.github.io/
 accent_color: '#4fb1ba'
-accent_image: /assets/img/projects/cheatsheetCover.png
+accent_image: /assets/img/projects/cheatsheetCover-blur.png
 theme_color: '#193747'
 sitemap: false
 ---

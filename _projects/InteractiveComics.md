@@ -29,7 +29,7 @@ sitemap: false
 ---
 
 This project investigates how to make data comics interactive. Data comics are an effective and versatile means for visual communication, leveraging the power of sequential narration and combined textual and visual content, while providing an overview of the storyline through panels assembled in expressive layouts. While a powerful static storytelling medium that works well on paper support, adding interactivity to data comics can enable non-linear storytelling, personalization, levels of details, explanations, and potentially enriched user experiences. This project introduces a set of _operations_ tailored to support data comics _narrative goals_ that go beyond the traditional linear, immutable storyline curated by a story author. The goals and operations include adding and removing panels into pre-defined layouts to support branching, change of perspective, or access to detail-on-demand, as well as providing and modifying data, and interacting with data representation, to support personalization and reader-defined data focus. We propose a lightweight specification language, **ComicScript**, for designers to add such interactivity to static comics. To assess the viability of our authoring process, we recruited six professional illustrators, designers and data comics enthusiasts and asked them to craft an interactive comic, allowing us to understand authoring workflow and potential of our approach. Feedback helps us improve both our set of interactions and our scripting language. 
-We present examples of interactive comics in a gallery. This initial step towards understanding the design space of interactive comics can inform the design of creation tools and experiences for interactive storytelling. 
+This initial step towards understanding the design space of interactive comics can inform the design of creation tools and experiences for interactive storytelling. 
 
 ## Example:
 
@@ -45,6 +45,7 @@ We present examples of interactive comics in a gallery. This initial step toward
          
 </div> 
 
+(If the earned value of money does not show properly, try retype the number.)
 Find more [interactive data comic examples](https://interactivedatacomics.github.io/examples.html) from our project website.
 
 ---

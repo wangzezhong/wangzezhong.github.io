@@ -3,7 +3,7 @@ layout: project
 title: 'Data Comics'
 caption: Telling compelling data stories with comics
 description: > 
-  Click the [project website](https://datacomics.github.io/) to find a collection of data Comics, the workshop Plan and related publications.
+  Click the [project website](https://datacomics.github.io/) to find a collection of data comics, the workshop plan and related publications.
 date: 1 May 2018
 image: 
   path: /assets/img/projects/DCCover.png

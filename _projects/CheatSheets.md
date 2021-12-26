@@ -21,7 +21,7 @@ sitemap: false
 
 **Cheat Sheets for Data Visualization Techniques** Zezhong Wang, Lovisa Sundin, Dave Murray-Rust, Benjamin Bach _ACM Conference on Human Factors in Computing Systems (CHI 2020)_) [📄**PDF**](https://github.com/wangzezhong/wangzezhong.github.io/blob/e4cb5befe0187df571a186c4d87d3f9000563fbc/assets/papersPDF/Wang2020cheatsheets.pdf)
 
-### Video Preview (30 sec)
+## Video Preview (30 sec)
 <div class="videoWrapper">
   <iframe width="854" height="480" src="https://www.youtube.com/embed/SfSgIvn-99U" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   
@@ -31,7 +31,7 @@ sitemap: false
 
 This project introduces the concept of 'cheat sheets' for data visualization techniques, a set of concise graphical explanations and textual annotations inspired by infographics, data comics, and cheat sheets in other domains. Cheat sheets aim to address the increasing need for accessible material that supports a wide audience in understanding data visualization techniques, their use, their fallacies and so forth. We have carried out an iterative design process with practitioners, teachers and students of data science and visualization, resulting six types of cheat sheet (anatomy, construction, visual patterns, pitfalls, false-friends and well-known relatives) for six types of visualization, and formats for presentation. We assess these with a qualitative user study using 11 participants that demonstrates the readability and usefulness of our cheat sheets.
 
-### Poster presented at VIS 2019.
+## Poster presented at VIS 2019.
 
 Awarded both *‘Best Poster Research’* and *‘Best Poster Design’* awards (InfoVis).
 

@@ -19,7 +19,7 @@ theme_color: '#193747'
 sitemap: false
 ---
 
-**Data Comics for Reporting Controlled User Studies in Human-Computer Interaction** Zezhong Wang, Jacob Ritchie, Jingtao Zhou, Fanny Chevalier, Benjamin Bach _IEEE Transactions on Visualization and Computer Graphics (TVCG) 2021 (IEEE VIS, 2020))_ [📄**PDF**]()
+**Data Comics for Reporting Controlled User Studies in Human-Computer Interaction** Zezhong Wang, Jacob Ritchie, Jingtao Zhou, Fanny Chevalier, Benjamin Bach _IEEE Transactions on Visualization and Computer Graphics (TVCG) 2021 (IEEE VIS, 2020))_ [📄**PDF**](https://github.com/wangzezhong/wangzezhong.github.io/blob/efc5b35980f8c0e80b9ca4fca193c36f4b7f055e/assets/papersPDF/wang2020stats.pdf)
 
 ### Video Preview (24sec)
 
@@ -42,7 +42,6 @@ Data comic for [📄Weighted Graph Comparison Techniques for Brain Connectivity 
      height="100%"
      title="Example: Data comic for Weighted Graph Comparison Techniques for Brain Connectivity Analysis">
 Comic created by [Jingtao Zhou](https://www.tzingtao.com/).
-
 
 ---
 

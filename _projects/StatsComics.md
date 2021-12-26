@@ -36,7 +36,7 @@ Inspired by data comics, this paper introduces a novel format for reporting cont
 
 Data comic for [📄Weighted Graph Comparison Techniques for Brain Connectivity Analysis](https://hal.inria.fr/hal-00780999/document). 
 
-<img src="https://github.com/wangzezhong/wangzezhong.github.io/blob/cd3d6dc26b598721a38501122a4054fc55af142e/assets/img/projects/wang2020stats.png"
+<img src="https://raw.githubusercontent.com/wangzezhong/wangzezhong.github.io/cd3d6dc26b598721a38501122a4054fc55af142e/assets/img/projects/wang2020stats.png"
      alt="Example: Data comic for Weighted Graph Comparison Techniques for Brain Connectivity Analysis"
      width="100%"
      height="100%"

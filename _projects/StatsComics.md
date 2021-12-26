@@ -41,6 +41,7 @@ Data comic for [📄Weighted Graph Comparison Techniques for Brain Connectivity 
      width="100%"
      height="100%"
      title="Example: Data comic for Weighted Graph Comparison Techniques for Brain Connectivity Analysis">
+
 Comic created by [Jingtao Zhou](https://www.tzingtao.com/).
 
 ---

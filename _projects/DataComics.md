@@ -1,7 +1,7 @@
 ---
 layout: project
 title: 'Data Comics'
-caption: Telling compelling data stories to achieve effective communication
+caption: Telling compelling data stories with comics
 description: > 
   Click the [project website](https://datacomics.github.io/) to find a collection of data Comics, the workshop Plan and related publications.
 date: 1 May 2018

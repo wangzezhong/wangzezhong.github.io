@@ -32,7 +32,7 @@ This project introduces the concept of 'cheat sheets' for data visualization tec
 
 ### Poster presented at VIS 2019.
 
-Awarded both *The Best Poster Research* and *The Best Poster Design* of Info vis poster.
+Awarded both *‘Best Poster Research’* and *‘Best Poster Design’* awards (InfoVis).
 
 <img src="https://github.com/wangzezhong/wangzezhong.github.io/blob/master/assets/img/projects/Cheatsheet_poster.png?raw=true"
      alt="Cheat Sheet for data visualization techniques -- poster at VIS 2019"
@@ -40,6 +40,6 @@ Awarded both *The Best Poster Research* and *The Best Poster Design* of Info vis
      height="100%"
      title="Cheat Sheet for data visualization techniques -- poster at VIS 2019">
      
-You can see more examples and download the whole pack of cheatsheets in our [project website](https://visualizationcheatsheets.github.io/).
+You can see more examples and download the whole pack of the cheatsheets in our [project website](https://visualizationcheatsheets.github.io/).
 
 ---

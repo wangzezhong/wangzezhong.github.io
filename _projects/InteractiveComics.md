@@ -19,7 +19,7 @@ theme_color: '#193747'
 sitemap: false
 ---
 
-**Interactive Data Comics** Zezhong Wang, Hugo Romat, Fanny Chevalier, Nathalie Henry Riche, Dave Murray-Rust and Benjamin Bach _IEEE Transactions on Visualization and Computer Graphics (TVCG) 2022 (IEEE VIS, 2021))_) **[PDF]**(https://github.com/wangzezhong/wangzezhong.github.io/blob/12373edeeaf9b95e602cf42061b038cc4ff91afb/assets/papersPDF/Interactive_Data_Comics_VIS2021.pdf)
+**Interactive Data Comics** Zezhong Wang, Hugo Romat, Fanny Chevalier, Nathalie Henry Riche, Dave Murray-Rust and Benjamin Bach _IEEE Transactions on Visualization and Computer Graphics (TVCG) 2022 (IEEE VIS, 2021))_) [**PDF**](https://github.com/wangzezhong/wangzezhong.github.io/blob/12373edeeaf9b95e602cf42061b038cc4ff91afb/assets/papersPDF/Interactive_Data_Comics_VIS2021.pdf)
 
 ### Video Presentation at VIS 2021 (10min 38sec)
 <div class="videoWrapper">

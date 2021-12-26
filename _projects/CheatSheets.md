@@ -30,10 +30,16 @@ sitemap: false
 
 This project introduces the concept of 'cheat sheets' for data visualization techniques, a set of concise graphical explanations and textual annotations inspired by infographics, data comics, and cheat sheets in other domains. Cheat sheets aim to address the increasing need for accessible material that supports a wide audience in understanding data visualization techniques, their use, their fallacies and so forth. We have carried out an iterative design process with practitioners, teachers and students of data science and visualization, resulting six types of cheat sheet (anatomy, construction, visual patterns, pitfalls, false-friends and well-known relatives) for six types of visualization, and formats for presentation. We assess these with a qualitative user study using 11 participants that demonstrates the readability and usefulness of our cheat sheets.
 
+### Poster presented at VIS 2019.
+
+Awarded both *The Best Poster Research* and *The Best Poster Design* of Info vis poster.
+
 <img src="https://github.com/wangzezhong/wangzezhong.github.io/blob/master/assets/img/projects/Cheatsheet_poster.png?raw=true"
      alt="Cheat Sheet for data visualization techniques -- poster at VIS 2019"
      width="100%"
      height="100%"
      title="Cheat Sheet for data visualization techniques -- poster at VIS 2019">
+     
+You can see more examples and download the whole pack of cheatsheets in our [project website](https://visualizationcheatsheets.github.io/).
 
 ---

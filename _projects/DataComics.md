@@ -1,6 +1,6 @@
 ---
 layout: project
-title: 'Data Comics'
+title: 'Data Comics - 数据漫画'
 caption: Telling compelling data stories with comics
 description: > 
   Click the [project website](https://datacomics.github.io/) to find a collection of data comics, the workshop plan and related publications.

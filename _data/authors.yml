@@ -3,7 +3,7 @@
 # Change `author1` to your shortname.
 author1:
   name:              <Zezhong> <Wang>
-  email:             <zezhong.wang@ed.ac.uk>
+  email:             <zezhongw@sfu.ca>
 
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
@@ -24,7 +24,7 @@ author1:
   social:
     twitter:         https://twitter.com/zezhong_w
 #     github:          <username>
-    email:           <zezhong.wang@ed.ac.uk>
+    email:           <zezhongw@sfu.ca>
     # rss:             https://<url>/feed.xml
     # facebook:        <username>
     googlescholar:    EJ8drhwAAAAJ&hl=en&oi=ao

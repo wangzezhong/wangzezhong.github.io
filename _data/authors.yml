@@ -8,7 +8,7 @@ author1:
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    Zezhong Wang, Ph.D. student in University of Edinburgh, his research focuces on data-driven storytelling and data visualization.
+    Zezhong Wang, a postdoc fellow at Simon Fraser University, his research focuces on data-driven storytelling and data visualization.
 
   # This photo will be used in the about section
   picture:

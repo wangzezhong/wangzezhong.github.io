@@ -29,7 +29,7 @@ of design patterns implies a design space of data comics, which combines a dimen
      alt="Data comic design pattern examples"
      width="100%"
      height="100%"
-     title="Data comic design pattern examples"
+     title="Data comic design pattern examples (click to open the full set of cards in a new tab)"
      onclick="window.location.href='https://drive.google.com/file/d/0B1zFhCjto4BXTU9UNHJfd3haaHM/view?usp=sharing&resourcekey=0-lpHK38EzzMXXxXyPQpqB4A'"
      alt="full set of data comic design pattern cards">
 

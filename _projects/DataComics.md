@@ -30,8 +30,8 @@ of design patterns implies a design space of data comics, which combines a dimen
      width="100%"
      height="100%"
      title="Data comic design pattern examples"
-     onclick="https://drive.google.com/file/d/0B1zFhCjto4BXTU9UNHJfd3haaHM/view?usp=sharing&resourcekey=0-lpHK38EzzMXXxXyPQpqB4A" 
-   alt="full set of data comic design pattern cards">
+     onclick="window.location.href='https://drive.google.com/file/d/0B1zFhCjto4BXTU9UNHJfd3haaHM/view?usp=sharing&resourcekey=0-lpHK38EzzMXXxXyPQpqB4A'"
+     alt="full set of data comic design pattern cards">
 
 However, creating data comics is still a difficult process, in part because of its interdisciplinary nature, and also because they lack tool supports, many manual works could take significant time and effort during the creation process. My PhD explores the creation process of data comics. We conduct data comic creation workshops with students (e.g., [data comic workshop in a course of illustration](https://vishub.net/papers/wang2019teaching.pdf)), and domain experts, running controlled study to understand effectiveness of data comics by [comparing it with infographics and triditional text+image formats](https://www.researchgate.net/publication/331357753_Comparing_Effectiveness_and_Engagement_of_Data_Comics_and_Infographics), aim to provide creation methods (e.g., build [interactive data comics](https://interactivedatacomics.github.io/)), reusable design solutions (e.g., a set of [cheat sheets for explaining data visualization techniques](https://visualizationcheatsheets.github.io/index.html), and use [Data Comics for Reporting Controlled User Studies in Human-Computer Interaction](https://statscomics.github.io/)), and to set fundamental resources of knowledge and design guidance to foster the use and creation of effective data comics.
 

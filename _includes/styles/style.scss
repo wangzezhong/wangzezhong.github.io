@@ -30,15 +30,15 @@ li:has(.pubWrapper) {
   list-style-type: none;
 }
 
-.pubWrapper {
-	display: grid;
-	grid-column-gap: 15px;
-	margin-bottom: 20px;
-}
+// .pubWrapper {
+// 	display: grid;
+// 	grid-column-gap: 15px;
+// 	margin-bottom: 20px;
+// }
 .pubWrapper {
     grid-template-columns: auto 1fr; 
-    grid-column-gap: 10px;
-    margin-bottom: 15px;
+    grid-column-gap: 15px;
+    margin-bottom: 20px;
 }
 
 .pubImage img {

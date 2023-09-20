@@ -26,6 +26,28 @@
 
 @import "reboot-mod";
 
+.pubWrapper,
+.personWrapper {
+	display: grid;
+	grid-column-gap: 10px;
+	margin-bottom: 15px;
+}
+.pubWrapper {
+    grid-template-columns: auto 1fr;  /* Changed from 40% to auto */
+    grid-column-gap: 10px;
+    margin-bottom: 15px;
+}
+
+.pubImage img {
+    max-width: 100px;  /* Or whatever max-width you prefer */
+    height: auto;
+}
+
+
+.pubText {
+	grid-column: 2;
+}
+
 {% unless site.hydejack.no_inline_css or jekyll.environment == 'development' %}
   @import "pooleparty/__link__/base";
   @import "pooleparty/__link__/type";

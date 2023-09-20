@@ -26,8 +26,11 @@
 
 @import "reboot-mod";
 
-.pubWrapper,
-.personWrapper {
+li:has(.pubWrapper) {
+  list-style-type: none;
+}
+
+.pubWrapper {
 	display: grid;
 	grid-column-gap: 10px;
 	margin-bottom: 15px;

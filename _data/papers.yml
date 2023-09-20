@@ -1,5 +1,19 @@
 papers:
   - layout: paper
+    year: 2023
+    paper-type: inproceedings
+    selected: yes
+    title: "Educational Data Comics: What Can Comics Do for Education in Visualization?"
+    authors: "Magdalena Boucher, Benjamin Bach, Christina Stoiber, Zezhong Wang, Wolfgang Aigner"
+    booktitle: IEEE VIS 2023
+    booktitle-url: 
+    doc-url: https://www.researchgate.net/publication/373389676_Educational_Data_Comics_What_can_Comics_do_for_Education_in_Visualization
+    img: "Boucher2023EduVis.png"
+    img_alt: "Boucher2023EduVis.png"
+    weblink: 
+    videolink: 
+    venue: Conference
+  - layout: paper
     year: 2021
     paper-type: inproceedings
     selected: yes

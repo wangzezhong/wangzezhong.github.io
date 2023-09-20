@@ -2,7 +2,7 @@
 layout: base
 ---
 
-<!-- <article class="page mb6" role="article">
+<article class="page mb6" role="article">
   <header>
     <h1 class="page-title">{{ page.title }}</h1>
     {% include components/message.html text=page.description hide=page.hide_description %}
@@ -13,25 +13,6 @@ layout: base
 
 {% include components/dingbat.html %}
 {% include body/comments.html %}
- -->
 
- 
-{% assign grouped = site.data.publications | group_by: 'year' %}
 
-<ul class="menu">
-	{% for yr in grouped %}
-	<li><a href="#{{ yr.name }}">{{ yr.name }}</a></li>
-	{% endfor %}
-</ul>
 
-<h1>Publications</h1>
-
-{% for yr in grouped %}
-
-<h2>{{ yr.name }}</h2>
-
-{% for item in yr.items %}
-{% include publication.html item=item %}
-{% endfor %}
-
-{% endfor %}

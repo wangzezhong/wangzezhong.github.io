@@ -39,8 +39,9 @@
 }
 
 .pubImage img {
-    max-width: 200px;  /* Or whatever max-width you prefer */
-    height: auto;
+    // max-width: 200px; 
+    // height: auto;
+	grid-column: 1;
 }
 
 

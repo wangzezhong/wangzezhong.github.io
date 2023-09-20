@@ -36,7 +36,7 @@ li:has(.pubWrapper) {
 	margin-bottom: 15px;
 }
 .pubWrapper {
-    grid-template-columns: auto 1fr;  /* Changed from 40% to auto */
+    grid-template-columns: auto 1fr; 
     grid-column-gap: 10px;
     margin-bottom: 15px;
 }

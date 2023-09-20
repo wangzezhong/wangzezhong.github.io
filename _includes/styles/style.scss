@@ -36,14 +36,10 @@ li:has(.pubWrapper) {
 	grid-column-gap: 15px;
 	margin-bottom: 20px;
 }
-// .pubWrapper {
-//     grid-template-columns: auto 1fr; 
-//     grid-column-gap: 15px;
-//     margin-bottom: 20px;
-// }
+
 
 .pubImage img {
-    max-width: 270px; 
+    max-width: 260px; 
     height: auto;
 }
 

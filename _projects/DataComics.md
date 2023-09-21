@@ -3,7 +3,7 @@ layout: project
 title: 'Data Comics - 数据漫画'
 caption: Telling compelling data stories with comics
 description: > 
-  Click the [project website](https://datacomics.github.io/) to find a collection of data comics, the workshop plan and related publications.
+    Click the [project website](https://datacomics.github.io/) to find a collection of data comics, the workshop plan, and related publications.
 date: 1 May 2018
 image: 
   path: /assets/img/projects/DCCover.png
@@ -20,9 +20,9 @@ theme_color: '#193747'
 sitemap: false
 ---
 
-Data comics are a way of effectively communicating with data through data visualizations. Inspired by how audiences read and [understand comics](http://mm12.johncaserta.info/wp-content/uploads/2012/10/Understanding%20Comics%20(The%20Invisible%20Art)%20By%20Scott%20McCloud.pdf), data comics integrate texts and images in the 2D display, map time into space through panels and their ordering. Data comics provide the freedom of a space-oriented layout of infographics and annotated charts while supporting the linear narration of videos and live presentations. They open up a potential for expressive storytelling with data visualizations. 
+Data comics serve as an effective medium for conveying information using data visualizations. Drawing inspiration from the interpretive nature of comic reading, they blend text and images in a 2D space, transforming time into spatial arrangements using panels and sequences. By merging the spatial flexibility of infographics and chart annotations with the sequential narrative found in videos and live presentations, data comics offer a unique avenue for rich and expressive data-driven storytelling.
 
-In 2018, we presented [data comic design patterns](https://www.researchgate.net/publication/324670172_Design_Patterns_for_Data_Comics), each pattern describing a set of panels with a specific narrative purpose (see examples below or download the full [printable pattern cards](https://drive.google.com/file/d/0B1zFhCjto4BXTU9UNHJfd3haaHM/view?usp=sharing&resourcekey=0-lpHK38EzzMXXxXyPQpqB4A)), that allows for rapid story-boarding of data comics while showcasing their expressive potential. The description
+In 2018, we introduced [data comic design patterns](https://www.researchgate.net/publication/324670172_Design_Patterns_for_Data_Comics), each pattern describing a set of panels with a specific narrative purpose (see examples below or download the full [printable pattern cards](https://drive.google.com/file/d/0B1zFhCjto4BXTU9UNHJfd3haaHM/view?usp=sharing&resourcekey=0-lpHK38EzzMXXxXyPQpqB4A)), that allows for rapid story-boarding of data comics while showcasing their expressive potential. The description
 of design patterns implies a design space of data comics, which combines a dimension for spatial panel layouts with a dimension for content relation between panels. 
 
 <img src="https://github.com/wangzezhong/wangzezhong.github.io/blob/master/assets/img/projects/patternExample.jpg?raw=true"
@@ -33,7 +33,12 @@ of design patterns implies a design space of data comics, which combines a dimen
      onclick="window.location.href='https://drive.google.com/file/d/0B1zFhCjto4BXTU9UNHJfd3haaHM/view?usp=sharing&resourcekey=0-lpHK38EzzMXXxXyPQpqB4A'"
      alt="full set of data comic design pattern cards">
 
-However, creating data comics is still a difficult process, in part because of its interdisciplinary nature, and also because they lack tool supports, many manual works could take significant time and effort during the creation process. My PhD explores the creation process of data comics. We conduct data comic creation workshops with students (e.g., [data comic workshop in a course of illustration](https://vishub.net/papers/wang2019teaching.pdf)), and domain experts, running a controlled study to understand the effectiveness of data comics by [comparing it with infographics and traditional text+image formats](https://www.researchgate.net/publication/331357753_Comparing_Effectiveness_and_Engagement_of_Data_Comics_and_Infographics), aim to provide creation methods (e.g., build [interactive data comics](https://interactivedatacomics.github.io/)), reusable design solutions (e.g., a set of [cheat sheets for explaining data visualization techniques](https://visualizationcheatsheets.github.io/index.html), and use [Data Comics for Reporting Controlled User Studies in Human-Computer Interaction](https://statscomics.github.io/)), and to set fundamental resources of knowledge and design guidance to foster the use and creation of effective data comics.
+The creation of data comics remains a challenging endeavor, due in part to its interdisciplinary demands and the absence of specialized tools to facilitate the process. The manual aspects of crafting data comics can often consume a significant amount of time and effort. My doctoral research delves into the intricacies of this creation process.
+
+I have conducted data comic workshops involving various participants, ranging from students—as exemplified by our [workshop in an illustration course](https://vishub.net/papers/wang2019teaching.pdf)—to domain experts. To dissect and understand the efficacy of data comics in relation to other forms of data presentation, we've conducted controlled studies that [compare the effectiveness of data comics with infographics and traditional text-plus-image formats](https://www.researchgate.net/publication/331357753_Comparing_Effectiveness_and_Engagement_of_Data_Comics).
+
+My research extends to developing methodologies for crafting data comics, such as the creation of [interactive data comics](https://interactivedatacomics.github.io/). Practical tools are also created like [cheat sheets for data visualization techniques](https://visualizationcheatsheets.github.io/index.html), and innovative applications, like using [Data Comics for Reporting Controlled User Studies in HCI](https://statscomics.github.io/). We strive to consolidate foundational knowledge to encourage the widespread creation and utilization of data comics to promote communication with data.
+
 
 ---
 

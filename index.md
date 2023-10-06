@@ -19,11 +19,12 @@ I'm Zezhong Wang (王 泽中), currently working as a postdoctoral fellow at [ix
 
 # News
 
-* I started a project in the summer of 2023 on _Data Comics for Climate Change_, with [Prof Sheelagh Carpendale](https://www.cs.sfu.ca/~sheelagh/), [Prof Michelle Levy](https://www.sfu.ca/english/people-dir/faculty/michelle-levy.html), and [Prof Stephan Gruber](https://carleton.ca/geography/people/gruberstephan/), the project is supported by the Government of Canada’s New Frontiers in Research Fund (NFRF).
+* IEEE Visualization and Graphics Technical Community (VGTC) Visualization Dissertation Award Honorable Mention 2023.
+
+* I started a project _Data Comics for Climate Change_ in the summer of 2023, with [Prof Sheelagh Carpendale](https://www.cs.sfu.ca/~sheelagh/), [Prof Michelle Levy](https://www.sfu.ca/english/people-dir/faculty/michelle-levy.html), and [Prof Stephan Gruber](https://carleton.ca/geography/people/gruberstephan/), supported by the Government of Canada’s New Frontiers in Research Fund (NFRF).
 
 * I joined [ixLab](https://ixlab.cs.sfu.ca/) and working with [Prof Sheelagh Carpendale](https://www.cs.sfu.ca/~sheelagh/) in June 2022.
 
-* I successfully defended my PhD VIVA on 9th December 2021 with the internal examiner of the dissertation is [Prof John Lee](https://www.eca.ed.ac.uk/profile/prof-john-lee), and the external examiner is [Prof Niklas Elmqvist](https://sites.umiacs.umd.edu/elm/).
 
 
 <!-- ---

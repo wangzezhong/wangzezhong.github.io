@@ -1,5 +1,5 @@
 papers:
-   - layout: paper
+  - layout: paper
     year: 2024
     paper-type: inproceedings
     selected: yes
@@ -13,7 +13,7 @@ papers:
     weblink: https://datadrivenarticle.github.io/
     videolink: 
     venue: Conference
-   - layout: paper
+  - layout: paper
     year: 2024
     paper-type: inproceedings
     selected: yes
@@ -27,7 +27,7 @@ papers:
     weblink: https://aivisethicards.github.io/
     videolink: 
     venue: Conference
-    - layout: paper
+  - layout: paper
     year: 2024
     paper-type: inproceedings
     selected: yes
@@ -69,7 +69,6 @@ papers:
     weblink: "https://interactivedatacomics.github.io/"
     videolink: "https://youtu.be/zV4oHfMU5aI?si=zd2uHJoy6KrBoWIj"
     venue: Conference
-
   - layout: paper
     year: 2020
     paper-type: inproceedings

@@ -25,11 +25,11 @@ title:                 Zezhong Wang
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  Personal Website of Zezhong Wang - Information visualization & Data-driven storytelling
+  Personal Website of Zezhong Wang - Information Visualization & Data-Driven Storytelling
 
 # A shorter description for the sidebar.
 tagline: |              
-  Information visualization & data-driven storytelling post-doc at Simon Fraser University
+  Information Visualization & Data-Driven Storytelling Post-Doctoral Fellow at Simon Fraser University
 
 # A list of keywords for your blog
 keywords:              [Zezhong, Wang, Data, Comics, Data-driven, storytelling, 数据漫画]
@@ -71,7 +71,7 @@ legal:
 #     url:               /CHANGELOG/
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:             © 2021 Zezhong Wang. All rights reserved.
+copyright:             © 2024 Zezhong Wang. All rights reserved.
 
 # Format of the permalinks
 permalink:             /blog/:categories/:year-:month-:day-:title/

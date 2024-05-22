@@ -1,4 +1,46 @@
 papers:
+   - layout: paper
+    year: 2024
+    paper-type: inproceedings
+    selected: yes
+    title: "Design Patterns for Data-Driven News Articles"
+    authors: "Zezhong Wang, Shan Hao, Sheelagh Carpendale"
+    booktitle: ACM Conference on Human Factors in Computing Systems (CHI)
+    booktitle-url: 
+    doc-url: https://www.researchgate.net/profile/Zezhong-Wang-2/publication/378961283_Design_Patterns_for_Data-Driven_News_Articles/links/65f3058132321b2cff78da97/Design-Patterns-for-Data-Driven-News-Articles.pdf
+    img: "Shan2024News.png"
+    img_alt: "Shan2024News.png"
+    weblink: https://datadrivenarticle.github.io/
+    videolink: 
+    venue: Conference
+   - layout: paper
+    year: 2024
+    paper-type: inproceedings
+    selected: yes
+    title: "Card-Based Approach to Engage Exploring Ethics in AI for Data Visualization"
+    authors: "Zezhong Wang, Shan Hao, Sheelagh Carpendale"
+    booktitle: ACM Conference on Human Factors in Computing Systems (CHI), Extended Abstracts
+    booktitle-url: 
+    doc-url: https://summit.sfu.ca/_flysystem/fedora/2024-05/chiea24-500.pdf
+    img: "Wang2024EthiCards.png"
+    img_alt: "Wang2024EthiCards.png"
+    weblink: https://aivisethicards.github.io/
+    videolink: 
+    venue: Conference
+    - layout: paper
+    year: 2024
+    paper-type: inproceedings
+    selected: yes
+    title: "Gen4DS: Workshop on Data Storytelling in an Era of Generative AI"
+    authors: "Xingyu Lan, Leni Yang, Zezhong Wang, Danqing Shi, Sheelagh Carpendale"
+    booktitle: IEEE VIS 2024 (Gen4DS)
+    booktitle-url: 
+    doc-url: https://arxiv.org/pdf/2404.01622
+    img: "Lan2024gen4ds.png"
+    img_alt: "Lan2024gen4ds.png"
+    weblink: https://gen4ds.github.io/gen4ds/
+    videolink: 
+    venue: Conference
   - layout: paper
     year: 2023
     paper-type: inproceedings

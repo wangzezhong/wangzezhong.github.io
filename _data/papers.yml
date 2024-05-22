@@ -7,7 +7,7 @@ papers:
     authors: "Komal Waseem, Miriam Sturdee, Zezhong Wang, Rachel Lewis, Marcello Tonelli, Sheelagh Carpendale"
     booktitle: ACM Designing Interactive Systems Conference (DIS)
     booktitle-url: 
-    doc-url: assets/papersPDF/dis24-94.pdf
+    doc-url: https://wangzezhong.github.io/assets/papersPDF/dis24-94.pdf
     img: "Waseem2024Comic.png"
     img_alt: "Waseem2024Comic.png"
     weblink: 

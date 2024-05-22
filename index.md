@@ -21,7 +21,7 @@ I currently work as a postdoctoral fellow at [ixLab](https://ixlab.cs.sfu.ca/), 
 
 # News
 
-* Our paper "Design Patterns for Data-Driven News Articles" received the Best Paper Honourable Mention at CHI 2024.
+* Our paper "[Design Patterns for Data-Driven News Articles](https://www.researchgate.net/profile/Zezhong-Wang-2/publication/378961283_Design_Patterns_for_Data-Driven_News_Articles/links/65f3058132321b2cff78da97/Design-Patterns-for-Data-Driven-News-Articles.pdf)" received the Best Paper Honourable Mention at CHI 2024.
 
 * Paper accepted by the International Conference on Permafrost (ICOP 2024).
 

@@ -12,12 +12,18 @@ featured: false
 ---
 
 
-I'm Zezhong Wang (王 泽中), currently working as a postdoctoral fellow at [ixLab](https://ixlab.cs.sfu.ca/), [Simon Fraser University](https://www.sfu.ca/computing.html) with [Prof Sheelagh Carpendale](https://www.cs.sfu.ca/~sheelagh/). Before that, I received my Ph.D. in 2022 from the [University of Edinburgh](https://www.ed.ac.uk/) with an interdisciplinary team [Visual+Interactive Data Lab (VisHub)](https://vishub.net/), supervised by [Dr. Benjamin Bach](https://visualinteractivedata.github.io/bach.html) and [Dr. Dave Murray-Rust](http://dave.murray-rust.org/). My Ph.D. investigates [Data Comics](https://datacomics.github.io/), PhD thesis entitled [Creating Data Comics for Data-Driven Storytelling](https://era.ed.ac.uk/handle/1842/38793?show=full).
+I'm Zezhong Wang (王 泽中), my research primarily focuses on innovative methods for presenting and interacting with data, blending design and storytelling to enhance user engagement and understanding.
+
+I currently work as a postdoctoral fellow at [ixLab](https://ixlab.cs.sfu.ca/), [Simon Fraser University](https://www.sfu.ca/computing.html) with [Prof Sheelagh Carpendale](https://www.cs.sfu.ca/~sheelagh/). Before that, I received my PhD in 2022 from the [University of Edinburgh](https://www.ed.ac.uk/) with an interdisciplinary team [Visual+Interactive Data Lab (VisHub)](https://vishub.net/), supervised by [Dr. Benjamin Bach](https://visualinteractivedata.github.io/bach.html) and [Dr. Dave Murray-Rust](http://dave.murray-rust.org/). My PhD investigates [Data Comics](https://datacomics.github.io/), PhD thesis entitled [Creating Data Comics for Data-Driven Storytelling](https://era.ed.ac.uk/handle/1842/38793?show=full).
 
 <!-- [Design Informatics](https://www.designinformatics.org/) -->
 <!--projects-->
 
 # News
+
+* Our paper "Design Patterns for Data-Driven News Articles" received the Best Paper Honourable Mention at CHI 2024.
+
+* Paper accepted by the International Conference on Permafrost (ICOP 2024).
 
 * IEEE Visualization and Graphics Technical Community (VGTC) Visualization Dissertation Award Honorable Mention 2023.
 

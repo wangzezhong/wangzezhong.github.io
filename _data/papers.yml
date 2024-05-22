@@ -3,6 +3,20 @@ papers:
     year: 2024
     paper-type: inproceedings
     selected: yes
+    title: "Exploring Using Personalised Comics for Healthcare Communication for Patients Living With Hemodialysis"
+    authors: "Komal Waseem, Miriam Sturdee, Zezhong Wang, Rachel Lewis, Marcello Tonelli, Sheelagh Carpendale"
+    booktitle: ACM Designing Interactive Systems Conference (DIS)
+    booktitle-url: 
+    doc-url: 
+    img: "Waseem2024Comic.png"
+    img_alt: "Waseem2024Comic.png"
+    weblink: 
+    videolink: 
+    venue: Conference
+  - layout: paper
+    year: 2024
+    paper-type: inproceedings
+    selected: yes
     title: "Design Patterns for Data-Driven News Articles"
     authors: "Zezhong Wang, Shan Hao, Sheelagh Carpendale"
     booktitle: ACM Conference on Human Factors in Computing Systems (CHI)

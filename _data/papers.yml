@@ -3,6 +3,20 @@ papers:
     year: 2024
     paper-type: inproceedings
     selected: yes
+    title: "From science to story: Communicating permafrost concepts with data comics"
+    authors: "Zezhong Wang, Stephan Gruber, Michelle Levy, Sheelagh Carpendale"
+    booktitle: The 12th International Conference on Permafrost (ICOP2024)
+    booktitle-url: 
+    doc-url: https://doi.org/10.52381/ICOP2024.157.1
+    img: "permafrostComic.png"
+    img_alt: "permafrostComic.png"
+    weblink: https://dc4cc.github.io/permafrost.html
+    videolink: https://youtu.be/S1onwzJBlvg?si=JNhisnc-JcMsVQxn
+    venue: Conference
+  - layout: paper
+    year: 2024
+    paper-type: inproceedings
+    selected: yes
     title: "Exploring Using Personalised Comics for Healthcare Communication for Patients Living With Hemodialysis"
     authors: "Komal Waseem, Miriam Sturdee, Zezhong Wang, Rachel Lewis, Marcello Tonelli, Sheelagh Carpendale"
     booktitle: ACM Designing Interactive Systems Conference (DIS)

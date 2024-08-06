@@ -3,12 +3,12 @@
 # Change `author1` to your shortname.
 author1:
   name:              <Zezhong> <Wang>
-  email:             <zezhongw@sfu.ca>
+  email:             <wangzezhong2016@gmail.com>
 
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    Zezhong Wang, a postdoc fellow at Simon Fraser University, his research focuces on data-driven storytelling and data visualization.
+    Zezhong Wang, a postdoc fellow at Simon Fraser University, research focuses on data-driven storytelling and data visualization.
 
   # This photo will be used in the about section
   picture:
@@ -24,7 +24,7 @@ author1:
   social:
     twitter:         https://twitter.com/zezhong_w
 #     github:          <username>
-    email:           <zezhongw@sfu.ca>
+    email:           <wangzezhong2016@gmail.com>
     # rss:             https://<url>/feed.xml
     # facebook:        <username>
     googlescholar:    EJ8drhwAAAAJ&hl=en&oi=ao

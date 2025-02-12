@@ -4,7 +4,7 @@ title: 'A Journey of Exploring Data Comics (数据漫画)'
 caption: A brief introduction to data comics and a summary of my exploration
 description: > 
     This article chronicles my exploration of data comics as a tool for democratizing data literacy, sharing research insights, and providing practical resources for creators.
-date: 1 Oct 2024
+date: Feb 2025
 image: 
   path: /assets/img/projects/DCCover.png
   srcset: 
@@ -19,8 +19,9 @@ accent_image: /assets/img/projects/DCCover-blur.jpg
 theme_color: '#193747'
 sitemap: false
 ---
+# A Journey of Exploring Data Comics (数据漫画)
 
-# Overview of Data Comics for Data-Driven Storytelling
+## Overview of Data Comics for Data-Driven Storytelling
 
 Data Comics are a sequential storytelling medium that merges data visualizations with comic elements (e.g., panels and characters) to transform complex information into engaging, narrative-driven experiences. By organizing data into expressive panel layouts, they guide readers through a curated storyline while enabling non-linear exploration via interactivity (e.g., branching paths, data-input). 
 

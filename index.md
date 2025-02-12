@@ -39,7 +39,7 @@ I am currently a postdoctoral fellow at [ixLab](https://ixlab.cs.sfu.ca/), [Simo
 
 * IEEE Visualization and Graphics Technical Community (VGTC) Visualization Dissertation Award Honorable Mention 2023.
 
-* Started a project _Data Comics for Climate Change_ in the summer of 2023, with [Prof Sheelagh Carpendale](https://www.cs.sfu.ca/~sheelagh/), [Prof Michelle Levy](https://www.sfu.ca/english/people-dir/faculty/michelle-levy.html), and [Prof Stephan Gruber](https://carleton.ca/geography/people/gruberstephan/), supported by the Government of Canada’s New Frontiers in Research Fund (NFRF).
+* Started a project _Data Comics for Climate Change_ in the summer of 2023, with [Dr Sheelagh Carpendale](https://www.cs.sfu.ca/~sheelagh/), [Dr Michelle Levy](https://www.sfu.ca/english/people-dir/faculty/michelle-levy.html), and [Dr Stephan Gruber](https://carleton.ca/geography/people/gruberstephan/), supported by the Government of Canada’s New Frontiers in Research Fund (NFRF).
 
 
 

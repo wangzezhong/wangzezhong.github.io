@@ -12,6 +12,8 @@ left_column:
   - awards
   - publications
   - references
+  - teaching
+  - service
 right_column:
   - languages
   - skills

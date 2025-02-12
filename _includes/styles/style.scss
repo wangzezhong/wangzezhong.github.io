@@ -39,7 +39,7 @@ li:has(.pubWrapper) {
 
 
 .pubImage img {
-    max-width: 260px; 
+    max-width: 260px !important; 
     height: auto;
     border-radius: 8px; 
 }
@@ -48,6 +48,7 @@ li:has(.pubWrapper) {
 .pubText {
 	grid-column: 2;
 }
+
 
 {% unless site.hydejack.no_inline_css or jekyll.environment == 'development' %}
   @import "pooleparty/__link__/base";

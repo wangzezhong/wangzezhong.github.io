@@ -6,6 +6,8 @@ cover:  false
 selected_projects:
   - _projects/DataComics.md
   - _projects/CheatSheets.md
+  - _projects/DC4CC.md
+  - _projects/AI-VIS-EthiCards.md
 featured: false
 ---
 

@@ -5,16 +5,16 @@ caption: Engage the public to understand climate change with validated science a
 description: > 
 date: Feb 2025
 image: 
-  path: /assets/img/projects/cheatsheetCover.png
+  path: /assets/img/projects/dc4cc.png
   srcset: 
-    1920w: /assets/img/projects/cheatsheetCover.png
-    960w:  /assets/img/projects/cheatsheetCover@0,5.png
-    480w:  /assets/img/projects/cheatsheetCover@0,25.png
+    1920w: /assets/img/projects/dc4cc.png
+    960w:  /assets/img/projects/dc4cc@0,5.png
+    480w:  /assets/img/projects/dc4cc@0,25.png
 links:
   - title: Project Website 
-    url: https://visualizationcheatsheets.github.io/
+    url: https://dc4cc.github.io/index.html
 accent_color: '#4fb1ba'
-accent_image: /assets/img/projects/cheatsheetCover-blur.png
+accent_image: /assets/img/projects/dc4cc-blur.png
 theme_color: '#193747'
 sitemap: false
 ---

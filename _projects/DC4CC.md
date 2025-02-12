@@ -22,23 +22,27 @@ sitemap: false
 # Data Comics for Climate Change
 
 
-## Video Preview (30 sec)
-<div class="videoWrapper">
-  <iframe width="854" height="480" src="https://www.youtube.com/embed/SfSgIvn-99U" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  
-</div>
+
+While there is a gap between what the general public and policymakers understand about science and what is known by experts, this gap is particularly perilous regarding climate change. Climate change is increasingly recognized as a paramount threat to life on the planet.
+
+The most recent report from the Intergovernmental Panel on Climate Change highlights the extreme and worsening impacts of climate change, including rising sea levels, heatwaves, drought, flooding, regional food, and water shortages, storm damage, and more.
+
+Scientists are generating massive amounts of data about climate change and developing significant understandings of the causal factors, wide-ranging projected impacts, and necessary mitigation and adaptation strategies. To know how to respond and make changes both policymakers and the general public need to be better supported to develop actionable comprehension. Currently, scientists inform each other via expert publications and conferences. We, as part of the public and policymakers, receive our information via the media and the web – and in our current catastrophic blending of information with misinformation, we are at risk of well-intentionally taking ineffective or even harmful actions and decisions. We need the best and most current scientific information in an easily accessible format that includes data transparency and is also both scientifically informed and verified.
+
+To close this gap, we have assembled a team that includes experts in data visualization, narrative construction, data comics, and climate change. We will work collaboratively to develop climate change data comics that combine compelling narratives with comprehensible data visuals that are informed and verified by the appropriate scientists.
 
 ---
 
-This project introduces the concept of 'cheat sheets' for data visualization techniques, a set of concise graphical explanations and textual annotations inspired by infographics, data comics, and cheat sheets in other domains. Cheat sheets aim to address the increasing need for accessible material that supports a wide audience in understanding data visualization techniques, their use, their fallacies, and so forth. We have carried out an iterative design process with practitioners, teachers, and students of data science and visualization, resulting in six types of cheat sheets (anatomy, construction, visual patterns, pitfalls, false-friends, and well-known relatives) for six types of visualization, and formats for presentation. We assess these with a qualitative user study using 11 participants that demonstrate the readability and usefulness of our cheat sheets.
+Poster presented at Graphic Interface 2023:
 
-Poster presented at VIS 2019 was awarded both *‘Best Poster Research’* and *‘Best Poster Design’* awards (InfoVis).
-
-<img src="https://github.com/wangzezhong/wangzezhong.github.io/blob/master/assets/img/projects/Cheatsheet_poster.png?raw=true"
-     alt="Cheat Sheet for data visualization techniques -- poster at VIS 2019"
+<img src="/assets/img/DC4CC/dc4ccPoster.jpg"
+     alt="Poster of Data Comics for Climate Change presented at Graphic Interface 2023."
      width="100%"
      height="100%"
-     title="Cheat Sheet for data visualization techniques -- poster at VIS 2019">
+     style="border-radius: 5px;"
+     >
+
+---
 
 <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
   <!-- Image 1 -->
@@ -156,7 +160,13 @@ Poster presented at VIS 2019 was awarded both *‘Best Poster Research’* and *
   </div>
 </div>
 
-     
-Find more examples and download the whole pack of cheatsheets on the [project website](https://visualizationcheatsheets.github.io/).
+
+## Video Preview (30 sec)
+<div class="videoWrapper">
+  <iframe width="854" height="480" src="https://www.youtube.com/embed/SfSgIvn-99U" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+</div>
+
+---
 
 ---

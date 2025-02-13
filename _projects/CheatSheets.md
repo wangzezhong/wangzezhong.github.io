@@ -39,9 +39,10 @@ Poster presented at VIS 2019 was awarded both *‘Best Poster Research’* and *
      height="100%"
      title="Cheat Sheet for data visualization techniques -- poster at VIS 2019">
 
+
 <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
   <!-- Image 1 -->
-  <div style="width: 30%; text-align: center; margin: 10px;">
+  <div style="width: 32%; text-align: center; margin-top: 10px;">
     <img src="/assets/img/DataComics/anatomy.png"
          alt="Anatomy" 
          style="width: 100%; height: auto; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
@@ -49,7 +50,7 @@ Poster presented at VIS 2019 was awarded both *‘Best Poster Research’* and *
          onclick="window.open('https://visualizationcheatsheets.github.io/anatomy.html', '_blank')" 
          onmouseover="this.style.transform='scale(1.01)'" 
          onmouseout="this.style.transform='scale(1)'" />
-    <div style="position: relative; display: inline-block; margin-top: 8px; cursor: pointer;"
+    <div style="position: relative; display: inline-block; margin-top: 8px; cursor: pointer; font-size: 0.8em"
          onmouseover="document.getElementById('tooltip1').style.visibility='visible'; document.getElementById('tooltip1').style.opacity='1';" 
          onmouseout="document.getElementById('tooltip1').style.visibility='hidden'; document.getElementById('tooltip1').style.opacity='0';">
       Anatomy
@@ -60,7 +61,7 @@ Poster presented at VIS 2019 was awarded both *‘Best Poster Research’* and *
   </div>
 
   <!-- Image 2 -->
-  <div style="width: 30%; text-align: center; margin: 10px;">
+  <div style="width: 32%; text-align: center; margin-top: 10px;">
     <img src="/assets/img/DataComics/construction.png" 
          alt="Construction" 
          style="width: 100%; height: auto; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
@@ -68,7 +69,7 @@ Poster presented at VIS 2019 was awarded both *‘Best Poster Research’* and *
          onclick="window.open('https://visualizationcheatsheets.github.io/construction.html', '_blank')" 
          onmouseover="this.style.transform='scale(1.01)'" 
          onmouseout="this.style.transform='scale(1)'" />
-    <div style="position: relative; display: inline-block; margin-top: 8px; cursor: pointer;"
+    <div style="position: relative; display: inline-block; margin-top: 8px; cursor: pointer; font-size: 0.8em"
          onmouseover="document.getElementById('tooltip2').style.visibility='visible'; document.getElementById('tooltip2').style.opacity='1';" 
          onmouseout="document.getElementById('tooltip2').style.visibility='hidden'; document.getElementById('tooltip2').style.opacity='0';">
       Construction
@@ -79,7 +80,7 @@ Poster presented at VIS 2019 was awarded both *‘Best Poster Research’* and *
   </div>
 
   <!-- Image 3 -->
-  <div style="width: 30%; text-align: center; margin: 10px;">
+  <div style="width: 32%; text-align: center; margin-top: 10px;">
     <img src="/assets/img/DataComics/falsefriends.png"
          alt="False-Friends" 
          style="width: 100%; height: auto; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
@@ -87,7 +88,7 @@ Poster presented at VIS 2019 was awarded both *‘Best Poster Research’* and *
          onclick="window.open('https://visualizationcheatsheets.github.io/falsefriends.html', '_blank')" 
          onmouseover="this.style.transform='scale(1.01)'" 
          onmouseout="this.style.transform='scale(1)'" />
-    <div style="position: relative; display: inline-block; margin-top: 8px; cursor: pointer;"
+    <div style="position: relative; display: inline-block; margin-top: 8px; cursor: pointer; font-size: 0.8em"
          onmouseover="document.getElementById('tooltip3').style.visibility='visible'; document.getElementById('tooltip3').style.opacity='1';" 
          onmouseout="document.getElementById('tooltip3').style.visibility='hidden'; document.getElementById('tooltip3').style.opacity='0';">
       False Friends
@@ -98,7 +99,7 @@ Poster presented at VIS 2019 was awarded both *‘Best Poster Research’* and *
   </div>
 
   <!-- Image 4 -->
-  <div style="width: 30%; text-align: center; margin: 10px;">
+  <div style="width: 32%; text-align: center; margin-top: 10px;">
     <img src="/assets/img/DataComics/pitfalls.png"
          alt="Pitfalls" 
          style="width: 100%; height: auto; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
@@ -106,7 +107,7 @@ Poster presented at VIS 2019 was awarded both *‘Best Poster Research’* and *
          onclick="window.open('https://visualizationcheatsheets.github.io/pitfalls.html', '_blank')" 
          onmouseover="this.style.transform='scale(1.01)'" 
          onmouseout="this.style.transform='scale(1)'" />
-    <div style="position: relative; display: inline-block; margin-top: 8px; cursor: pointer;"
+    <div style="position: relative; display: inline-block; margin-top: 8px; cursor: pointer; font-size: 0.8em"
          onmouseover="document.getElementById('tooltip1').style.visibility='visible'; document.getElementById('tooltip1').style.opacity='1';" 
          onmouseout="document.getElementById('tooltip1').style.visibility='hidden'; document.getElementById('tooltip1').style.opacity='0';">
       Pitfalls
@@ -117,7 +118,7 @@ Poster presented at VIS 2019 was awarded both *‘Best Poster Research’* and *
   </div>
 
   <!-- Image 5 -->
-  <div style="width: 30%; text-align: center; margin: 10px;">
+  <div style="width: 32%; text-align: center; margin-top: 10px;">
     <img src="/assets/img/DataComics/relative.png" 
          alt="Well-known Relative" 
          style="width: 100%; height: auto; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
@@ -125,7 +126,7 @@ Poster presented at VIS 2019 was awarded both *‘Best Poster Research’* and *
          onclick="window.open('https://visualizationcheatsheets.github.io/relative.html', '_blank')" 
          onmouseover="this.style.transform='scale(1.01)'" 
          onmouseout="this.style.transform='scale(1)'" />
-    <div style="position: relative; display: inline-block; margin-top: 8px; cursor: pointer;"
+    <div style="position: relative; display: inline-block; margin-top: 8px; cursor: pointer; font-size: 0.8em"
          onmouseover="document.getElementById('tooltip2').style.visibility='visible'; document.getElementById('tooltip2').style.opacity='1';" 
          onmouseout="document.getElementById('tooltip2').style.visibility='hidden'; document.getElementById('tooltip2').style.opacity='0';">
       Well-known Relative
@@ -136,7 +137,7 @@ Poster presented at VIS 2019 was awarded both *‘Best Poster Research’* and *
   </div>
 
   <!-- Image 6 -->
-  <div style="width: 30%; text-align: center; margin: 10px;">
+  <div style="width: 32%; text-align: center; margin-top: 10px;">
     <img src="/assets/img/DataComics/visualpatterns.png" 
          alt="Visual Patterns" 
          style="width: 100%; height: auto; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
@@ -144,7 +145,7 @@ Poster presented at VIS 2019 was awarded both *‘Best Poster Research’* and *
          onclick="window.open('https://visualizationcheatsheets.github.io/visualpatterns.html', '_blank')" 
          onmouseover="this.style.transform='scale(1.01)'" 
          onmouseout="this.style.transform='scale(1)'" />
-    <div style="position: relative; display: inline-block; margin-top: 8px; cursor: pointer;"
+    <div style="position: relative; display: inline-block; margin-top: 8px; cursor: pointer; font-size: 0.8em"
          onmouseover="document.getElementById('tooltip3').style.visibility='visible'; document.getElementById('tooltip3').style.opacity='1';" 
          onmouseout="document.getElementById('tooltip3').style.visibility='hidden'; document.getElementById('tooltip3').style.opacity='0';">
       Visual Patterns

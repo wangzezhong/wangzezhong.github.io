@@ -1,7 +1,7 @@
 ---
 layout: project
-title: 'Cheat Sheets for Data Visualization Techniques'
-caption: A set of concise graphical explanations to support understanding data visualization techniques
+title: 'AI-VIS EthiCards: exploring ethics in AI for visualizations'
+caption: A card deck and activities to engage exploration of ethics in AI for visualizations
 description: > 
 date: May 2024
 image: 
@@ -19,143 +19,78 @@ theme_color: '#193747'
 sitemap: false
 ---
 
-**Cheat Sheets for Data Visualization Techniques** Zezhong Wang, Lovisa Sundin, Dave Murray-Rust, Benjamin Bach _ACM Conference on Human Factors in Computing Systems (CHI 2020)_) [📄**PDF**](https://www.researchgate.net/publication/338657160_Cheat_Sheets_for_Data_Visualization_Techniques)
-
-## Video Preview (30 sec)
-<div class="videoWrapper">
-  <iframe width="854" height="480" src="https://www.youtube.com/embed/SfSgIvn-99U" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  
+<div>
+  <p>
+    <strong>Card-Based Approach to Engage Exploring Ethics in AI for Data Visualization</strong><br>
+    Zezhong Wang, Shan Hao, Sheelagh Carpendale. <em>CHI EA '24: Extended Abstracts of the CHI Conference on Human Factors in Computing Systems</em>
+    [📄 <a href="https://summit.sfu.ca/_flysystem/fedora/2024-05/chiea24-500.pdf" target="_blank" rel="noopener noreferrer"><strong>PDF</strong></a>
+    | <a href="javascript:void(0)" id="copyBibTeXLink" onclick="copyBibTeX2()" style="font-size:0.9em; text-decoration: underline; color: inherit;">Copy BibTeX</a>]
+  </p>
+  <span id="copyConfirmation2" style="display:none; margin-left: 10px; color: #4fb1ba;">BibTeX code copied!</span>
 </div>
+
+<script>
+  const bibtexCode2 = `@inproceedings{wang2024card,
+  author    = {Wang, Zezhong and Hao, Shan and Carpendale, Sheelagh},
+  title     = {Card-Based Approach to Engage Exploring Ethics in AI for Data Visualization},
+  year      = {2024},
+  isbn      = {9798400703317},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  url       = {https://doi.org/10.1145/3613905.3650972},
+  doi       = {10.1145/3613905.3650972},
+  booktitle = {Extended Abstracts of the CHI Conference on Human Factors in Computing Systems},
+  articleno = {69},
+  numpages  = {7},
+  keywords  = {Artificial intelligence, Card, Data visualization, Education, Ethics},
+  location  = {Honolulu, HI, USA},
+  series    = {CHI EA '24}
+}`;
+
+  function copyBibTeX2() {
+    // Create a temporary textarea to hold the BibTeX code
+    const tempTextArea = document.createElement("textarea");
+    tempTextArea.value = bibtexCode2;
+    document.body.appendChild(tempTextArea);
+    tempTextArea.select();
+    tempTextArea.setSelectionRange(0, 99999); // For mobile devices
+
+    try {
+      const successful = document.execCommand('copy');
+      if (successful) {
+        // Show confirmation message
+        const confirmation = document.getElementById("copyConfirmation2");
+        confirmation.style.display = "inline";
+        setTimeout(() => {
+          confirmation.style.display = "none";
+        }, 2000);
+      } else {
+        alert('Unable to copy. Please try manually.');
+      }
+    } catch (err) {
+      alert('Error copying text: ' + err);
+    }
+    // Remove the temporary textarea
+    document.body.removeChild(tempTextArea);
+  }
+</script>
 
 ---
 
-This project introduces the concept of 'cheat sheets' for data visualization techniques, a set of concise graphical explanations and textual annotations inspired by infographics, data comics, and cheat sheets in other domains. Cheat sheets aim to address the increasing need for accessible material that supports a wide audience in understanding data visualization techniques, their use, their fallacies, and so forth. We have carried out an iterative design process with practitioners, teachers, and students of data science and visualization, resulting in six types of cheat sheets (anatomy, construction, visual patterns, pitfalls, false-friends, and well-known relatives) for six types of visualization, and formats for presentation. We assess these with a qualitative user study using 11 participants that demonstrate the readability and usefulness of our cheat sheets.
+We present AI-VIS EthiCards, a card-based approach to explore ethics tailored for AI for visualization. The continuous integration of artificial intelligence and data visualization has brought about increased efficiency and benefits, yet inevitably raises ethical concerns. The emerging field of AI for visualization is marked by its inherent complexity, making it crucial for researchers, designers, and practitioners to cultivate ethical literacy and contemplate moral obligations within this intricate environment. These cards aim to aid users in learning, discussing, and reflecting on the ethical dilemmas that may arise from the integration of AI technology and visualization. 
 
-Poster presented at VIS 2019 was awarded both *‘Best Poster Research’* and *‘Best Poster Design’* awards (InfoVis).
+The AI-VIS EthiCard set contains six themes: Goals, AI-VIS Tasks, Technologies, Ethical Principles, People-In-Focus, and Challenges, proposes various modes of use, including theoretical exploration, and design development simulations, with five activities. We aim to offer users an exploratory and open approach to discussions, providing multiple perspectives to guide ethical considerations when applying AI for visualization.
 
-<img src="https://github.com/wangzezhong/wangzezhong.github.io/blob/master/assets/img/projects/Cheatsheet_poster.png?raw=true"
-     alt="Cheat Sheet for data visualization techniques -- poster at VIS 2019"
+
+<img src="/assets/img/AI-VIS-EthiCards/DSC06343-teaser.png"
+     alt="Ai-VIS EthiCards"
      width="100%"
      height="100%"
-     title="Cheat Sheet for data visualization techniques -- poster at VIS 2019">
+     style="border-radius: 5px;"
+     >
 
-<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
-  <!-- Image 1 -->
-  <div style="width: 30%; text-align: center; margin: 10px;">
-    <img src="/assets/img/DataComics/anatomy.png"
-         alt="Anatomy" 
-         style="width: 100%; height: auto; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
-         title="click to view Anatomy sheets"
-         onclick="window.open('https://visualizationcheatsheets.github.io/anatomy.html', '_blank')" 
-         onmouseover="this.style.transform='scale(1.01)'" 
-         onmouseout="this.style.transform='scale(1)'" />
-    <div style="position: relative; display: inline-block; margin-top: 8px; cursor: pointer;"
-         onmouseover="document.getElementById('tooltip1').style.visibility='visible'; document.getElementById('tooltip1').style.opacity='1';" 
-         onmouseout="document.getElementById('tooltip1').style.visibility='hidden'; document.getElementById('tooltip1').style.opacity='0';">
-      Anatomy
-      <!-- <div id="tooltip1" style="visibility: hidden; opacity: 0; width: 140px; background-color: #333; color: #fff; text-align: center; padding: 5px 8px; border-radius: 6px; position: absolute; bottom: 125%; left: 50%; transform: translateX(-50%); transition: opacity 0.3s ease; pointer-events: none;">
-        My weekly data comic practice example
-      </div> -->
-    </div>
-  </div>
 
-  <!-- Image 2 -->
-  <div style="width: 30%; text-align: center; margin: 10px;">
-    <img src="/assets/img/DataComics/construction.png" 
-         alt="Construction" 
-         style="width: 100%; height: auto; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
-         title="click to view Construction sheets"
-         onclick="window.open('https://visualizationcheatsheets.github.io/construction.html', '_blank')" 
-         onmouseover="this.style.transform='scale(1.01)'" 
-         onmouseout="this.style.transform='scale(1)'" />
-    <div style="position: relative; display: inline-block; margin-top: 8px; cursor: pointer;"
-         onmouseover="document.getElementById('tooltip2').style.visibility='visible'; document.getElementById('tooltip2').style.opacity='1';" 
-         onmouseout="document.getElementById('tooltip2').style.visibility='hidden'; document.getElementById('tooltip2').style.opacity='0';">
-      Construction
-      <!-- <div id="tooltip2" style="visibility: hidden; opacity: 0; width: 140px; background-color: #333; color: #fff; text-align: center; padding: 5px 8px; border-radius: 6px; position: absolute; bottom: 125%; left: 50%; transform: translateX(-50%); transition: opacity 0.3s ease; pointer-events: none;">
-        My weekly data comic practice example
-      </div> -->
-    </div>
-  </div>
 
-  <!-- Image 3 -->
-  <div style="width: 30%; text-align: center; margin: 10px;">
-    <img src="/assets/img/DataComics/falsefriends.png"
-         alt="False-Friends" 
-         style="width: 100%; height: auto; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
-         title="click to view False-Friends sheets"
-         onclick="window.open('https://visualizationcheatsheets.github.io/falsefriends.html', '_blank')" 
-         onmouseover="this.style.transform='scale(1.01)'" 
-         onmouseout="this.style.transform='scale(1)'" />
-    <div style="position: relative; display: inline-block; margin-top: 8px; cursor: pointer;"
-         onmouseover="document.getElementById('tooltip3').style.visibility='visible'; document.getElementById('tooltip3').style.opacity='1';" 
-         onmouseout="document.getElementById('tooltip3').style.visibility='hidden'; document.getElementById('tooltip3').style.opacity='0';">
-      False Friends
-      <!-- <div id="tooltip3" style="visibility: hidden; opacity: 0; width: 140px; background-color: #333; color: #fff; text-align: center; padding: 5px 8px; border-radius: 6px; position: absolute; bottom: 125%; left: 50%; transform: translateX(-50%); transition: opacity 0.3s ease; pointer-events: none;">
-        My weekly data comic practice example
-      </div> -->
-    </div>
-  </div>
 
-  <!-- Image 4 -->
-  <div style="width: 30%; text-align: center; margin: 10px;">
-    <img src="/assets/img/DataComics/pitfalls.png"
-         alt="Pitfalls" 
-         style="width: 100%; height: auto; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
-         title="click to view Pitfalls sheets"
-         onclick="window.open('https://visualizationcheatsheets.github.io/pitfalls.html', '_blank')" 
-         onmouseover="this.style.transform='scale(1.01)'" 
-         onmouseout="this.style.transform='scale(1)'" />
-    <div style="position: relative; display: inline-block; margin-top: 8px; cursor: pointer;"
-         onmouseover="document.getElementById('tooltip1').style.visibility='visible'; document.getElementById('tooltip1').style.opacity='1';" 
-         onmouseout="document.getElementById('tooltip1').style.visibility='hidden'; document.getElementById('tooltip1').style.opacity='0';">
-      Pitfalls
-      <!-- <div id="tooltip1" style="visibility: hidden; opacity: 0; width: 140px; background-color: #333; color: #fff; text-align: center; padding: 5px 8px; border-radius: 6px; position: absolute; bottom: 125%; left: 50%; transform: translateX(-50%); transition: opacity 0.3s ease; pointer-events: none;">
-        My weekly data comic practice example
-      </div> -->
-    </div>
-  </div>
-
-  <!-- Image 5 -->
-  <div style="width: 30%; text-align: center; margin: 10px;">
-    <img src="/assets/img/DataComics/relative.png" 
-         alt="Well-known Relative" 
-         style="width: 100%; height: auto; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
-         title="click to view Well-known Relative sheets"
-         onclick="window.open('https://visualizationcheatsheets.github.io/relative.html', '_blank')" 
-         onmouseover="this.style.transform='scale(1.01)'" 
-         onmouseout="this.style.transform='scale(1)'" />
-    <div style="position: relative; display: inline-block; margin-top: 8px; cursor: pointer;"
-         onmouseover="document.getElementById('tooltip2').style.visibility='visible'; document.getElementById('tooltip2').style.opacity='1';" 
-         onmouseout="document.getElementById('tooltip2').style.visibility='hidden'; document.getElementById('tooltip2').style.opacity='0';">
-      Well-known Relative
-      <!-- <div id="tooltip2" style="visibility: hidden; opacity: 0; width: 140px; background-color: #333; color: #fff; text-align: center; padding: 5px 8px; border-radius: 6px; position: absolute; bottom: 125%; left: 50%; transform: translateX(-50%); transition: opacity 0.3s ease; pointer-events: none;">
-        My weekly data comic practice example
-      </div> -->
-    </div>
-  </div>
-
-  <!-- Image 6 -->
-  <div style="width: 30%; text-align: center; margin: 10px;">
-    <img src="/assets/img/DataComics/visualpatterns.png" 
-         alt="Visual Patterns" 
-         style="width: 100%; height: auto; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
-         title="click to view Visual Patterns sheets"
-         onclick="window.open('https://visualizationcheatsheets.github.io/visualpatterns.html', '_blank')" 
-         onmouseover="this.style.transform='scale(1.01)'" 
-         onmouseout="this.style.transform='scale(1)'" />
-    <div style="position: relative; display: inline-block; margin-top: 8px; cursor: pointer;"
-         onmouseover="document.getElementById('tooltip3').style.visibility='visible'; document.getElementById('tooltip3').style.opacity='1';" 
-         onmouseout="document.getElementById('tooltip3').style.visibility='hidden'; document.getElementById('tooltip3').style.opacity='0';">
-      Visual Patterns
-      <!-- <div id="tooltip3" style="visibility: hidden; opacity: 0; width: 140px; background-color: #333; color: #fff; text-align: center; padding: 5px 8px; border-radius: 6px; position: absolute; bottom: 125%; left: 50%; transform: translateX(-50%); transition: opacity 0.3s ease; pointer-events: none;">
-        My weekly data comic practice example
-      </div> -->
-    </div>
-  </div>
-</div>
-
-     
-Find more examples and download the whole pack of cheatsheets on the [project website](https://visualizationcheatsheets.github.io/).
 
 ---

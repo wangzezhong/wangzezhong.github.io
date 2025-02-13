@@ -3,6 +3,20 @@ papers:
     year: 2024
     paper-type: inproceedings
     selected: yes
+    title: "Summary of the Workshop on Visual Methods and Analyzing Visual Data in Human Computer Interaction"
+    authors: "Zezhong Wang, Samuel Huron, Miriam Sturdee, Sheelagh Carpendale"
+    booktitle: Companion Proceedings of the 2024 Conference on Interactive Surfaces and Spaces
+    booktitle-url: 
+    doc-url: https://www.researchgate.net/publication/385287571_Summary_of_the_Workshop_on_Visual_Methods_and_Analyzing_Visual_Data_in_Human_Computer_Interaction
+    img: "visualMethodsHCI.png"
+    img_alt: "visualMethodsHCI.png"
+    weblink: 
+    videolink: 
+    venue: Conference
+  - layout: paper
+    year: 2024
+    paper-type: inproceedings
+    selected: yes
     title: "From Science to Story: Communicating Permafrost Concepts with Data Comics"
     authors: "Zezhong Wang, Stephan Gruber, Michelle Levy, Sheelagh Carpendale"
     booktitle: The 12th International Conference on Permafrost (ICOP2024)

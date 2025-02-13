@@ -310,7 +310,7 @@ While static data comics are effective on their own, adding interactivity opens 
 This demo shows how interactive elements like alternative layouts, branching paths and data input can transform static comics into exploratory experiences.
 
 <div style="width: 70%; max-width: 100%; text-align: center;">
-  <iframe width="730" height="480" src="https://www.youtube.com/embed/9u1tg2gHNAc" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="730" height="480" frameborder="0" src="https://www.youtube.com/embed/9u1tg2gHNAc" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   
 </div>
 
@@ -340,7 +340,7 @@ Data comics have been successfully used to communicate complex information. For 
   </div>
 </div>
 
-My current projects extend the concept to tackle pressing challenges, such as engaging public collaboration on climate change. Collaborating with climate scientists, I create data comics that communicate [climate data](https://dc4cc.github.io/about.html){:target="_blank" rel="noopener noreferrer"} which uses visual stories to make climate data accessible and engaging for diverse public audiences. Presented at a top international conference on permafrost [(ICOP2024)](https://doi.org/10.52381/ICOP2024.157.1){:target="_blank" rel="noopener noreferrer"} and featured in the [State of the Mountains Report](https://stateofthemountains.ca/){:target="_blank" rel="noopener noreferrer"}, this project underscores the importance of clear, visual communication in bridging the gap between complex scientific data and public understanding, demonstrates how visual narratives can inspire action, and promote data literacy at a societal level. 
+My current projects extend the concept to tackle pressing challenges, such as engaging public collaboration on climate change. Collaborating with climate scientists, I create data comics that communicate [climate data](https://dc4cc.github.io/about.html){:target="_blank" rel="noopener noreferrer"} which uses visual stories to make climate data accessible and engaging for diverse public audiences. Presented at a top international conference on permafrost [(ICOP2024)](https://doi.org/10.52381/ICOP2024.157.1){:target="_blank" rel="noopener noreferrer"} and featured in the 2024 [State of the Mountains Report](https://stateofthemountains.ca/){:target="_blank" rel="noopener noreferrer"}, this project underscores the importance of clear, visual communication in bridging the gap between complex scientific data and public understanding, demonstrates how visual narratives can inspire action, and promote data literacy at a societal level. 
 
 For example, I visually explain how _latent heat_ affects temperature changes in permafrost, using metaphors to demonstrate how diverse data sources—such as cell counts, ground truthing, and satellite imagery—are synthesized and analyzed to create a holistic understanding of a lake’s health. I integrate the explanation of data and science into captivating storylines, drawing inspiration from fiction writing to engage and inform audiences.
 

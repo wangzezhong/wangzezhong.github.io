@@ -21,9 +21,9 @@ sitemap: false
 
 **Cheat Sheets for Data Visualization Techniques** Zezhong Wang, Lovisa Sundin, Dave Murray-Rust, Benjamin Bach _ACM Conference on Human Factors in Computing Systems (CHI 2020)_) [📄**PDF**](https://www.researchgate.net/publication/338657160_Cheat_Sheets_for_Data_Visualization_Techniques)
 
-## Video Preview (30 sec)
-<div class="videoWrapper">
-  <iframe width="854" height="480" src="https://www.youtube.com/embed/SfSgIvn-99U" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+### Video Preview (30 sec)
+<div style="width: 70%; max-width: 100%; text-align: center;">
+  <iframe width="730" height="430" src="https://www.youtube.com/embed/SfSgIvn-99U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   
 </div>
 

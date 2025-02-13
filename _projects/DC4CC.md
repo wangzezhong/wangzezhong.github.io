@@ -117,7 +117,7 @@ To cite this work:
 </script>
 
 ### Video Preview (2 min)
-<div class="videoWrapper">
+<div style="width: 70%; max-width: 100%; text-align: center;">
 <iframe width="730" height="410" src="https://www.youtube.com/embed/S1onwzJBlvg?si=fplGUbslJNdJ7eql" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 

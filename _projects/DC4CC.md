@@ -78,6 +78,7 @@ To cite this work:
   <span id="copyConfirmationFrom" style="display:none; margin-left: 10px; color: #4fb1ba;">BibTeX code copied!</span>
 </div>
 
+<!-- Place the script just before the closing body tag -->
 <script>
   const bibtexCodeFrom = `@inproceedings{Wang2024From,
   title     = {From Science to Story: Communicating Permafrost Concepts with Data Comics},
@@ -89,30 +90,42 @@ To cite this work:
 }`;
 
   function copyBibTeXFrom() {
-    // Create a temporary textarea to hold the BibTeX code
-    const tempTextArea = document.createElement("textarea");
-    tempTextArea.value = bibtexCodeFrom;
-    document.body.appendChild(tempTextArea);
-    tempTextArea.select();
-    tempTextArea.setSelectionRange(0, 99999); // For mobile devices
-
-    try {
-      const successful = document.execCommand('copy');
-      if (successful) {
-        // Show confirmation message
-        const confirmation = document.getElementById("copyConfirmationFrom");
-        confirmation.style.display = "inline";
-        setTimeout(() => {
-          confirmation.style.display = "none";
-        }, 2000);
-      } else {
-        alert('Unable to copy. Please try manually.');
+    // Use the Clipboard API if available in a secure context
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(bibtexCodeFrom)
+        .then(function() {
+          showConfirmation();
+        })
+        .catch(function(err) {
+          alert('Error copying text: ' + err);
+        });
+    } else {
+      // Fallback for older browsers: use a temporary textarea and execCommand
+      const tempTextArea = document.createElement("textarea");
+      tempTextArea.value = bibtexCodeFrom;
+      document.body.appendChild(tempTextArea);
+      tempTextArea.select();
+      tempTextArea.setSelectionRange(0, 99999); // For mobile devices
+      try {
+        const successful = document.execCommand('copy');
+        if (successful) {
+          showConfirmation();
+        } else {
+          alert('Unable to copy. Please try manually.');
+        }
+      } catch (err) {
+        alert('Error copying text: ' + err);
       }
-    } catch (err) {
-      alert('Error copying text: ' + err);
+      document.body.removeChild(tempTextArea);
     }
-    // Remove the temporary textarea
-    document.body.removeChild(tempTextArea);
+  }
+
+  function showConfirmation() {
+    const confirmation = document.getElementById("copyConfirmationFrom");
+    confirmation.style.display = "inline";
+    setTimeout(() => {
+      confirmation.style.display = "none";
+    }, 2000);
   }
 </script>
 

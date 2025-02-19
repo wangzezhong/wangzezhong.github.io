@@ -67,7 +67,6 @@ Poster presented at Graphic Interface 2023:
 This comic was presented at a top international conference on permafrost [(ICOP2024)](https://doi.org/10.52381/ICOP2024.157.1){:target="_blank" rel="noopener noreferrer"} and featured in the 2024 [State of the Mountains Report](https://stateofthemountains.ca/){:target="_blank" rel="noopener noreferrer"}.
 
 To cite this work:
-
 <div>
   <p>
     <strong>From science to story: Communicating permafrost concepts with data comics</strong><br>
@@ -78,7 +77,6 @@ To cite this work:
   <span id="copyConfirmationFrom" style="display:none; margin-left: 10px; color: #4fb1ba;">BibTeX code copied!</span>
 </div>
 
-<!-- Place the script just before the closing body tag -->
 <script>
   const bibtexCodeFrom = `@inproceedings{Wang2024From,
   title     = {From Science to Story: Communicating Permafrost Concepts with Data Comics},
@@ -89,8 +87,8 @@ To cite this work:
   url       = {https://doi.org/10.52381/ICOP2024.157.1}
 }`;
 
-  function copyBibTeXFrom() {
-    // Use the Clipboard API if available in a secure context
+  // Attach the function to the global window object
+  window.copyBibTeXFrom = function() {
     if (navigator.clipboard && window.isSecureContext) {
       navigator.clipboard.writeText(bibtexCodeFrom)
         .then(function() {
@@ -100,7 +98,6 @@ To cite this work:
           alert('Error copying text: ' + err);
         });
     } else {
-      // Fallback for older browsers: use a temporary textarea and execCommand
       const tempTextArea = document.createElement("textarea");
       tempTextArea.value = bibtexCodeFrom;
       document.body.appendChild(tempTextArea);
@@ -118,7 +115,7 @@ To cite this work:
       }
       document.body.removeChild(tempTextArea);
     }
-  }
+  };
 
   function showConfirmation() {
     const confirmation = document.getElementById("copyConfirmationFrom");

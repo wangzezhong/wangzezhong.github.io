@@ -14,9 +14,9 @@ gem "jekyll", "~> 3.8"
 gem "webrick"
 
 group :jekyll_plugins do
-  gem "github-pages"
   gem "jekyll-include-cache"
   gem "jekyll-compose"
+  gem "github-pages", group: :jekyll_plugins
 end
 
 gem 'wdm' if Gem.win_platform?

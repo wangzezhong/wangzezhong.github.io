@@ -26,27 +26,41 @@
 
 @import "reboot-mod";
 
+/* Remove list bullets for any list item containing a publication wrapper */
 li:has(.pubWrapper) {
   list-style-type: none;
 }
 
+/* Publication wrapper grid layout */
 .pubWrapper {
-	display: grid;
-        grid-template-columns: auto 1fr; 
-	grid-column-gap: 15px;
-	margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: auto 1fr; 
+  grid-column-gap: 15px;
+  margin-bottom: 25px;
 }
 
+/* Wrap the image and the links together in a vertical stack */
+.pubImageWrapper {
+  display: inline-block;
+}
 
+/* Publication image styling */
 .pubImage img {
-    max-width: 260px !important; 
-    height: auto;
-    border-radius: 8px; 
+  max-width: 260px !important; 
+  height: auto;
+  border-radius: 8px;
+  display: block;
 }
 
+/* Container for web and video links placed below the image with a 10px gap */
+.pubLinks {
+  margin-top: 10px;  /* 10px gap below the image */
+  text-align: left;
+}
 
+/* Publication text area (occupies the second grid column) */
 .pubText {
-	grid-column: 2;
+  grid-column: 2;
 }
 
 

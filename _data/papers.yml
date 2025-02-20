@@ -5,7 +5,7 @@ papers:
     selected: yes
     title: "Summary of the Workshop on Visual Methods and Analyzing Visual Data in Human Computer Interaction"
     authors: "Zezhong Wang, Samuel Huron, Miriam Sturdee, Sheelagh Carpendale"
-    booktitle: Companion Proceedings of the 2024 Conference on Interactive Surfaces and Spaces
+    booktitle: Companion Proceedings of the Conference on Interactive Surfaces and Spaces (ISS)
     booktitle-url: 
     doc-url: https://www.researchgate.net/publication/385287571_Summary_of_the_Workshop_on_Visual_Methods_and_Analyzing_Visual_Data_in_Human_Computer_Interaction
     img: "visualMethodsHCI.png"
@@ -13,13 +13,20 @@ papers:
     weblink: 
     videolink: 
     venue: Conference
+    bibtex: |
+             @inproceedings{Wang2024Summary,
+             author    = {Wang, Zezhong and Huron, Samuel and Sturdee, Miriam and Carpendale, Sheelagh},
+             title     = {Summary of the Workshop on Visual Methods and Analyzing Visual Data in Human Computer Interaction},
+             year      = {2024},
+             booktitle = {Companion Proceedings of the 2024 Conference on Interactive Surfaces and Spaces}
+              }
   - layout: paper
     year: 2024
     paper-type: inproceedings
     selected: yes
     title: "From Science to Story: Communicating Permafrost Concepts with Data Comics"
     authors: "Zezhong Wang, Stephan Gruber, Michelle Levy, Sheelagh Carpendale"
-    booktitle: The 12th International Conference on Permafrost (ICOP2024)
+    booktitle: The 12th International Conference on Permafrost (ICOP)
     booktitle-url: 
     doc-url: https://doi.org/10.52381/ICOP2024.157.1
     img: "permafrostComic.png"
@@ -27,6 +34,15 @@ papers:
     weblink: https://dc4cc.github.io/permafrost.html
     videolink: https://youtu.be/S1onwzJBlvg?si=JNhisnc-JcMsVQxn
     venue: Conference
+    bibtex: | 
+             @inproceedings{Wang2024From,
+             title     = {From Science to Story: Communicating Permafrost Concepts with Data Comics},
+             author    = {Zezhong Wang and Stephan Gruber and Michelle Levy and Sheelagh Carpendale},
+             booktitle = {The 12th International Conference on Permafrost (ICOP2024)},
+             year      = {2024},
+             doi       = {10.52381/ICOP2024.157.1},
+             url       = {https://doi.org/10.52381/ICOP2024.157.1}
+              }
   - layout: paper
     year: 2024
     paper-type: inproceedings
@@ -41,6 +57,23 @@ papers:
     weblink: 
     videolink: 
     venue: Conference
+    bibtex: |
+        @inproceedings{Komal2024Exploring,
+        author = {Waseem, Komal and Sturdee, Miriam and Wang, Zezhong and Lewis, Rachel A and Tonelli, Marcello and Carpendale, Sheelagh},
+        title = {Exploring Using Personalised Comics for Healthcare Communication for Patients Living With Hemodialysis},
+        year = {2024},
+        isbn = {9798400705830},
+        publisher = {Association for Computing Machinery},
+        address = {New York, NY, USA},
+        url = {https://doi.org/10.1145/3643834.3661506},
+        doi = {10.1145/3643834.3661506},
+        booktitle = {Proceedings of the 2024 ACM Designing Interactive Systems Conference},
+        pages = {859–873},
+        numpages = {15},
+        keywords = {co-design, graphic medicine, health communication, medical comics, storytelling, visual thinking},
+        location = {Copenhagen, Denmark},
+        series = {DIS '24}
+        }
   - layout: paper
     year: 2024
     paper-type: inproceedings
@@ -48,6 +81,7 @@ papers:
     title: "Design Patterns for Data-Driven News Articles"
     authors: "Shan Hao, Zezhong Wang, Benjamin Bach, Larissa Pschetz"
     booktitle: ACM Conference on Human Factors in Computing Systems (CHI)
+    awards: Best Paper Honorable Mention
     booktitle-url: 
     doc-url: https://www.researchgate.net/profile/Zezhong-Wang-2/publication/378961283_Design_Patterns_for_Data-Driven_News_Articles/links/65f3058132321b2cff78da97/Design-Patterns-for-Data-Driven-News-Articles.pdf
     img: "Shan2024News.png"
@@ -55,6 +89,23 @@ papers:
     weblink: https://datadrivenarticle.github.io/
     videolink: 
     venue: Conference
+    bibtex: |
+             @inproceedings{Hao2024Design,
+              author = {Hao, Shan and Wang, Zezhong and Bach, Benjamin and Pschetz, Larissa},
+              title = {Design Patterns for Data-Driven News Articles},
+              year = {2024},
+              isbn = {9798400703300},
+              publisher = {Association for Computing Machinery},
+              address = {New York, NY, USA},
+              url = {https://doi.org/10.1145/3613904.3641916},
+              doi = {10.1145/3613904.3641916},
+              booktitle = {Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems},
+              articleno = {231},
+              numpages = {16},
+              keywords = {Classification, Data Journalism, Data-Driven Storytelling, Design Patterns, Education},
+              location = {Honolulu, HI, USA},
+              series = {CHI '24}
+              }
   - layout: paper
     year: 2024
     paper-type: inproceedings
@@ -69,6 +120,23 @@ papers:
     weblink: https://aivisethicards.github.io/
     videolink: 
     venue: Conference
+    bibtex: |
+       @inproceedings{10.1145/3613905.3650972,
+          author    = {Wang, Zezhong and Hao, Shan and Carpendale, Sheelagh},
+          title     = {Card-Based Approach to Engage Exploring Ethics in AI for Data Visualization},
+          year      = {2024},
+          isbn      = {9798400703317},
+          publisher = {Association for Computing Machinery},
+          address   = {New York, NY, USA},
+          url       = {https://doi.org/10.1145/3613905.3650972},
+          doi       = {10.1145/3613905.3650972},
+          booktitle = {Extended Abstracts of the CHI Conference on Human Factors in Computing Systems},
+          articleno = {69},
+          numpages  = {7},
+          keywords  = {Artificial intelligence, Card, Data visualization, Education, Ethics},
+         location  = {Honolulu, HI, USA},
+         series    = {CHI EA '24}
+         }
   - layout: paper
     year: 2024
     paper-type: inproceedings
@@ -83,6 +151,13 @@ papers:
     weblink: https://gen4ds.github.io/gen4ds/
     videolink: 
     venue: Conference
+    bibtex: |
+      @article{lan2024gen4ds,
+      title={Gen4DS: Workshop on Data Storytelling in an Era of Generative AI},
+      author={Lan, Xingyu and Yang, Leni and Wang, Zezhong and Wang, Yun and Shi, Danqing and Carpendale, Sheelagh},
+      journal={IEEE VIS Workshop},
+      year={2024}
+      }
   - layout: paper
     year: 2023
     paper-type: inproceedings
@@ -97,6 +172,20 @@ papers:
     weblink: 
     videolink: 
     venue: Conference
+    bibtex: |
+        @INPROCEEDINGS {Boucher2023Educational,
+        author = { Boucher, Magdalena and Bach, Benjamin and Stoiber, Christina and Wang, Zezhong and Aigner, Wolfgang },
+        booktitle = { 2023 IEEE VIS Workshop on Visualization Education, Literacy, and Activities (EduVis) },
+        title = {{ Educational Data Comics: What can Comics do for Education in Visualization? }},
+        year = {2023},
+        volume = {},
+        ISSN = {},
+        pages = {34-40},
+        keywords = {Surveys;Visualization;Conferences;Bibliographies;Education;Data visualization},
+        doi = {10.1109/EduVis60792.2023.00012},
+        url = {https://doi.ieeecomputersociety.org/10.1109/EduVis60792.2023.00012},
+        publisher = {IEEE Computer Society},
+        address = {Los Alamitos, CA, USA}}
   - layout: paper
     year: 2021
     paper-type: inproceedings
@@ -111,6 +200,17 @@ papers:
     weblink: "https://interactivedatacomics.github.io/"
     videolink: "https://youtu.be/zV4oHfMU5aI?si=zd2uHJoy6KrBoWIj"
     venue: Conference
+    bibtex: |
+        @ARTICLE{Wang2021Interactive,
+          author={Wang, Zezhong and Romat, Hugo and Chevalier, Fanny and Riche, Nathalie Henry and Murray-Rust, Dave and Bach, Benjamin},
+          journal={IEEE Transactions on Visualization and Computer Graphics}, 
+          title={Interactive Data Comics}, 
+          year={2022},
+          volume={28},
+          number={1},
+          pages={944-954},
+          keywords={Data visualization;Tools;Layout;Visualization;Media;Space exploration;Navigation;Data comics;Non-linear narrative;interactive storytelling},
+          doi={10.1109/TVCG.2021.3114849}}
   - layout: paper
     year: 2020
     paper-type: inproceedings
@@ -125,6 +225,17 @@ papers:
     weblink: "https://statscomics.github.io/"
     videolink: "https://youtu.be/k9kM30ThPg4"
     venue: Conference
+    bibtex: |
+        @ARTICLE{Wang2020Data,
+        author={Wang, Zezhong and Ritchie, Jacob and Zhou, Jingtao and Chevalier, Fanny and Bach, Benjamin},
+        journal={IEEE Transactions on Visualization and Computer Graphics}, 
+        title={Data Comics for Reporting Controlled User Studies in Human-Computer Interaction}, 
+        year={2021},
+        volume={27},
+        number={2},
+        pages={967-977},
+        keywords={Data visualization;Visualization;Human computer interaction;Guidelines;Jacobian matrices;Blogs;Statistical communication;comics;scientific reports},
+        doi={10.1109/TVCG.2020.3030433}}
   - layout: paper
     year: 2020
     paper-type: inproceedings
@@ -132,6 +243,8 @@ papers:
     title: "Cheat Sheets for Data Visualization Techniques"
     authors: "Zezhong Wang, Lovisa Sundin, Dave Murray-Rust, Benjamin Bach"
     booktitle: ACM Conference on Human Factors in Computing Systems (CHI)
+    otherbooktitile: IEEE VIS 2019 infovis poster
+    otherawards: Best Poster Research Award | Best Poster Design Award
     booktitle-url: 
     doc-url: https://www.researchgate.net/publication/338657160_Cheat_Sheets_for_Data_Visualization_Techniques
     img: "wang2020cheat.png"
@@ -139,6 +252,25 @@ papers:
     weblink: "https://visualizationcheatsheets.github.io/"
     videolink: "https://youtu.be/SfSgIvn-99U"
     venue: Conference
+    bibtex: |
+        @inproceedings{Wang2020Cheat,
+        author = {Wang, Zezhong and Sundin, Lovisa and Murray-Rust, Dave and Bach, Benjamin},
+        title = {Cheat Sheets for Data Visualization Techniques},
+        year = {2020},
+        isbn = {9781450367080},
+        publisher = {Association for Computing Machinery},
+        address = {New York, NY, USA},
+        url = {https://doi.org/10.1145/3313831.3376271},
+        doi = {10.1145/3313831.3376271},
+        abstract = {This paper introduces the concept of 'cheat sheets' for data visualization techniques, a set of concise graphical explanations and textual annotations inspired by infographics, data comics, and cheat sheets in other domains. Cheat sheets aim to address the increasing need for accessible material that supports a wide audience in understanding data visualization techniques, their use, their fallacies and so forth. We have carried out an iterative design process with practitioners, teachers and students of data science and visualization, resulting six types of cheat sheet (anatomy, construction, visual patterns, pitfalls, false-friends and well-known relatives) for six types of visualization, and formats for presentation. We assess these with a qualitative user study using 11 participants that demonstrates the readability and usefulness of our cheat sheets.},
+        booktitle = {Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems},
+        pages = {1–13},
+        numpages = {13},
+        keywords = {cheat sheet, visualization literacy},
+        location = {Honolulu, HI, USA},
+        series = {CHI '20}
+        }
+        
   - layout: paper
     year: 2019
     paper-type: inproceedings
@@ -153,6 +285,24 @@ papers:
     weblink: 
     videolink: 
     venue: Conference
+    bibtex: |
+        @inproceedings{Wang2019Comparing,
+        author = {Wang, Zezhong and Wang, Shunming and Farinella, Matteo and Murray-Rust, Dave and Henry Riche, Nathalie and Bach, Benjamin},
+        title = {Comparing Effectiveness and Engagement of Data Comics and Infographics},
+        year = {2019},
+        isbn = {9781450359702},
+        publisher = {Association for Computing Machinery},
+        address = {New York, NY, USA},
+        url = {https://doi.org/10.1145/3290605.3300483},
+        doi = {10.1145/3290605.3300483},
+        abstract = {This paper compares the effectiveness of data comics and infographics for data-driven storytelling. While infographics are widely used, comics are increasingly popular for explaining complex and scientific concepts. However, empirical evidence comparing the effectiveness and engagement of infographics, comics and illustrated texts is still lacking. We report on the results of two complementary studies, one in a controlled setting and one in the wild. Our results suggest participants largely prefer data comics in terms of enjoyment, focus, and overall engagement and that comics improve understanding and recall of information in the stories. Our findings help to understand the respective roles of the investigated formats as well as inform the design of more effective data comics and infographics.},
+        booktitle = {Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems},
+        pages = {1–12},
+        numpages = {12},
+        keywords = {comics, effectiveness, engagement, visualization},
+        location = {Glasgow, Scotland Uk},
+        series = {CHI '19}
+        }
   - layout: paper
     year: 2019
     paper-type: inproceedings
@@ -167,6 +317,24 @@ papers:
     weblink: 
     videolink: 
     venue: Conference
+    bibtex: |
+        @inproceedings{Wang2019Teaching,
+        author = {Wang, Zezhong and Dingwall, Harvey and Bach, Benjamin},
+        title = {Teaching Data Visualization and Storytelling with Data Comic Workshops},
+        year = {2019},
+        isbn = {9781450359719},
+        publisher = {Association for Computing Machinery},
+        address = {New York, NY, USA},
+        url = {https://doi.org/10.1145/3290607.3299043},
+        doi = {10.1145/3290607.3299043},
+        abstract = {This paper presents a method for hands-on creation of data comics in a workshop context and includes a description of the results, lessons learned and future improvements. Data comics is a promising format for data-driven storytelling, leveraging the power of data visualization and visual storytelling with comics. However, authoring data comics requires a diverse range of skills that are both creative and analytical. Our workshop is aimed at developing a blue-print for future workshops and reflecting on challenges and potential improvements. Within a 3-week assignment for an illustration class, we ran three 3-hour sessions. Our design was informed by the experiences of previous data-comics workshops. Results show the creative potential of data comics. Challenges to learn from the workshop include the stages to introduce data visualizations and journalistic narratives, the structuring of stories and the method of developing iterations of comic drafts. We close by reflecting on these challenges and how they can inform future improvements and adaptations.},
+        booktitle = {Extended Abstracts of the 2019 CHI Conference on Human Factors in Computing Systems},
+        pages = {1–9},
+        numpages = {9},
+        keywords = {data-driven storytelling, data visualization, data comics, creative workshop},
+        location = {Glasgow, Scotland Uk},
+        series = {CHI EA '19}
+        }
   - layout: paper
     year: 2018
     paper-type: inproceedings
@@ -180,6 +348,24 @@ papers:
     weblink: "https://datacomics.github.io/designpatterns.html"
     videolink:
     venue: Conference
+    bibtex: |
+        @inproceedings{Bach2018Design,
+        author = {Bach, Benjamin and Wang, Zezhong and Farinella, Matteo and Murray-Rust, Dave and Henry Riche, Nathalie},
+        title = {Design Patterns for Data Comics},
+        year = {2018},
+        isbn = {9781450356206},
+        publisher = {Association for Computing Machinery},
+        address = {New York, NY, USA},
+        url = {https://doi.org/10.1145/3173574.3173612},
+        doi = {10.1145/3173574.3173612},
+        abstract = {Data comics for data-driven storytelling are inspired by the visual language of comics and aim to communicate insights in data through visualizations. While comics are widely known, few examples of data comics exist and there has not been any structured analysis nor guidance for their creation. We introduce data-comic design-patterns, each describing a set of panels with a specific narrative purpose, that allow for rapid storyboarding of data comics while showcasing their expressive potential. Our patterns are derived from i) analyzing common patterns in infographics, datavideos, and existing data comics, ii) our experiences creating data comics for different scenarios. Our patterns demonstrate how data comics allow an author to combine the best of both worlds: spatial layout and overview from infographics as well as linearity and narration from videos and presentations.},
+        booktitle = {Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems},
+        pages = {1–12},
+        numpages = {12},
+        keywords = {comics, story-telling, visualization},
+        location = {Montreal QC, Canada},
+        series = {CHI '18}
+        }
     
   
  

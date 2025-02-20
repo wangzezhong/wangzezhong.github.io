@@ -186,121 +186,16 @@ The study highlights the effectiveness of using panels to structure information 
 Visualizations serve as foundational tools for delivering data-driven insights in data comics, yet the diversity of techniques—especially complex ones like adjacency matrices and treemaps—creates a steep learning curve for beginers. To address this, we developed [cheat sheets for data visualization techniques](https://visualizationcheatsheets.github.io/index.html){:target="_blank" rel="noopener noreferrer"} (ACM CHI 2020)—concise, annotated explanations of specific visualization techniques—to support both first-time learners and those seeking quick references during data exploration.
 
 Our cheat sheets cover six core areas: (1) Anatomy (core visual elements), (2) Construction (step-by-step construction of the visualization technique), (3) Visual Patterns, (4) Pitfalls (common misinterpretations), (5) Well-Known Relative (visualization techniques with similar functions), and (6) False-Friends (visually similar but functionally distinct techniques). These resources not only support creators in learnning and applying visualizing techniques but also help creators explain visualizations within comics, ensuring clarity while maintaining narrative flow.
-
-<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
-  <!-- Image 1 -->
-  <div style="width: 32%; text-align: center; margin-top: 10px;">
-    <img src="/assets/img/DataComics/anatomy.png"
-         alt="Anatomy" 
-         style="width: 100%; height: auto; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
-         title="click to view Anatomy sheets"
-         onclick="window.open('https://visualizationcheatsheets.github.io/anatomy.html', '_blank')" 
-         onmouseover="this.style.transform='scale(1.01)'" 
-         onmouseout="this.style.transform='scale(1)'" />
-    <div style="position: relative; display: inline-block; margin-top: 8px; cursor: pointer; font-size: 0.8em"
-         onmouseover="document.getElementById('tooltip1').style.visibility='visible'; document.getElementById('tooltip1').style.opacity='1';" 
-         onmouseout="document.getElementById('tooltip1').style.visibility='hidden'; document.getElementById('tooltip1').style.opacity='0';">
-      Anatomy
-      <!-- <div id="tooltip1" style="visibility: hidden; opacity: 0; width: 140px; background-color: #333; color: #fff; text-align: center; padding: 5px 8px; border-radius: 6px; position: absolute; bottom: 125%; left: 50%; transform: translateX(-50%); transition: opacity 0.3s ease; pointer-events: none;">
-        My weekly data comic practice example
-      </div> -->
-    </div>
-  </div>
-
-  <!-- Image 2 -->
-  <div style="width: 32%; text-align: center; margin-top: 10px;">
-    <img src="/assets/img/DataComics/construction.png" 
-         alt="Construction" 
-         style="width: 100%; height: auto; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
-         title="click to view Construction sheets"
-         onclick="window.open('https://visualizationcheatsheets.github.io/construction.html', '_blank')" 
-         onmouseover="this.style.transform='scale(1.01)'" 
-         onmouseout="this.style.transform='scale(1)'" />
-    <div style="position: relative; display: inline-block; margin-top: 8px; cursor: pointer; font-size: 0.8em"
-         onmouseover="document.getElementById('tooltip2').style.visibility='visible'; document.getElementById('tooltip2').style.opacity='1';" 
-         onmouseout="document.getElementById('tooltip2').style.visibility='hidden'; document.getElementById('tooltip2').style.opacity='0';">
-      Construction
-      <!-- <div id="tooltip2" style="visibility: hidden; opacity: 0; width: 140px; background-color: #333; color: #fff; text-align: center; padding: 5px 8px; border-radius: 6px; position: absolute; bottom: 125%; left: 50%; transform: translateX(-50%); transition: opacity 0.3s ease; pointer-events: none;">
-        My weekly data comic practice example
-      </div> -->
-    </div>
-  </div>
-
-  <!-- Image 3 -->
-  <div style="width: 32%; text-align: center; margin-top: 10px;">
-    <img src="/assets/img/DataComics/falsefriends.png"
-         alt="False-Friends" 
-         style="width: 100%; height: auto; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
-         title="click to view False-Friends sheets"
-         onclick="window.open('https://visualizationcheatsheets.github.io/falsefriends.html', '_blank')" 
-         onmouseover="this.style.transform='scale(1.01)'" 
-         onmouseout="this.style.transform='scale(1)'" />
-    <div style="position: relative; display: inline-block; margin-top: 8px; cursor: pointer; font-size: 0.8em"
-         onmouseover="document.getElementById('tooltip3').style.visibility='visible'; document.getElementById('tooltip3').style.opacity='1';" 
-         onmouseout="document.getElementById('tooltip3').style.visibility='hidden'; document.getElementById('tooltip3').style.opacity='0';">
-      False Friends
-      <!-- <div id="tooltip3" style="visibility: hidden; opacity: 0; width: 140px; background-color: #333; color: #fff; text-align: center; padding: 5px 8px; border-radius: 6px; position: absolute; bottom: 125%; left: 50%; transform: translateX(-50%); transition: opacity 0.3s ease; pointer-events: none;">
-        My weekly data comic practice example
-      </div> -->
-    </div>
-  </div>
-
-  <!-- Image 4 -->
-  <div style="width: 32%; text-align: center; margin-top: 10px;">
-    <img src="/assets/img/DataComics/pitfalls.png"
-         alt="Pitfalls" 
-         style="width: 100%; height: auto; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
-         title="click to view Pitfalls sheets"
-         onclick="window.open('https://visualizationcheatsheets.github.io/pitfalls.html', '_blank')" 
-         onmouseover="this.style.transform='scale(1.01)'" 
-         onmouseout="this.style.transform='scale(1)'" />
-    <div style="position: relative; display: inline-block; margin-top: 8px; cursor: pointer; font-size: 0.8em"
-         onmouseover="document.getElementById('tooltip1').style.visibility='visible'; document.getElementById('tooltip1').style.opacity='1';" 
-         onmouseout="document.getElementById('tooltip1').style.visibility='hidden'; document.getElementById('tooltip1').style.opacity='0';">
-      Pitfalls
-      <!-- <div id="tooltip1" style="visibility: hidden; opacity: 0; width: 140px; background-color: #333; color: #fff; text-align: center; padding: 5px 8px; border-radius: 6px; position: absolute; bottom: 125%; left: 50%; transform: translateX(-50%); transition: opacity 0.3s ease; pointer-events: none;">
-        My weekly data comic practice example
-      </div> -->
-    </div>
-  </div>
-
-  <!-- Image 5 -->
-  <div style="width: 32%; text-align: center; margin-top: 10px;">
-    <img src="/assets/img/DataComics/relative.png" 
-         alt="Well-known Relative" 
-         style="width: 100%; height: auto; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
-         title="click to view Well-known Relative sheets"
-         onclick="window.open('https://visualizationcheatsheets.github.io/relative.html', '_blank')" 
-         onmouseover="this.style.transform='scale(1.01)'" 
-         onmouseout="this.style.transform='scale(1)'" />
-    <div style="position: relative; display: inline-block; margin-top: 8px; cursor: pointer; font-size: 0.8em"
-         onmouseover="document.getElementById('tooltip2').style.visibility='visible'; document.getElementById('tooltip2').style.opacity='1';" 
-         onmouseout="document.getElementById('tooltip2').style.visibility='hidden'; document.getElementById('tooltip2').style.opacity='0';">
-      Well-known Relative
-      <!-- <div id="tooltip2" style="visibility: hidden; opacity: 0; width: 140px; background-color: #333; color: #fff; text-align: center; padding: 5px 8px; border-radius: 6px; position: absolute; bottom: 125%; left: 50%; transform: translateX(-50%); transition: opacity 0.3s ease; pointer-events: none;">
-        My weekly data comic practice example
-      </div> -->
-    </div>
-  </div>
-
-  <!-- Image 6 -->
-  <div style="width: 32%; text-align: center; margin-top: 10px;">
-    <img src="/assets/img/DataComics/visualpatterns.png" 
-         alt="Visual Patterns" 
-         style="width: 100%; height: auto; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
-         title="click to view Visual Patterns sheets"
-         onclick="window.open('https://visualizationcheatsheets.github.io/visualpatterns.html', '_blank')" 
-         onmouseover="this.style.transform='scale(1.01)'" 
-         onmouseout="this.style.transform='scale(1)'" />
-    <div style="position: relative; display: inline-block; margin-top: 8px; cursor: pointer; font-size: 0.8em"
-         onmouseover="document.getElementById('tooltip3').style.visibility='visible'; document.getElementById('tooltip3').style.opacity='1';" 
-         onmouseout="document.getElementById('tooltip3').style.visibility='hidden'; document.getElementById('tooltip3').style.opacity='0';">
-      Visual Patterns
-      <!-- <div id="tooltip3" style="visibility: hidden; opacity: 0; width: 140px; background-color: #333; color: #fff; text-align: center; padding: 5px 8px; border-radius: 6px; position: absolute; bottom: 125%; left: 50%; transform: translateX(-50%); transition: opacity 0.3s ease; pointer-events: none;">
-        My weekly data comic practice example
-      </div> -->
-    </div>
-  </div>
+<div>
+  <p>
+    <strong>{{ page.title }}</strong><br>
+    {{ page.authors }}. <em>{{ page.booktitle }}</em>
+    [📄 <a href="{{ page.doc-url }}" target="_blank" rel="noopener noreferrer"><strong>PDF</strong></a>
+    | <a href="javascript:void(0)" class="copyBibtex" 
+         data-bibtex="{{ page.bibtex | xml_escape }}" 
+         style="font-size:0.9em; text-decoration: underline; color: inherit;">Copy BibTeX</a>]
+  </p>
+  <span class="copyConfirmation" style="display:none; margin-left:10px; color:#193747;">BibTeX code copied!</span>
 </div>
 
 ## Interactive Data Comics

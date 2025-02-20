@@ -32,15 +32,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   
     function showConfirmation(linkElement) {
-      // If needed, adjust this selector to target the correct container.
-      // For example, if your HTML structure uses a specific class:
-      // const parent = linkElement.closest('.pubText');
+      // Find the confirmation span within the same parent container
       const parent = linkElement.closest('div');
       const confirmation = parent.querySelector('.copyConfirmation');
       if (confirmation) {
-        confirmation.style.display = 'inline';
+        confirmation.style.opacity = '1';
         setTimeout(() => {
-          confirmation.style.display = 'none';
+          confirmation.style.opacity = '0';
         }, 2000);
       }
     }

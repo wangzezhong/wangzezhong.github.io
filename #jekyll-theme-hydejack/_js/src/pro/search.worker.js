@@ -27,21 +27,11 @@ async function getDocuments(dataURL) {
     ...pages,
     ...documents.map((doc) => {
       if (doc.date) doc.date = new Date(doc.date);
-      // Ensure each document has a url field
-      if (!doc.url) {
-        doc.url = generateUrl(doc); // Implement generateUrl function if necessary
-      }
       return doc;
     }),
   ];
   const docs = uniqBy(siteData, 'url');
   return docs;
-}
-
-// Example implementation of generateUrl function (if needed)
-function generateUrl(doc) {
-  // Generate a URL based on document properties (e.g., title, id)
-  return `/documents/${doc.id || doc.title.replace(/\s+/g, '-').toLowerCase()}`;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -91,8 +81,7 @@ function search({ data: term, ports: [port] }) {
     self.addEventListener('message', storeEvent);
 
     miniSearch = new MiniSearch(OPTIONS);
-    const documents = await getDocuments(DATA_URL);
-    miniSearch.addAll(documents);
+    miniSearch.addAll(await getDocuments(DATA_URL));
 
     if (lastEvent) search(lastEvent);
 

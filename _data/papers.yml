@@ -1,5 +1,109 @@
 papers:
   - layout: paper
+    year: 2025
+    paper-type: inproceedings
+    selected: yes
+    title: "Input Data Comics: Exploring a Narrative Approach to Input Visualization"
+    authors: "Zezhong Wang, Sheelagh Carpendale"
+    booktitle: IEEE VIS 2025 Input Visualization Workshop
+    booktitle-url: 
+    doc-url: https://wangzezhong.github.io/assets/papersPDF/VisDarkSide_VIS2025.pdf
+    img: "wang2025inputcomic.png"
+    img_alt: "wang2025inputcomic.png"
+    weblink: 
+    videolink: 
+    venue: Conference
+    bibtex: |
+             @inproceedings{Wang2025InputComic,
+             author    = {Wang, Zezhong and Carpendale, Sheelagh},
+             title     = {Input Data Comics: Exploring a Narrative Approach to Input Visualization},
+             year      = {2025},
+             booktitle = {IEEE VIS 2025 Input Visualization Workshop}
+  - layout: paper
+    year: 2025
+    paper-type: inproceedings
+    selected: yes
+    title: "Flirting Charts: Expressive Motion Design in Information Visualization Inspired by Animal Courtship Performances"
+    authors: "Zezhong Wang, Shan Hao, Carpendale Sheelagh"
+    booktitle: IEEE VIS 2025 alt.vis
+    booktitle-url: 
+    doc-url: https://wangzezhong.github.io/assets/papersPDF/VisDarkSide_VIS2025.pdf
+    img: "wang2015Courtship.png"
+    img_alt: "wang2015Courtship.png"
+    weblink: 
+    videolink: 
+    venue: Conference
+    bibtex: |
+             @inproceedings{Wang2025Flirting,
+             author    = {Wang, Zezhong and Hao, Shan and Carpendale, Sheelagh},
+             title     = {Flirting Charts: Expressive Motion Design in Information Visualization Inspired by Animal Courtship Performances},
+             year      = {2025},
+             booktitle = {IEEE VIS 2025 poster}
+              }
+  - layout: paper
+    year: 2025
+    paper-type: inproceedings
+    selected: yes
+    title: "The Fuzzy Front Ends: Reflections on the Never-Ending Story of Visualization Co-Design"
+    authors: "Wei Wei, Foroozan Daneshzand, Zezhong Wang, Erica Mattson, Charles Perin, Sheelagh Carpendale"
+    booktitle: IEEE VIS 2025 alt.vis
+    booktitle-url: 
+    doc-url: https://wangzezhong.github.io/assets/papersPDF/VisDarkSide_VIS2025.pdf
+    img: "wei2025dark.png"
+    img_alt: "wei2025dark.png"
+    weblink: 
+    videolink: 
+    venue: Conference
+    bibtex: |
+             @inproceedings{Wei2025Dark,
+             author    = {Wei, Wei and Daneshzand, Foroozan and Wang, Zezhong and Mattson, Erica and Perin, Charles and Carpendale, Sheelagh},
+             title     = {The Fuzzy Front Ends: Reflections on the Never-Ending Story of Visualization Co-Design},
+             year      = {2025},
+             booktitle = {IEEE VIS 2025 alt.vis}
+              }
+  - layout: paper
+    year: 2025
+    paper-type: inproceedings
+    selected: yes
+    title: "Exploring Data Detective Practices as a Class Activity"
+    authors: "Ruishan Wu, Zezhong Wang, Haidan Liu, Krithika Balasubramanyam, Kanak Gautam, Aham Gupta, Shannon McAllister, Sheelagh Carpendale"
+    booktitle: Nightingale The Journal of the Data Visualization Society
+    booktitle-url: 
+    doc-url: https://nightingaledvs.com/exploring-data-detective-practices-as-a-class-activity/
+    img: "Ruishan2025Detective.png"
+    img_alt: "Ruishan2025Detective.png"
+    weblink: 
+    videolink: 
+    venue: Conference
+    bibtex: |
+             @inproceedings{Wu2025Detective,
+             author    = {Wu, Ruishan and Wang, Zezhong and Liu, Haidan and Balasubramanyam, Krithika and Gautam, Kanak and Gupta, Aham and McAllister, Shannon and Carpendale, Sheelagh},
+             title     = {Exploring Data Detective Practices as a Class Activity},
+             year      = {2025},
+             booktitle = {Nightingale: The Journal of the Data Visualization Society}
+              }
+  - layout: paper
+    year: 2025
+    paper-type: inproceedings
+    selected: yes
+    title: "ThreadWave: Visualizing Co-authorship as Temporal Threads"
+    authors: "Ruishan Wu, Zezhong Wang, Charles Perin, Sheelagh Carpendale"
+    booktitle: IEEE VIS 2025 Poster
+    booktitle-url: 
+    doc-url: https://wangzezhong.github.io/assets/papersPDF/Ruishan_Poster_ThreadWave__Visualizing_Co_authorship_as_Temporal_Threads.pdf
+    img: "Ruishan2025ThreadWave.png"
+    img_alt: "Ruishan2025ThreadWave.png"
+    weblink: 
+    videolink: 
+    venue: Conference
+    bibtex: |
+             @inproceedings{Wu2025ThreadWave,
+             author    = {Wu, Ruishan and Wang, Zezhong and Perin, Charles and Carpendale, Sheelagh},
+             title     = {ThreadWave: Visualizing Co-authorship as Temporal Threads},
+             year      = {2025},
+             booktitle = {IEEE VIS 2025 Poster}
+              }
+  - layout: paper
     year: 2024
     paper-type: inproceedings
     selected: yes
@@ -34,7 +138,7 @@ papers:
     weblink: https://dc4cc.github.io/permafrost.html
     videolink: https://youtu.be/S1onwzJBlvg?si=JNhisnc-JcMsVQxn
     venue: Conference
-    bibtex: | 
+    bibtex: |
              @inproceedings{Wang2024From,
              title     = {From Science to Story: Communicating Permafrost Concepts with Data Comics},
              author    = {Zezhong Wang and Stephan Gruber and Michelle Levy and Sheelagh Carpendale},

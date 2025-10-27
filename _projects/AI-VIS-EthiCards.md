@@ -2,7 +2,7 @@
 layout: project
 title: 'AI-VIS EthiCards: exploring ethics in AI for visualizations'
 caption: A card deck and activities to engage exploration of ethics in AI for visualizations
-description: > 
+description: >
 date: May 2024
 image: 
   path: /assets/img/projects/AI-VISEthiCards.png
@@ -16,7 +16,7 @@ links:
 accent_color: '#4fb1ba'
 accent_image: /assets/img/projects/AI-VISEthiCards-blur.png
 theme_color: '#193747'
-sitemap: false
+sitemap: true
 ---
 
 **Card-Based Approach to Engage Exploring Ethics in AI for Data Visualization** Zezhong Wang, Shan Hao, Sheelagh Carpendale. _CHI EA '24: Extended Abstracts of the CHI Conference on Human Factors in Computing Systems_ [📄**PDF**](https://summit.sfu.ca/_flysystem/fedora/2024-05/chiea24-500.pdf){:target="_blank" rel="noopener noreferrer"}

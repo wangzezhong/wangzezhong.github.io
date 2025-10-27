@@ -2,7 +2,7 @@
 layout: project
 title: 'Cheat Sheets for Data Visualization Techniques'
 caption: A set of concise graphical explanations to support understanding data visualization techniques
-description: > 
+description: >
 date: 17 October 2020
 image: 
   path: /assets/img/projects/cheatsheetCover.png
@@ -16,7 +16,7 @@ links:
 accent_color: '#4fb1ba'
 accent_image: /assets/img/projects/cheatsheetCover-blur.png
 theme_color: '#193747'
-sitemap: false
+sitemap: true
 ---
 
 **Cheat Sheets for Data Visualization Techniques** Zezhong Wang, Lovisa Sundin, Dave Murray-Rust, Benjamin Bach _ACM Conference on Human Factors in Computing Systems (CHI 2020)_) [📄**PDF**](https://www.researchgate.net/publication/338657160_Cheat_Sheets_for_Data_Visualization_Techniques){:target="_blank" rel="noopener noreferrer"}

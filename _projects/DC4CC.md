@@ -2,7 +2,7 @@
 layout: project
 title: 'Data Comics for Climate Change'
 caption: Engage the public to understand climate change with validated science and data
-description: > 
+description: >
 date: Feb 2025
 image: 
   path: /assets/img/projects/dc4cc.png
@@ -16,7 +16,7 @@ links:
 accent_color: '#4fb1ba'
 accent_image: /assets/img/projects/dc4cc-blur.png
 theme_color: '#193747'
-sitemap: false
+sitemap: true
 ---
 
 # Data Comics for Climate Change

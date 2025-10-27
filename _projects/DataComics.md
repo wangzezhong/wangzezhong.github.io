@@ -2,7 +2,7 @@
 layout: project
 title: 'A Journey of Exploring Data Comics'
 caption: A brief introduction to data comics and a summary of my exploration
-description: > 
+description: >
     This article chronicles my exploration of data comics as a tool for democratizing data literacy, sharing research insights, and providing practical resources for creators.
 date: Feb 2025
 image: 
@@ -17,7 +17,7 @@ links:
 accent_color: '#4fb1ba'
 accent_image: /assets/img/projects/DCCover-blur.jpg
 theme_color: '#193747'
-sitemap: false
+sitemap: true
 ---
 # A Journey of Exploring Data Comics
 

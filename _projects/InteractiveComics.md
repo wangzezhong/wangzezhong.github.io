@@ -2,7 +2,7 @@
 layout: project
 title: 'Interactive Data Comics'
 caption: Bring interactions to static data comics (VIS 2021)
-description: > 
+description: >
 date: 1 July 2021
 image: 
   path: /assets/img/projects/Interactive.png
@@ -16,7 +16,7 @@ links:
 accent_color: '#4fb1ba'
 accent_image: /assets/img/projects/Interactive-blur.png
 theme_color: '#193747'
-sitemap: false
+sitemap: true
 ---
 
 **Interactive Data Comics** Zezhong Wang, Hugo Romat, Fanny Chevalier, Nathalie Henry Riche, Dave Murray-Rust and Benjamin Bach _IEEE Transactions on Visualization and Computer Graphics (TVCG) 2022 (IEEE VIS, 2021))_) [📄**PDF**](https://www.researchgate.net/publication/353825597_Interactive_Data_Comics)

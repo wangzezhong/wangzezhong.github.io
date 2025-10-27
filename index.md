@@ -13,18 +13,18 @@ featured: false
 
 
 
-We live in a world overflowing with data, the ability to understand and utilize data has become more critical than ever. Yet, for many people—non-experts and the general public—data feels cold, distant, or even exclusionary, like a language they were never taught to speak. This disconnect has real consequences: it fuels inequity, spreads misinformation, and leaves communities feeling powerless to address challenges like climate change or public health crises. In this landscape, the need for clear, engaging, and compelling data communication is urgent.
+We live in a world overflowing with data, and understanding it has never been more important. Yet for many people, data feels cold, distant, or even exclusionary, like a language they were never taught to speak. This disconnect has real consequences: when access to and understanding of data are uneven, inequality deepens and misinformation spreads. My work aims to bridge this gap by making data communication clearer, more engaging, and more human.
 
-My work is rooted in a simple belief: **Data can spark curiosity, invite interaction, and tell stories that resonate with people’s lives**.  Leveraging Visual Design, Human Computer Interaction (HCI), and Data Visualization, I explore how to help people see data not as something cold or alienating, but something they can see, feel, connect to, and share. By actively applying research through design methods, I have been struck by how meaningful images and visuals are for people as they grapple with new understandings.
+I think data can spark curiosity, invite interaction, and tell stories that resonate with people’s lives.  Leveraging Visual Design, Human Computer Interaction (HCI), and Data Visualization, I explore how to help people see data not as something cold or alienating, but something they can see, feel, connect to, and share. By actively applying Research Through Design methods, I have been struck by how meaningful images and visuals are for people as they grapple with new understandings.
 
-I am currently a postdoctoral fellow at [ixLab](https://ixlab.cs.sfu.ca/), [Simon Fraser University](https://www.sfu.ca/computing.html) working alongside [Dr. Sheelagh Carpendale](https://www.cs.sfu.ca/~sheelagh/). Previously, I earned my PhD in 2022 from  the [University of Edinburgh](https://www.ed.ac.uk/) under the supervision of [Dr. Benjamin Bach](https://visualinteractivedata.github.io/bach.html) and [Dr. Dave Murray-Rust](http://dave.murray-rust.org/). 
+I am currently a postdoctoral fellow at [ixLab](https://ixlab.cs.sfu.ca/), [Simon Fraser University](https://www.sfu.ca/computing.html) working alongside [Dr. Sheelagh Carpendale](https://www.cs.sfu.ca/~sheelagh/). Previously, I earned my PhD from  the [University of Edinburgh](https://www.ed.ac.uk/) under the supervision of [Dr. Benjamin Bach](https://visualinteractivedata.github.io/bach.html) and [Dr. Dave Murray-Rust](http://dave.murray-rust.org/). I’ve been lucky to live in beautiful cities such as Beijing, Edinburgh, and Vancouver, and to work with inspiring people along the way. I look forward to continuing this journey and welcome new opportunities to collaborate.
 
 
 
 <!--projects-->
 
 # News
-* Five works will be presented at IEEE VIS 2025: 
+* Our work will be presented at IEEE VIS 2025, I couldn't attend in person, I hope to see you next time!
 [Flirting Charts: Expressive Motion Design in Information Visualization Inspired by Animal Courtship Performances](https://wangzezhong.github.io/assets/papersPDF/VIS25_Poster_Courtship_preprint.pdf)
 [Input Data Comics: Exploring a Narrative Approach to Input Visualization](https://wangzezhong.github.io/assets/papersPDF/Input_DataComic_InPutVIS_2025_preprint.pdf);
 [ThreadWave: Visualizing Co-authorship as Temporal Threads (led by Ruishan Wu)](https://wangzezhong.github.io/assets/papersPDF/Ruishan_Poster_ThreadWave__Visualizing_Co_authorship_as_Temporal_Threads.pdf); [Exploring Data Detective Practices as a Class Activity (led by Ruishan Wu)](https://nightingaledvs.com/exploring-data-detective-practices-as-a-class-activity/); [The Fuzzy Front Ends: Reflections on the Never-Ending Story of Visualization Co-Design (led by Wei Wei)](https://wangzezhong.github.io/assets/papersPDF/VisDarkSide_VIS2025.pdf).

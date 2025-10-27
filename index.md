@@ -11,11 +11,9 @@ selected_projects:
 featured: false
 ---
 
+We live in a world overflowing with data, and understanding it has never been more important. Yet for many people, data still feels cold, distant, or exclusionary, like a language they were never taught to speak. This disconnect widens inequality and allows misinformation to spread. My work grows from a simple belief: data can be more than numbers, it can tell stories, spark curiosity, and bring people closer to the world around them.
 
-
-We live in a world overflowing with data, and understanding it has never been more important. Yet for many people, data feels cold, distant, or even exclusionary, like a language they were never taught to speak. This disconnect has real consequences: when access to and understanding of data are uneven, inequality deepens and misinformation spreads. My work aims to bridge this gap by making data communication clearer, more engaging, and more human.
-
-I think data can spark curiosity, invite interaction, and tell stories that resonate with people’s lives.  Leveraging Visual Design, Human Computer Interaction (HCI), and Data Visualization, I explore how to help people see data not as something cold or alienating, but something they can see, feel, connect to, and share. By actively applying Research Through Design methods, I have been struck by how meaningful images and visuals are for people as they grapple with new understandings.
+Blending Visual Design, Human-Computer Interaction, and Data Visualization, I explore ways to make data something people can see, feel, and connect with. Through Research Through Design approaches, I’ve seen how visual and creative methods can help people build personal and emotional relationships with information, turning data into something meaningful, memorable, and inspiring action.
 
 I am currently a postdoctoral fellow at [ixLab](https://ixlab.cs.sfu.ca/), [Simon Fraser University](https://www.sfu.ca/computing.html) working alongside [Dr. Sheelagh Carpendale](https://www.cs.sfu.ca/~sheelagh/). Previously, I earned my PhD from  the [University of Edinburgh](https://www.ed.ac.uk/) under the supervision of [Dr. Benjamin Bach](https://visualinteractivedata.github.io/bach.html) and [Dr. Dave Murray-Rust](http://dave.murray-rust.org/). I’ve been lucky to live in beautiful cities such as Beijing, Edinburgh, and Vancouver, and to work with inspiring people along the way. I look forward to continuing this journey and welcome new opportunities to collaborate.
 

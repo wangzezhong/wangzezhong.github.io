@@ -7,7 +7,7 @@ basics:
   name: "Zezhong Wang"
   label: "Postdoctoral Researcher"
   website: "https://zezhongwang.com"
-  summary: "Postdoctoral Fellow at Simon Fraser University, focusing on data-driven storytelling, visual methodologies in HCI, and AI-assisted creation of visual data stories with ethical considerations."
+  summary: "Postdoctoral Fellow at Simon Fraser University, focusing on data-driven storytelling, visual methodologies in HCI, and AI-assisted creation of information visualization."
   location:
     city: "Burnaby"
     region: "British Columbia"
@@ -47,25 +47,25 @@ work:
     summary: "Designed a user interface for an information repository for CCADI members."
 
 awards:
-  - title: "VGTC Doctoral Dissertation Award Honorable Mention"
+  - title: "VGTC Best Doctoral Dissertation Award Honorable Mention"
     year: "2023"
     awarder: "IEEE Visualization and Graphics Technical Community (VGTC)"
   - title: "Ph.D. Full Scholarship"
     year: "2018"
     awarder: "School of Informatics, University of Edinburgh"
-  - title: "Second Place at User Experience Design Award"
+  - title: "The Most Popular Work and Best Presentation at User Experience Design Award"
     year: "2015"
     awarder: "User Experience Professionals Association (UXPA) China"
 
-publications:
-  - name: "Interactive Data Comics"
-    publisher: "IEEE Transactions on Visualization and Computer Graphics"
-    year: "2021"
-    url: "https://doi.org/10.1109/TVCG.2021.3114849"
-  - name: "Data Comics for Reporting Controlled User Studies in Human-Computer Interaction"
-    publisher: "IEEE Transactions on Visualization and Computer Graphics"
-    year: "2020"
-    url: "https://doi.org/10.1109/TVCG.2020.3030433"
+# publications:
+#   - name: "Interactive Data Comics"
+#     publisher: "IEEE Transactions on Visualization and Computer Graphics"
+#     year: "2021"
+#     url: "https://doi.org/10.1109/TVCG.2021.3114849"
+#   - name: "Data Comics for Reporting Controlled User Studies in Human-Computer Interaction"
+#     publisher: "IEEE Transactions on Visualization and Computer Graphics"
+#     year: "2020"
+#     url: "https://doi.org/10.1109/TVCG.2020.3030433"
 
 skills:
   - name: "Data Visualization"
@@ -79,7 +79,7 @@ skills:
     keywords:
       - "Qualitative Research"
       - "User Studies"
-      - "Ethics in AI"
+
 
 languages:
   - language: "Chinese"

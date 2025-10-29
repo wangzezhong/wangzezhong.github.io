@@ -56,6 +56,8 @@ menu:
 #    url:               /projects/
    - title:             Publications
      url:               /papers/
+   - title:             Portfolio
+     url:               https://zezhongwang.com/assets/Design-Portfolio_Zezhing_Wang.pdf
 #   - title:             Résumé*
 #     url:               /resume/
 #   - title:             Documentation

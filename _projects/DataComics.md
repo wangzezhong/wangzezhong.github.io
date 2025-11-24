@@ -41,7 +41,7 @@ In my doctoral work (2018–2022) at the University of Edinburgh, under the supe
 # A Journey of Exploring Data Comics 
 
 From my design and user experience background, I have always been keenly exploring how everyday experience can be enhanced through better design. This sensitivity became a driving force during my master’s study in Design Informatics, at the University of Edinburgh, where I began applying my UX design mindset to data communication. 
-I started by sketching weekly data comics that documented my life—tracking sleep patterns, visualizing news events, and capturing newly acquired insights. Over time, this experiment evolved into a set of [design patterns for data comics](https://datacomics.github.io/designpatterns.html){:target="_blank" rel="noopener noreferrer"} (ACM CHI 2018), a design space that blends the features of comics (panels, sequential visual narratives) with data visualization. To democratize access to this format, I distilled these patterns into printable, [workshop-ready cards](https://drive.google.com/file/d/0B1zFhCjto4BXTU9UNHJfd3haaHM/view?usp=sharing&resourcekey=0-lpHK38EzzMXXxXyPQpqB4A){:target="_blank" rel="noopener noreferrer"}, enabling others to adopt and adapt the format. I further leveraged these tools in [teaching data visualization and storytelling with data comic workshops](https://www.researchgate.net/publication/331547312_Teaching_Data_Visualization_and_Storytelling_with_Data_Comic_Workshops){:target="_blank" rel="noopener noreferrer"} (ACM CHI 2019 EA).
+I started by sketching weekly data comics that documented my life—tracking sleep patterns, visualizing news events, and capturing newly acquired insights. Over time, this experiment evolved into a set of [design patterns for data comics](https://datacomics.github.io/designpatterns.html){:target="_blank" rel="noopener noreferrer"} (ACM CHI 2018), a design space that blends the features of comics (panels, sequential visual narratives) with data visualization. To democratize access to this format, I distilled these patterns into printable, [workshop-ready cards](https://drive.google.com/file/d/1i_GKFBl_mIgUVk76G6-v69QOT_7C-F95/view?usp=sharing){:target="_blank" rel="noopener noreferrer"}, enabling others to adopt and adapt the format. I further leveraged these tools in [teaching data visualization and storytelling with data comic workshops](https://www.researchgate.net/publication/331547312_Teaching_Data_Visualization_and_Storytelling_with_Data_Comic_Workshops){:target="_blank" rel="noopener noreferrer"} (ACM CHI 2019 EA).
 
 
 <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
@@ -107,7 +107,7 @@ I started by sketching weekly data comics that documented my life—tracking sle
     <img src="https://github.com/wangzezhong/wangzezhong.github.io/blob/master/assets/img/projects/patternExample.jpg?raw=true" 
          alt="full set of data comic design pattern cards" 
          style="width: 100%; height: 100%; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
-         onclick="window.open('https://drive.google.com/file/d/0B1zFhCjto4BXTU9UNHJfd3haaHM/view?usp=sharing&resourcekey=0-lpHK38EzzMXXxXyPQpqB4A', '_blank')"
+         onclick="window.open('https://drive.google.com/file/d/1i_GKFBl_mIgUVk76G6-v69QOT_7C-F95/view?usp=sharing', '_blank')"
          title="click to open the full set of cards in a new tab"
          onmouseover="this.style.transform='scale(1.01)'" 
          onmouseout="this.style.transform='scale(1)'" />

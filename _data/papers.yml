@@ -225,7 +225,7 @@ papers:
     videolink: 
     venue: Conference
     bibtex: |
-       @inproceedings{10.1145/3613905.3650972,
+       @inproceedings{wang2024Card,
           author    = {Wang, Zezhong and Hao, Shan and Carpendale, Sheelagh},
           title     = {Card-Based Approach to Engage Exploring Ethics in AI for Data Visualization},
           year      = {2024},
@@ -278,9 +278,9 @@ papers:
     venue: Conference
     bibtex: |
         @INPROCEEDINGS {Boucher2023Educational,
-        author = { Boucher, Magdalena and Bach, Benjamin and Stoiber, Christina and Wang, Zezhong and Aigner, Wolfgang },
-        booktitle = { 2023 IEEE VIS Workshop on Visualization Education, Literacy, and Activities (EduVis) },
-        title = {{ Educational Data Comics: What can Comics do for Education in Visualization? }},
+        author = {Boucher, Magdalena and Bach, Benjamin and Stoiber, Christina and Wang, Zezhong and Aigner, Wolfgang},
+        booktitle = {2023 IEEE VIS Workshop on Visualization Education, Literacy, and Activities (EduVis)},
+        title = {{ Educational Data Comics: What can Comics do for Education in Visualization?}},
         year = {2023},
         volume = {},
         ISSN = {},

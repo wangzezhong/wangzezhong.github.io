@@ -15,13 +15,18 @@ We live in a world overflowing with data, and understanding it has never been mo
 
 I am currently a postdoctoral fellow at [ixLab](https://ixlab.cs.sfu.ca/), [Simon Fraser University](https://www.sfu.ca/computing.html) working alongside [Dr. Sheelagh Carpendale](https://www.cs.sfu.ca/~sheelagh/). Previously, I earned my PhD from  the [University of Edinburgh](https://www.ed.ac.uk/) under the supervision of [Dr. Benjamin Bach](https://visualinteractivedata.github.io/bach.html) and [Dr. Dave Murray-Rust](http://dave.murray-rust.org/). I bring my expertise in user experience design, visual storytelling, and data visualization to HCI communities and specific domains where data is valuable yet challenging to communicate to broader audiences. I look forward to continuing this journey and welcome opportunities to collaborate.
 
-My research investigates **Human-Data Interaction** (designing data-driven systems so people can understand what’s happening, take informed action, and contest or revise data use), focusing on data-oriented tasks and data-rich interfaces; I also study data-driven storytelling (turning data-based evidence into narratives that help non-experts understand and connect with data in context).
+My research investigates **Human-Data Interaction** (designing data-driven systems so people can understand what’s happening, take informed action, and contest or revise data use), focusing on data-oriented tasks and data-rich interfaces; I also design and study **Data-Driven Storytelling** (turning data-based evidence into narratives that help non-experts understand and connect with data in context).
 
 
 
 <!--projects-->
 
 # News
+
+* Invited to be a member of IEEE VIS 2026 Conference  program committee. 
+
+* Invited to be a member of PacificVis 2026 Conference Track program committee.
+
 * Our work will be presented at IEEE VIS 2025, I couldn't attend in person, I hope to see you next time!
 [Flirting Charts: Expressive Motion Design in Information Visualization Inspired by Animal Courtship Performances](https://wangzezhong.github.io/assets/papersPDF/VIS25_Poster_Courtship_preprint.pdf)
 [Input Data Comics: Exploring a Narrative Approach to Input Visualization](https://wangzezhong.github.io/assets/papersPDF/Input_DataComic_InPutVIS_2025_preprint.pdf);

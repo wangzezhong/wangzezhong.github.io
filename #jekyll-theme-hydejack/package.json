@@ -89,5 +89,8 @@
   "homepage": "https://hydejack.com/",
   "engines": {
     "node": ">=11"
+  },
+  "overrides": {
+    "minimatch": "^3.0.5"
   }
 }

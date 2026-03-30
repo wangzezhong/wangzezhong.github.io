@@ -3,7 +3,7 @@ layout: project
 title: 'A Journey of Exploring Data Comics'
 caption: A brief introduction to data comics and a summary of my exploration
 description: >
-    My story in exploring data comics.
+    My exploration of data comics: from a data storytelling medium to a human-data interaction interface.
 date: Feb 2025
 image: 
   path: /assets/img/projects/DCCover.png

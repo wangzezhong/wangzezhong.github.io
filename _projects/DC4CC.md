@@ -71,8 +71,10 @@ To cite this work:
 **From Science to Story: Communicating Permafrost Concepts with Data Comics** Zezhong Wang, Stephan Gruber, Michelle Levy, Sheelagh Carpendale. _The 12th International Conference on Permafrost (ICOP2024)_ [📄**PDF**](https://www.permafrost.org/wp-content/uploads/ICOP2024_157_Wang_2A.pdf){:target="_blank" rel="noopener noreferrer"}
 
 ### Video Preview (2 min)
-<div style="width: 70%; max-width: 100%; text-align: center;">
-<iframe width="730" height="410" src="https://www.youtube.com/embed/S1onwzJBlvg?si=fplGUbslJNdJ7eql" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div style="width: 100%; max-width: 730px; margin: 0 auto;">
+  <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px;">
+    <iframe src="https://www.youtube.com/embed/S1onwzJBlvg?si=fplGUbslJNdJ7eql" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
 </div>
 
 

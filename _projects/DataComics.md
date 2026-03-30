@@ -252,7 +252,9 @@ While static data comics are effective on their own, adding interactivity opens 
 This demo shows how interactive elements like alternative layouts, branching paths and data input can transform static comics into exploratory experiences.
 
 <div style="width: 100%; max-width: 730px; margin: 20px auto; text-align: center;">
-  <iframe width="730" height="480" frameborder="0" src="https://www.youtube.com/embed/9u1tg2gHNAc" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px;">
+    <iframe src="https://www.youtube.com/embed/9u1tg2gHNAc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
 </div>
 
 ## Use Cases

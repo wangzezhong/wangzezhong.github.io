@@ -23,9 +23,10 @@ sitemap: false
 
 ## Video Preview (24sec)
 
-<div class="videoWrapper">
-  <iframe width="854" height="480" src="https://www.youtube.com/embed/k9kM30ThPg4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  
+<div style="width: 100%; max-width: 854px; margin: 0 auto; text-align: center;">
+  <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px;">
+    <iframe src="https://www.youtube.com/embed/k9kM30ThPg4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
 </div>
 
 ---

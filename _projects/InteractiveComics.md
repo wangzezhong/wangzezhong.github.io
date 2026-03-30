@@ -22,9 +22,10 @@ sitemap: true
 **Interactive Data Comics** Zezhong Wang, Hugo Romat, Fanny Chevalier, Nathalie Henry Riche, Dave Murray-Rust and Benjamin Bach _IEEE Transactions on Visualization and Computer Graphics (TVCG) 2022 (IEEE VIS, 2021))_) [📄**PDF**](https://www.researchgate.net/publication/353825597_Interactive_Data_Comics)
 
 ## Video Presentation at VIS 2021 (10min 38sec)
-<div class="videoWrapper">
-  <iframe width="854" height="480" src="https://www.youtube.com/embed/zV4oHfMU5aI" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  
+<div style="width: 100%; max-width: 854px; margin: 0 auto; text-align: center;">
+  <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px;">
+    <iframe src="https://www.youtube.com/embed/zV4oHfMU5aI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
 </div>
 
 ---
@@ -34,9 +35,10 @@ This project investigates how to make data comics interactive. Data comics are a
 This initial step towards understanding the design space of interactive comics can inform the design of authoring tools and experiences for interactive storytelling. 
 
 ## Example Demo (1min 26sec)
-<div class="videoWrapper">
-  <iframe width="854" height="480" src="https://www.youtube.com/embed/9u1tg2gHNAc" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  
+<div style="width: 100%; max-width: 854px; margin: 0 auto; text-align: center;">
+  <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px;">
+    <iframe src="https://www.youtube.com/embed/9u1tg2gHNAc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
 </div>
 
 ## Example:

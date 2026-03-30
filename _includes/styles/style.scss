@@ -63,6 +63,44 @@ li:has(.pubWrapper) {
   grid-column: 2;
 }
 
+@media screen and (max-width: 900px) {
+  .pubWrapper {
+    grid-template-columns: 1fr;
+    grid-row-gap: 15px;
+    margin-bottom: 45px; 
+  }
+
+  .pubText {
+    grid-column: 1;
+  }
+
+  .pubImage img {
+    margin: 0 auto; 
+    max-width: 100% !important; 
+  }
+  
+  .pubLinks {
+    text-align: center; 
+  }
+}
+
+.nav-shortcut {
+  display: flex !important;
+  font-size: 0.85em;
+  font-weight: 600;
+  text-decoration: none !important;
+  color: inherit !important;
+  padding: 0 12px;
+  align-items: center;
+  height: 100%;
+}
+
+@media (min-width: 901px) {
+  .nav-shortcut {
+    display: none !important;
+  }
+}
+
 .copyConfirmation {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;

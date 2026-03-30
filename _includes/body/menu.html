@@ -7,6 +7,17 @@
         <span class="icon-menu"></span>
       </a>
       <div class="nav-span"></div>
+      <div id="_nav-shortcuts">
+        {% if page.layout == "welcome" or page.url == "/" %}
+          <a href="{{ '/papers/' | relative_url }}" class="nav-shortcut">
+            Publications
+          </a>
+        {% elsif page.url contains "/papers/" or page.title == "Publications" %}
+          <a href="{{ '/' | relative_url }}" class="nav-shortcut">
+            Zezhong Wang
+          </a>
+        {% endif %}
+      </div>
     </div>
   </div>
 </div>

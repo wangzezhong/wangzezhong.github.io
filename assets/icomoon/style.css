@@ -272,10 +272,10 @@
   content: "\ea84";
 }
 .icon-brightness-contrast:before {
-  content: "\1f506";
+  content: "\1f506\fe0e";
 }
 .icon-search:before {
-  content: "\1f50d";
+  content: "\1f50d\fe0e";
 }
 .icon-key:before {
   content: "\e98d";
@@ -305,10 +305,10 @@
   content: "\eadf";
 }
 .icon-copy:before {
-  content: "\1f4cb";
+  content: "\1f4cb\fe0e";
 }
 .icon-checkmark:before {
-  content: "\2705";
+  content: "\2705\fe0e";
 }
 .icon-history:before {
   content: "\1f552";

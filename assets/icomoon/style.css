@@ -15,7 +15,7 @@
   font-family: 'icomoon' !important;
   speak: never;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400 !important;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
@@ -23,6 +23,9 @@
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Force text/font rendering for characters that might be interpreted as emojis */
+  font-variant-emoji: text;
 }
 
 .icon-googlescholar:before {
@@ -272,10 +275,10 @@
   content: "\ea84";
 }
 .icon-brightness-contrast:before {
-  content: "\1f506\fe0e";
+  content: "\1f506";
 }
 .icon-search:before {
-  content: "\1f50d\fe0e";
+  content: "\1f50d";
 }
 .icon-key:before {
   content: "\e98d";
@@ -305,10 +308,10 @@
   content: "\eadf";
 }
 .icon-copy:before {
-  content: "\1f4cb\fe0e";
+  content: "\1f4cb";
 }
 .icon-checkmark:before {
-  content: "\2705\fe0e";
+  content: "\2705";
 }
 .icon-history:before {
   content: "\1f552";

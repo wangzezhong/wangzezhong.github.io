@@ -1,7 +1,7 @@
 ---
 layout: project
-title: 'AI-VIS EthiCards: exploring ethics in AI for visualizations'
-caption: A card deck and activities to engage exploration of ethics in AI for visualizations
+title: 'AI4VIS EthiCards'
+caption: A Card-Based Approach to Exploring Ethics in AI for Data Visualization Applications
 description: >
 date: May 2026
 image: 

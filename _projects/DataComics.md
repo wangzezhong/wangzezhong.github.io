@@ -3,7 +3,7 @@ layout: project
 title: 'A Journey of Exploring Data Comics'
 caption: A brief introduction to data comics and a summary of my exploration
 description: >
-    This article chronicles my exploration of data comics as a tool for democratizing data literacy, sharing research insights, and providing practical resources for creators.
+    My story in exploring data comics.
 date: Feb 2025
 image: 
   path: /assets/img/projects/DCCover.png
@@ -23,19 +23,17 @@ sitemap: true
 
 ## Overview of Data Comics for Data-Driven Storytelling
 
-Data Comics are a sequential storytelling medium that merges data visualizations with comic elements (e.g., panels and characters) to transform complex information into engaging, narrative-driven experiences. By organizing data into expressive panel layouts, they guide readers through a curated storyline while enabling non-linear exploration via interactivity (e.g., branching paths, data-input). 
+Data comics are a sequential storytelling medium that combines data visualization with the visual language of comics, such as panels, layout, and narrative progression, to communicate complex information in more engaging and accessible ways. By arranging data across panels and sequences, they guide readers through a curated narrative while also supporting interactive and non-linear exploration, such as branching paths or user-driven input.
 
-This format leverages readers’ familiarity with comics to enhance comprehension and recall, as shown in empirical studies, while humanizing data through visual narratives. Though effective for education, journalism, and public communication, their design requires balancing visual complexity, narrative coherence, and technical skill, which can pose scalability challenges. Real-world applications, such as explaining climate change or health trends, demonstrate their ability to boost engagement and accessibility.
+As a form of data storytelling, data comics help bridge the gap between abstract numbers and human understanding. They place data and visualizations in context, showing why they matter through narrative structure, visual explanation, and relatable scenarios. Drawing on readers’ familiarity with comics, data comics can improve comprehension and engagement, and have shown promise in areas such as education, journalism, and public communication.
 
-In an era where data underpins global progress, its power remains locked unless communicated inclusively. Traditional data formats—static charts, dense reports—often alienate non-experts, exacerbating disparities in understanding critical issues like public health crises, climate urgency, or economic inequity. This divide isn’t merely technical; it’s societal. When data fails to resonate, it risks irrelevance, leaving audiences disengaged or indifferent to insights that shape their lives. Data storytelling bridges this gap by humanizing numbers, weaving them into narratives that answer “Why does this matter?” through relatable context, emotion, and clarity. 
-
-Data comics amplify the potential of data storytelling by merging the precision of data visualization with the narrative power of sequential art. They transform abstract statistics into vivid, emotionally resonant journeys, distilling complexity into clear insights that are accessible to diverse audience. In doing so, data comics democratize understanding—empowering diverse audiences to engage with the information that shapes their lives. More than a communication tool, they ignite dialogue, fuel informed decision-making, and foster a society that leverages data as a catalyst for progress.
+Data comics extend the potential of data storytelling by combining analytical evidence with the narrative and expressive qualities of sequential art. They can make complex data easier to follow, more memorable, and more meaningful to diverse audiences. In this way, data comics support broader public engagement with data and create opportunities for reflection, discussion, and informed action.
 
 ## The Pioneering Works on Data Comics
 
-Comics as a data-driven storytelling tool were first recognized by [Segel and Heer (2010)](http://vis.stanford.edu/files/2010-Narrative-InfoVis.pdf){:target="_blank" rel="noopener noreferrer"} and later expanded upon by [Zhao et al. (2015)](https://www.cs.umd.edu/hcil/trs/2015-15/2015-15.pdf), who developed data comics as web snapshots, as well as by [Bach et al. (2016)](https://dl.acm.org/doi/10.1145/2858036.2858387){:target="_blank" rel="noopener noreferrer"}, who focused on graph visualizations, and [Bach et al. (2017)](https://ieeexplore.ieee.org/document/7912272){:target="_blank" rel="noopener noreferrer"}, who highlighted the essential elements of data comics. Building on this foundational research, my doctoral work sought to expand the practical applications of data comics through hands-on experimentation. 
+Comics as a data-driven storytelling format were first discussed in academic literature by [Segel and Heer (2010)](http://vis.stanford.edu/files/2010-Narrative-InfoVis.pdf){:target="_blank" rel="noopener noreferrer"} and later implemented by [Zhao et al. (2015)](https://www.cs.umd.edu/hcil/trs/2015-15/2015-15.pdf), who developed data comics as web snapshots, as well as by [Bach et al. (2016)](https://dl.acm.org/doi/10.1145/2858036.2858387){:target="_blank" rel="noopener noreferrer"}, who focused on graph visualizations, and [Bach et al. (2017)](https://ieeexplore.ieee.org/document/7912272){:target="_blank" rel="noopener noreferrer"}, who highlighted the essential elements of data comics. Building on this foundational research, my doctoral work sought to expand the design and practical applications of data comics.
 
-In my doctoral work (2018–2022) at the University of Edinburgh, under the supervision of Dr. Benjamin Bach and Dr. Dave Murray-Rust, I investigated the creation of data comics for data-driven storytelling. My research, detailed in [Creating Data Comics for Data-Driven Storytelling](https://era.ed.ac.uk/handle/1842/38793){:target="_blank" rel="noopener noreferrer"}, pushed the boundaries of this innovative format and its production techniques. I examined aspects—including explanatory visualizations, narrative strategies, transitional elements, and visual design—by producing original data comics, collaborating with interdisciplinary experts, and developing teaching frameworks to advance both the understanding and practice of this emerging format.
+In my doctoral work (2018–2022) at the University of Edinburgh, under the supervision of Dr. Benjamin Bach and Dr. Dave Murray-Rust, I investigated the creation of data comics for data-driven storytelling. My research, detailed in [Creating Data Comics for Data-Driven Storytelling](https://era.ed.ac.uk/handle/1842/38793){:target="_blank" rel="noopener noreferrer"}, pushed the boundaries of this new format and its production techniques. 
 
 
 # A Journey of Exploring Data Comics 
@@ -57,7 +55,7 @@ I started by sketching weekly data comics that documented my life—tracking sle
     <div style="position: relative; display: inline-block; margin-top: 8px; cursor: pointer; font-size: 0.8em"
          onmouseover="document.getElementById('tooltip1').style.visibility='visible'; document.getElementById('tooltip1').style.opacity='1';" 
          onmouseout="document.getElementById('tooltip1').style.visibility='hidden'; document.getElementById('tooltip1').style.opacity='0';">
-      My sleep pattern
+      My sleep data
       <div id="tooltip1" style="visibility: hidden; opacity: 0; width: 140px; background-color: #333; color: #fff; text-align: center; padding: 5px 8px; border-radius: 6px; position: absolute; bottom: 125%; left: 50%; transform: translateX(-50%); transition: opacity 0.3s ease; pointer-events: none;">
         My weekly data comic practice example
       </div>
@@ -76,7 +74,7 @@ I started by sketching weekly data comics that documented my life—tracking sle
     <div style="position: relative; display: inline-block; margin-top: 8px; cursor: pointer; font-size: 0.8em"
          onmouseover="document.getElementById('tooltip2').style.visibility='visible'; document.getElementById('tooltip2').style.opacity='1';" 
          onmouseout="document.getElementById('tooltip2').style.visibility='hidden'; document.getElementById('tooltip2').style.opacity='0';">
-      Global Migrants
+      Global migrants
       <div id="tooltip2" style="visibility: hidden; opacity: 0; width: 140px; background-color: #333; color: #fff; text-align: center; padding: 5px 8px; border-radius: 6px; position: absolute; bottom: 125%; left: 50%; transform: translateX(-50%); transition: opacity 0.3s ease; pointer-events: none;">
         My weekly data comic practice example
       </div>
@@ -85,7 +83,7 @@ I started by sketching weekly data comics that documented my life—tracking sle
 
   <!-- Image 3 -->
   <div style="width: 32%; text-align: center; margin-top: 10px;">
-    <img src="https://datacomics.github.io/teasers/hansrosling.png" 
+    <img src="/assets/img/DataComics/hansrosling.png"
          alt="Title 3" 
          style="width: 100%; height: auto; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
          title="click to open the full comic"
@@ -133,8 +131,9 @@ I started by sketching weekly data comics that documented my life—tracking sle
 
 ## Comparing Data Comics with Infographics
 
-This experience made me to question whether my enthusiasm for data comics was just a niche interest reminiscent of the graphic novels of my childhood, or if it could have broader appeal. To explore this, I conducted studies [comparing the effectiveness and engagement of data comics and infographics](https://www.researchgate.net/publication/331357753_Comparing_Effectiveness_and_Engagement_of_Data_Comics){:target="_blank" rel="noopener noreferrer"} (ACM CHI 2019).
-The study used both qualitative and quantitative methods, shows that participants prefer data comics in terms of enjoyment, focus, and engagement. 
+As I continued exploring and creating data comics, I realized that the potential of data comics extends far beyond simply adding characters or humor. Some data comics do not include characters at all, yet still make storytelling with visualization more engaging through other qualities of the format: sequentiality, the interplay between text and visuals, visual explanations of visualization techniques, panel layout, and the transitions between panels. This led me to ask whether these features could help people better understand data and make data communication more engaging more broadly. To investigate this, I conducted studies [comparing the effectiveness and engagement of data comics and infographics](https://www.researchgate.net/publication/331357753_Comparing_Effectiveness_and_Engagement_of_Data_Comics){:target="_blank" rel="noopener noreferrer"} (ACM CHI 2019).
+
+Using both qualitative and quantitative methods, I designed study materials with controlled conditions, including the distance between text and visualizations, the presence or absence of guided reading order, and different reading structures, to compare data comics and infographics more systematically. I evaluated these materials both in a lab study and in the street during the Edinburgh International Festival. Across these settings, participants showed a preference for data comics in terms of enjoyment, focus, and engagement.
 
 <div style="width: 100%; text-align: center;">
   <!-- Image 1 -->
@@ -177,7 +176,7 @@ The study used both qualitative and quantitative methods, shows that participant
 </div>
 
 
-Notably, data comics improve understanding and recall of information within stories. The clear sequencing of panels allows readers to focus better on spatial-temporal information, while dividing the content into manageable chunks helps in memory retention. Panels grouped into rows present higher-level messages, which enhance overall comprehension.
+Notably, data comics improve understanding and recall of information within stories (23% more accurate in the quizzes). The clear sequencing of panels allows readers to focus better on spatial-temporal information, while dividing the content into manageable chunks helps in memory retention. Panels grouped into rows present higher-level messages, which enhance overall comprehension.
 The study highlights the effectiveness of using panels to structure information and provide reading guidance.
 
 
@@ -329,7 +328,15 @@ Through [workshops](https://vishub.net/papers/wang2019teaching.pdf){:target="_bl
   </div>
 </div>
 
-Data comics merge analytical rigor with creative storytelling, offering a scalable way to engage diverse audiences. Future work could explore AI-assisted authoring tools or immersive formats like AR comics.
+
+More recently, I have been exploring data comics not only as a storytelling medium, but also as an interactive interface. Through [input data comics](/assets/papersPDF/Input_DataComic_InPutVIS_2025_preprint.pdf) and [conversational data comics](/assets/papersPDF/CHI26Workshop_Conversational_DataComics.pdf), I investigate how comics can support people in contributing data, interpreting visualizations, asking follow-up questions, and developing data literacy in context. This work extends data comics from a medium for communication into a form of Human-Data Interaction.  
+
+<div style="width: 100%; text-align: center; margin-top: 15px; margin-bottom: 25px;">
+  <a href="/assets/papersPDF/CHI26Workshop_Conversational_DataComics.pdf" target="_blank" rel="noopener noreferrer">
+    <img src="/assets/img/DataComics/conversationalDataComics.png" alt="Conversational Data Comics" style="width: 100%; height: auto; border-radius: 5px; transition: transform 0.3s ease;" title="click to read the paper" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'">
+  </a>
+</div>
+
 If you’re interested in running a data comic workshop, creating data comics for your data, or collaborating on integrating data comics into your research, feel free to contact me!
 
 I gratefully acknowledge my supervisors, mentors, collaborators, audiences, and the students I’ve had the privilege to mentor—whose diverse insights and unwavering support have inspired every step of my journey in exploring data comics.

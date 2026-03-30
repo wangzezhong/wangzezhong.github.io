@@ -11,17 +11,21 @@ selected_projects:
 featured: false
 ---
 
-We live in a world overflowing with data, and understanding it has never been more important. Yet for many people, data still feels cold, distant, or exclusionary, like a language they were never taught to speak. This disconnect widens inequality and allows misinformation to spread. My work grows from a simple belief: data can be more than numbers, it can tell stories, spark curiosity, and bring people closer to the world around them. Blending Visual Design, Human-Computer Interaction, and Data Visualization, I explore ways to make data something people can see, feel, and connect with. 
+We live in a world overflowing with data — yet for many people, it still feels cold, distant, or like a language they were never taught to speak. My work grows from a simple belief: data can help people better understand the world around them and spark genuine curiosity.
+Blending Visual Design, Human-Computer Interaction, and Data Visualization, I explore two interlocking areas. **Human-Data Interaction** focuses on designing visualizations and interfaces that help people understand what's happening, take informed action, and contest or revise how data is used. **Data-Driven Storytelling** is about turning data-based evidence into narratives that help non-experts connect with data in context.
 
-I am currently a postdoctoral fellow at [ixLab](https://ixlab.cs.sfu.ca/), [Simon Fraser University](https://www.sfu.ca/computing.html) working alongside [Dr. Sheelagh Carpendale](https://www.cs.sfu.ca/~sheelagh/). Previously, I earned my PhD from  the [University of Edinburgh](https://www.ed.ac.uk/) under the supervision of [Dr. Benjamin Bach](https://visualinteractivedata.github.io/bach.html) and [Dr. Dave Murray-Rust](http://dave.murray-rust.org/). I bring my expertise in user experience design, visual storytelling, and data visualization to HCI communities and specific domains where data is valuable yet challenging to communicate to broader audiences. I look forward to continuing this journey and welcome opportunities to collaborate.
 
-My research investigates **Human-Data Interaction** (designing data-driven systems so people can understand what’s happening, take informed action, and contest or revise data use), focusing on data-oriented tasks and data-rich interfaces; I also design and study **Data-Driven Storytelling** (turning data-based evidence into narratives that help non-experts understand and connect with data in context).
+I am a postdoctoral fellow at [ixLab](https://ixlab.cs.sfu.ca/), [Simon Fraser University](https://www.sfu.ca/computing.html), working with [Dr. Sheelagh Carpendale](https://www.cs.sfu.ca/~sheelagh/). I earned my PhD from the [University of Edinburgh](https://www.ed.ac.uk/) under [Dr. Benjamin Bach](https://visualinteractivedata.github.io/bach.html) and [Dr. Dave Murray-Rust](http://dave.murray-rust.org/), and received the IEEE VGTC Visualization Dissertation Award Honorable Mention 2023.
 
 
 
 <!--projects-->
 
 # News
+
+* Paper [AI4VIS EthiCards: A Card-Based Approach to Exploring Ethics in AI for Data Visualization Applications](/assets/papersPDF/AI_VIS_EthiCards_EuroVis2026-Preprint.pdf) was accepted by EuroVis 2026.
+
+* I'll present [Just-in-Time Data Literacy Through Conversational Data Comics](/assets/papersPDF/CHI26Workshop_Conversational_DataComics.pdf) at CHI 2026 Workshop on Data Literacy.
 
 * Invited to be a member of IEEE VIS 2026 Conference  program committee. 
 

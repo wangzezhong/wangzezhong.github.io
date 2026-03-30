@@ -1,5 +1,48 @@
 papers:
   - layout: paper
+    year: 2026
+    paper-type: inproceedings
+    selected: yes
+    title: "AI4VIS EthiCards: A Card-Based Approach to Exploring Ethics in AI for Data Visualization Applications"
+    authors: "Zezhong Wang, Shan Hao, Sheelagh Carpendale"
+    booktitle: Computer Graphics Forum
+    booktitle-url: 
+    doc-url: /assets/papersPDF/AI_VIS_EthiCards_EuroVis2026-Preprint.pdf
+    img: "wang2026EthiCards.png"
+    img_alt: "wang2026EthiCards.png"
+    weblink: https://aivisethicards.github.io/
+    videolink: 
+    venue: Conference
+    bibtex: |
+             @inproceedings{Wang2026EthiCards,
+             author    = {Wang, Zezhong and Carpendale, Sheelagh},
+             title     = {AI4VIS EthiCards: A Card-Based Approach to Exploring Ethics in AI for Data Visualization Applications},
+             year      = {2026},
+             booktitle = {Computer Graphics Forum}
+             volume    = {45},
+             number    = {3}
+             
+  - layout: paper
+    year: 2026
+    paper-type: inproceedings
+    selected: yes
+    title: "Just-in-Time Data Literacy Through Conversational Data Comics"
+    authors: "Zezhong Wang, Sheelagh Carpendale"
+    booktitle: CHI 2026 Workshop on Data Literacy
+    booktitle-url: 
+    doc-url: /assets/papersPDF/CHI26Workshop_Conversational_DataComics.pdf
+    img: "wang2026conversationalDC.png"
+    img_alt: "wang2026conversationalDC.png"
+    weblink: 
+    videolink: 
+    venue: Conference
+    bibtex: |
+             @inproceedings{Wang2026ConversationalDataComics,
+             author    = {Wang, Zezhong and Carpendale, Sheelagh},
+             title     = {Just-in-Time Data Literacy Through Conversational Data Comics},
+             year      = {2026},
+             booktitle = {CHI 2026 Workshop on Data Literacy}
+  - layout: paper
     year: 2025
     paper-type: inproceedings
     selected: yes
@@ -7,7 +50,7 @@ papers:
     authors: "Zezhong Wang, Sheelagh Carpendale"
     booktitle: IEEE VIS 2025 Input Visualization Workshop
     booktitle-url: 
-    doc-url: https://wangzezhong.github.io/assets/papersPDF/Input_DataComic_InPutVIS_2025_preprint.pdf
+    doc-url: /assets/papersPDF/Input_DataComic_InPutVIS_2025_preprint.pdf
     img: "wang2025inputcomic.png"
     img_alt: "wang2025inputcomic.png"
     weblink: 
@@ -27,7 +70,7 @@ papers:
     authors: "Zezhong Wang, Shan Hao, Carpendale Sheelagh"
     booktitle: IEEE VIS 2025 alt.vis
     booktitle-url: 
-    doc-url: https://wangzezhong.github.io/assets/papersPDF/VIS25_Poster_Courtship_preprint.pdf
+    doc-url: /assets/papersPDF/VIS25_Poster_Courtship_preprint.pdf
     img: "wang2015Courtship.png"
     img_alt: "wang2015Courtship.png"
     weblink: 
@@ -48,7 +91,7 @@ papers:
     authors: "Wei Wei, Foroozan Daneshzand, Zezhong Wang, Erica Mattson, Charles Perin, Sheelagh Carpendale"
     booktitle: IEEE VIS 2025 alt.vis
     booktitle-url: 
-    doc-url: https://wangzezhong.github.io/assets/papersPDF/VisDarkSide_VIS2025.pdf
+    doc-url: /assets/papersPDF/VisDarkSide_VIS2025.pdf
     img: "wei2025dark.png"
     img_alt: "wei2025dark.png"
     weblink: 
@@ -90,7 +133,7 @@ papers:
     authors: "Ruishan Wu, Zezhong Wang, Charles Perin, Sheelagh Carpendale"
     booktitle: IEEE VIS 2025 Poster
     booktitle-url: 
-    doc-url: https://wangzezhong.github.io/assets/papersPDF/Ruishan_Poster_ThreadWave__Visualizing_Co_authorship_as_Temporal_Threads.pdf
+    doc-url: /assets/papersPDF/Ruishan_Poster_ThreadWave__Visualizing_Co_authorship_as_Temporal_Threads.pdf
     img: "Ruishan2025ThreadWave.png"
     img_alt: "Ruishan2025ThreadWave.png"
     weblink: 
@@ -155,7 +198,7 @@ papers:
     authors: "Komal Waseem, Miriam Sturdee, Zezhong Wang, Rachel Lewis, Marcello Tonelli, Sheelagh Carpendale"
     booktitle: ACM Designing Interactive Systems Conference (DIS)
     booktitle-url: 
-    doc-url: https://wangzezhong.github.io/assets/papersPDF/dis24-94.pdf
+    doc-url: /assets/papersPDF/dis24-94.pdf
     img: "Waseem2024Comic.png"
     img_alt: "Waseem2024Comic.png"
     weblink: 

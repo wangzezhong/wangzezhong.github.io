@@ -25,13 +25,22 @@ Fill in `href`. You may have to adjust `rel`.
 /* Custom stacked publication layout for mobile */
 @media screen and (max-width: 900px) {
   .pubWrapper {
-    grid-template-columns: 1fr !important;
-    text-align: center;
+    display: flex !important;
+    flex-direction: column !important;
+    text-align: left !important;
     gap: 1.5rem;
   }
+  .pubImageWrapper {
+    width: 100% !important;
+    text-align: left !important;
+  }
   .pubImage img {
-    margin: 0 auto;
-    max-width: 250px;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+  .pubLinks {
+    text-align: left !important;
+    margin-top: 10px !important;
   }
 }
 </style>

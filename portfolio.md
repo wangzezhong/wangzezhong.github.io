@@ -2,7 +2,7 @@
 layout: page
 title: Design Portfolio
 permalink: /portfolio/
-sitemap: false
+sitemap: true
 ---
 
 <style>

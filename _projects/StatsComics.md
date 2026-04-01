@@ -16,7 +16,7 @@ links:
 accent_color: '#4fb1ba'
 accent_image: /assets/img/projects/statsCover-blur.png
 theme_color: '#193747'
-sitemap: false
+sitemap: true
 ---
 
 **Data Comics for Reporting Controlled User Studies in Human-Computer Interaction** Zezhong Wang, Jacob Ritchie, Jingtao Zhou, Fanny Chevalier, Benjamin Bach _IEEE Transactions on Visualization and Computer Graphics (TVCG) 2021 (IEEE VIS, 2020))_ [📄**PDF**](https://www.researchgate.net/publication/344163702_Data_Comics_for_Reporting_Controlled_User_Studies_in_Human-Computer_Interaction)

@@ -22,7 +22,32 @@ Fill in `href`. You may have to adjust `rel`.
 </script>
 
 <style>
-/* Custom stacked publication layout for mobile */
+/* 1. Navbar Visibility: Hide mobile elements on desktop and vice versa immediately */
+@media screen and (min-width: 901px) {
+  .nav-shortcut, .mobile-only {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 900px) {
+  .desktop-only {
+    display: none !important;
+  }
+}
+
+/* 2. Publication Layout: Force grid immediately on desktop to prevent stack-then-grid flash */
+@media screen and (min-width: 901px) {
+  .pubWrapper {
+    display: grid !important;
+    grid-template-columns: auto 1fr !important;
+    grid-column-gap: 20px !important;
+    margin-bottom: 35px !important;
+  }
+  .pubText {
+    grid-column: 2 !important;
+  }
+}
+
+/* 3. Custom stacked publication layout for mobile (existing) */
 @media screen and (max-width: 900px) {
   .pubWrapper {
     display: flex !important;
@@ -44,7 +69,7 @@ Fill in `href`. You may have to adjust `rel`.
   }
 }
 
-/* Replace Twitter Bird with new X Logo across the site */
+/* 4. Social Icons Reset */
 .icon-twitter:before {
   content: "" !important;
   display: inline-block;

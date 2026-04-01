@@ -8,6 +8,15 @@ sitemap: false
 * this list will be replaced by the toc
 {:toc .large-only}
 
+## Redesign and Upgrades
+Copyright (c) 2026 Zezhong Wang <https://zezhongwang.com/>
+
+This website is based on the Hydejack template and has been significantly upgraded and redesigned.
+Key modifications include:
+- Custom publication list layout and stabilization.
+- Performance optimizations (Critical CSS inlining).
+- Responsive UI enhancements and icon system refinements.
+
 Copyright (c) 2020 Florian Klampfer <https://qwtel.com/>
 
 This program is free software: you can redistribute it and/or modify

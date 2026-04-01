@@ -15,6 +15,7 @@ Version 3, 29 June 2007
 
 Copyright (C) 2007 Free Software Foundation, Inc.
 <http://fsf.org/>
+Copyright (C) 2026 Zezhong Wang (Redesign and code modifications).
 
 Everyone is permitted to copy and distribute verbatim copies of this
 license document, but changing it is not allowed.

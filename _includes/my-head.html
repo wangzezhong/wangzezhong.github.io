@@ -38,12 +38,19 @@ Fill in `href`. You may have to adjust `rel`.
 @media screen and (min-width: 901px) {
   .pubWrapper {
     display: grid !important;
-    grid-template-columns: auto 1fr !important;
+    grid-template-columns: 260px 1fr !important; /* Fixed width prevents image column from expanding */
     grid-column-gap: 20px !important;
     margin-bottom: 35px !important;
   }
   .pubText {
     grid-column: 2 !important;
+  }
+  .pubImage img {
+    max-width: 260px !important;
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 6px !important;
+    display: block !important;
   }
 }
 

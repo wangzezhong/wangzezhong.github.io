@@ -11,7 +11,7 @@ sitemap: false
 ## Redesign and Upgrades
 Copyright (c) 2026 Zezhong Wang <https://zezhongwang.com/>
 
-This website is based on the Hydejack template and has been significantly upgraded and redesigned.
+This website is based on the Hydejack template and has been upgraded and redesigned.
 Key modifications include:
 - Custom publication list layout and stabilization.
 - Performance optimizations (Critical CSS inlining).

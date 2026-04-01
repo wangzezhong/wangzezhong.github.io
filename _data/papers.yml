@@ -35,6 +35,7 @@ papers:
     img_alt: "wang2026conversationalDC.png"
     weblink: 
     videolink: 
+    poster: /assets/img/posters/ConversationalDC-poster.png
     venue: Conference
     bibtex: |
              @inproceedings{Wang2026ConversationalDataComics,
@@ -392,6 +393,7 @@ papers:
     booktitle: ACM Conference on Human Factors in Computing Systems (CHI)
     otherbooktitile: IEEE VIS 2019 infovis poster
     otherawards: Best Poster Research Award | Best Poster Design Award
+    poster: /assets/img/projects/Cheatsheet_poster.png
     booktitle-url: 
     doc-url: https://www.researchgate.net/publication/338657160_Cheat_Sheets_for_Data_Visualization_Techniques
     img: "wang2020cheat.png"

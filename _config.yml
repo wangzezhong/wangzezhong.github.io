@@ -27,14 +27,14 @@ title:                 Zezhong Wang
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  Personal Website of Zezhong Wang - Information Visualization & Data-Driven Storytelling
+  Zezhong Wang - Data Comics, Information Visualization & Data-Driven Storytelling. Exploring Human-Data Interaction through narrative and sequential art.
 
 # A shorter description for the sidebar.
 tagline: |              
   Information Visualization & Data-Driven Storytelling Post-Doctoral Fellow at Simon Fraser University
 
 # A list of keywords for your blog
-keywords:              [Zezhong, Wang, Data, Comics, Data-driven, storytelling, 数据漫画]
+keywords:              [Zezhong, Wang, Data Comics, Data Storytelling, Information Visualization, HCI, 数据漫画]
 
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
@@ -177,7 +177,7 @@ kramdown:
 
 # Set your Google Analytics id to receive `pageview` events.
 # To remove Google Anaylics from your page, remove the line below.
-# google_analytics:      UA-XXXXXXXX-X
+google_analytics:      G-SRB97CEXJN
 
 # Setting a disqus shortname will enable the comment section on
 # pages with `comments: true` in the front matter.

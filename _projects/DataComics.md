@@ -1,9 +1,9 @@
 ---
 layout: project
-title: 'A Journey of Exploring Data Comics'
-caption: My exploration of data comics from a data storytelling medium to a human-data interaction interface
+title: 'Data Comics: Data Storytelling & Human-Data Interaction | Zezhong Wang'
+caption: Research and design exploration of data comics as a storytelling medium and interactive interface.
 description: >
-    My exploration of data comics: from a data storytelling medium to a human-data interaction interface.
+    Comprehensive research on Data Comics: from sequential data storytelling to interactive Human-Data Interaction (HDI) interfaces.
 date: Feb 2025
 image: 
   path: /assets/img/projects/DCCover.png
@@ -19,7 +19,7 @@ accent_image: /assets/img/projects/DCCover-blur.jpg
 theme_color: '#193747'
 sitemap: true
 ---
-# A Journey of Exploring Data Comics
+# Data Comics: A Journey of Exploration
 
 ## Overview of Data Comics for Data-Driven Storytelling
 
@@ -36,7 +36,7 @@ Comics as a data-driven storytelling format were first discussed in academic lit
 In my doctoral work (2018–2022) at the University of Edinburgh, under the supervision of Dr. Benjamin Bach and Dr. Dave Murray-Rust, I investigated the creation of data comics for data-driven storytelling. My research, detailed in [Creating Data Comics for Data-Driven Storytelling](https://era.ed.ac.uk/handle/1842/38793){:target="_blank" rel="noopener noreferrer"}, pushed the boundaries of this new format and its production techniques. 
 
 
-# A Journey of Exploring Data Comics 
+
 
 From my design and user experience background, I have always been keenly exploring how everyday experience can be enhanced through better design. This sensitivity became a driving force during my master’s study in Design Informatics, at the University of Edinburgh, where I began applying my UX design mindset to data communication. 
 I started by sketching weekly data comics that documented my life—tracking sleep patterns, visualizing news events, and capturing newly acquired insights. Over time, this experiment evolved into a set of [design patterns for data comics](https://datacomics.github.io/designpatterns.html){:target="_blank" rel="noopener noreferrer"} (ACM CHI 2018), a design space that blends the features of comics (panels, sequential visual narratives) with data visualization. To democratize access to this format, I distilled these patterns into printable, [workshop-ready cards](https://drive.google.com/file/d/1i_GKFBl_mIgUVk76G6-v69QOT_7C-F95/view?usp=sharing){:target="_blank" rel="noopener noreferrer"}, enabling others to adopt and adapt the format. I further leveraged these tools in [teaching data visualization and storytelling with data comic workshops](https://www.researchgate.net/publication/331547312_Teaching_Data_Visualization_and_Storytelling_with_Data_Comic_Workshops){:target="_blank" rel="noopener noreferrer"} (ACM CHI 2019 EA).
@@ -64,8 +64,8 @@ I started by sketching weekly data comics that documented my life—tracking sle
 
   <!-- Image 2 -->
   <div style="width: 32%; text-align: center; margin-top: 10px;">
-    <img src="https://datacomics.github.io/teasers/migration.png" 
-         alt="Title 2" 
+     <img src="https://datacomics.github.io/teasers/migration.png" 
+          alt="Data comic illustrating global migration trends through sequential panels" 
          style="width: 100%; height: auto; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
          title="click to open the full comic"
          onclick="window.open('https://datacomics.github.io/comicfiles/globakmigrantsZezhongWang.pdf', '_blank')" 
@@ -84,7 +84,7 @@ I started by sketching weekly data comics that documented my life—tracking sle
   <!-- Image 3 -->
   <div style="width: 32%; text-align: center; margin-top: 10px;">
     <img src="/assets/img/DataComics/hansrosling.png"
-         alt="Title 3" 
+         alt="Data comic summarizing Hans Rosling's talk on global health" 
          style="width: 100%; height: auto; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
          title="click to open the full comic"
          onclick="window.open('https://datacomics.github.io/comicfiles/GlobalHealthZezhongWang.pdf', '_blank')" 
@@ -190,7 +190,7 @@ Our cheat sheets cover six core areas: (1) Anatomy (core visual elements), (2) C
   <!-- Image 1 -->
   <div style="width: 32%; text-align: center; margin-top: 10px;">
     <img src="/assets/img/DataComics/boxplotIntro.png"
-         alt="Box plot" 
+         alt="Box plot data visualization cheat sheet for data comics" 
          style="width: 100%; height: auto; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
          title="click to view the introduction of Box Plot"
          onclick="window.open('https://visualizationcheatsheets.github.io/pdfs/boxplot_introduction.pdf', '_blank')" 
@@ -209,7 +209,7 @@ Our cheat sheets cover six core areas: (1) Anatomy (core visual elements), (2) C
   <!-- Image 2 -->
   <div style="width: 32%; text-align: center; margin-top: 10px;">
     <img src="/assets/img/DataComics/matrixIntro.png" 
-         alt="Adjacency Matrix" 
+         alt="Adjacency Matrix network visualization cheat sheet" 
          style="width: 100%; height: auto; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
          title="click to view the introduction of Adjacency Matrix"
          onclick="window.open('https://visualizationcheatsheets.github.io/pdfs/matrix_introduction.pdf', '_blank')" 
@@ -228,7 +228,7 @@ Our cheat sheets cover six core areas: (1) Anatomy (core visual elements), (2) C
   <!-- Image 3 -->
   <div style="width: 32%; text-align: center; margin-top: 10px;">
     <img src="/assets/img/DataComics/pcpIntro.png"
-         alt="Parallel Coordinates Plot" 
+         alt="Parallel Coordinates Plot (PCP) visualization cheat sheet" 
          style="width: 100%; height: auto; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
          title="click to view the introduction of Parallel Coordinates Plot"
          onclick="window.open('https://visualizationcheatsheets.github.io/pdfs/pcp_introduction.pdf', '_blank')" 
@@ -313,7 +313,7 @@ Through [workshops](https://vishub.net/papers/wang2019teaching.pdf){:target="_bl
   <!-- Image 1 -->
   <div style="width: 100%; text-align: center; margin-top: 10px; margin-bottom: 10px">
     <img src="/assets/img/DataComics/workshop.png"
-         alt="Example pages of data comics for climate change from the comic Pasta or Disaster" 
+         alt="Data comic creation workshop for teaching data visualization and storytelling" 
          style="width: 100%; height: 100%; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
          onclick="window.open('https://vishub.net/papers/wang2019teaching.pdf', '_blank')" 
          title="click to view the paper"

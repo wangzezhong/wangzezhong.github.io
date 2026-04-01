@@ -12,7 +12,8 @@ featured: false
 ---
 
 We live in a world overflowing with data — yet for many people, it still feels cold, distant, or like a language they were never taught to speak. My work grows from a simple belief: data can help people better understand the world around them and spark genuine curiosity.
-Blending _Visual Design_, _Human-Computer Interaction_, and _Data Visualization_, I explore two interlocking areas. **Human-Data Interaction** focuses on designing visualizations and interfaces that help people understand what's happening, take informed action, and contest or revise how data is used. **Data-Driven Storytelling** is about turning data-based evidence into narratives that help non-experts connect with data in context.
+
+Blending _Visual Design_, _Human-Computer Interaction_, and _Data Visualization_, I explore two interlocking areas. **Human-Data Interaction** focuses on designing visualizations and interfaces (including **Data Comics**) that help people understand what's happening, take informed action, and contest or revise how data is used. **Data-Driven Storytelling** is about turning data-based evidence into narratives — such as **Data Comics** and sequential visualizations — that help non-experts connect with data in context.
 
 
 I am a postdoctoral fellow at [ixLab](https://ixlab.cs.sfu.ca/), [Simon Fraser University](https://www.sfu.ca/computing.html), working with [Dr. Sheelagh Carpendale](https://www.cs.sfu.ca/~sheelagh/). I earned my PhD from the [University of Edinburgh](https://www.ed.ac.uk/) under [Dr. Benjamin Bach](https://visualinteractivedata.github.io/bach.html) and [Dr. Dave Murray-Rust](http://dave.murray-rust.org/), and received the IEEE VGTC Visualization Dissertation Award Honorable Mention 2023.

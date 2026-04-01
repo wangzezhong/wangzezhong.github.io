@@ -22,7 +22,14 @@ Fill in `href`. You may have to adjust `rel`.
 </script>
 
 <style>
-/* 1. Navbar Visibility: Hide mobile elements on desktop and vice versa immediately */
+/* 1. Reset: Remove list bullets and whitespace immediately */
+ul.pubList, ul.pubList li {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* 2. Navbar Visibility: Hide mobile elements on desktop and vice versa immediately */
 @media screen and (min-width: 901px) {
   .nav-shortcut, .mobile-only {
     display: none !important;

@@ -5,7 +5,7 @@ cover:  false
 ---
 
 
-<ul>
+<ul class="pubList">
 {% for paper in site.data.papers.papers %}
   <li>
   {% include paper.html paper=paper %}

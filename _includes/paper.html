@@ -19,11 +19,11 @@
 
  -->
 
-<div class="pubWrapper">
+<div class="pubWrapper" itemscope itemtype="http://schema.org/ScholarlyArticle">
   <div class="pubImageWrapper">
     <div class="pubImage">
       {% if include.paper.img %}
-      <img src="/assets/paperFigures/{{ include.paper.img }}" alt="{{ include.paper.img_alt }}">
+      <img src="/assets/paperFigures/{{ include.paper.img }}" alt="{{ include.paper.img_alt }}" itemprop="image">
       {% endif %}
     </div>
     <!-- Links appear below the image with a 10px gap -->
@@ -73,17 +73,17 @@
 
   <div class="pubText">
     {% if include.paper.doc-url %}
-    <a href="{{ include.paper.doc-url }}" style="font-weight: bold" target="_blank">
-      {{ include.paper.title }}
+    <a href="{{ include.paper.doc-url }}" style="font-weight: bold" target="_blank" itemprop="url">
+      <span itemprop="headline">{{ include.paper.title }}</span>
     </a>
     {% else %}
-    <span style="font-weight: bold">{{ include.paper.title }}</span>
+    <span style="font-weight: bold" itemprop="headline">{{ include.paper.title }}</span>
     {% endif %}
     <br />
     {% if include.paper.awards %}
     <span style="font-weight: bold; color:#4fb1ba">{{ include.paper.awards }}</span><br />
     {% endif %}
-    {% if include.paper.authors %}{{ include.paper.authors }}.{% endif %}
+    {% if include.paper.authors %}<span itemprop="author">{{ include.paper.authors }}</span>.{% endif %}
     {% case include.paper.paper-type %}
     {% when "inproceedings" %}
     In <i>{{ include.paper.booktitle }}</i>.

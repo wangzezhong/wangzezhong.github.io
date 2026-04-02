@@ -44,8 +44,9 @@ logo:                  /assets/img/IMG_7682.png
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
   # Used by `jekyll-feed`:
-  name:                <Zezhong> <Wang>
-  email:               <zezhongw@sfu.ca>
+  name:                Zezhong Wang
+  email:               wangzezhong2016@gmail.com
+  orcid:               0000-0002-1061-604X
   # # Used by `jekyll-seo-tag`:
   twitter:             zezhong_w
 
@@ -354,6 +355,8 @@ plugins:
 # -- or --
 # webmaster_verifications:
 #   google:              <verification-id>
+#   googlescholar:       EJ8drhwAAAAJ&hl=en&oi=ao
+#   orcid:               0000-0002-1061-604X
 #   bing:                <verification-id>
 #   alexa:               <verification-id>
 #   yandex:              <verification-id>

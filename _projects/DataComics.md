@@ -3,10 +3,12 @@ layout: project
 title: 'Data Comics: Data Storytelling & Human-Data Interaction | Zezhong Wang'
 caption: Research and design exploration of data comics as a storytelling medium and interactive interface.
 description: >
-    Comprehensive research on Data Comics: from sequential data storytelling to interactive Human-Data Interaction (HDI) interfaces.
-date: Feb 2025
+    Research on Data Comics: from sequential data storytelling to interactive Human-Data Interaction (HDI) interfaces.
+date: Feb 2026
 image: 
   path: /assets/img/projects/DCCover.png
+seo:
+  type: ScholarlyArticle
   srcset: 
     1920w: /assets/img/projects/DCCover.png
     960w:  /assets/img/projects/DCCover@0,5.png
@@ -19,7 +21,7 @@ accent_image: /assets/img/projects/DCCover-blur.jpg
 theme_color: '#193747'
 sitemap: true
 ---
-# Data Comics: A Journey of Exploration
+# Data Comics: My Journey of Exploration
 
 ## Overview of Data Comics for Data-Driven Storytelling
 

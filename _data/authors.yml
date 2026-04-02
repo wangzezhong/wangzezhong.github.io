@@ -2,8 +2,9 @@
 # Must be the same as `author` in `_config.yml`.
 # Change `author1` to your shortname.
 author1:
-  name:              <Zezhong> <Wang>
-  email:             <wangzezhong2016@gmail.com>
+  name:              Zezhong Wang
+  email:             wangzezhong2016@gmail.com
+  orcid:             0000-0002-1061-604X
 
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)

@@ -16,6 +16,8 @@ links:
 accent_color: '#4fb1ba'
 accent_image: /assets/img/projects/statsCover-blur.png
 theme_color: '#193747'
+seo:
+  type: ScholarlyArticle
 sitemap: true
 ---
 

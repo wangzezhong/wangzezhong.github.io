@@ -29,6 +29,17 @@ jobs:
           ruby-version: '3.1'
           bundler-cache: true
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Build fitts-comic (React/Vite)
+        working-directory: fitts-comic
+        run: |
+          npm install
+          npm run build
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
@@ -37,6 +48,11 @@ jobs:
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
+
+      - name: Copy fitts-comic build into Jekyll site
+        run: |
+          mkdir -p _site/fitts-comic
+          cp -R fitts-comic/dist/. _site/fitts-comic/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

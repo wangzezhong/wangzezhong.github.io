@@ -3,3 +3,6 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+fitts-comic/node_modules
+fitts-comic/dist
+.DS_Store

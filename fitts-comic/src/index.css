@@ -1,0 +1,13 @@
+/* Minimal global reset. The comic injects its own <style> for all
+   look-and-feel — fonts, colors, panels, etc. — so we keep this lean. */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #EBE5D7; /* matches the comic's paper-cream */
+  font-family: system-ui, -apple-system, "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

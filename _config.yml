@@ -323,6 +323,10 @@ exclude:
   - vendor
   - Gemfile
   - Gemfile.lock
+  # fitts-comic is a separate Vite/React app; its source is built by the
+  # GitHub Actions workflow and copied into _site/fitts-comic/. Don't let
+  # Jekyll process the source tree.
+  - fitts-comic
 include:
   - .well-known
   - LICENSE.md

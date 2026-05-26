@@ -4063,8 +4063,8 @@ export default function FittsLawComic() {
           transition: color 0.15s, border-color 0.15s;
         }
         .comic-footer a:hover {
-          color: ${RED};
-          border-bottom-color: ${RED};
+          color: ${TEAL};
+          border-bottom-color: ${TEAL};
         }
 
         input[type="range"] {

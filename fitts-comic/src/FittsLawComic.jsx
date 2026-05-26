@@ -25,7 +25,9 @@ const TEAL = "#126E7A";
 const MUTED = "#8B8475";
 const RULE = "#1A1A1733";
 
-const FD = '"Fraunces", "Iowan Old Style", Georgia, serif';
+// Two-font system:
+//   FB (Karla, sans-serif) — all prose: titles, captions, body, italic asides
+//   FM (JetBrains Mono)     — all data: axis labels, formulas, buttons, stats
 const FB = '"Karla", "Helvetica Neue", system-ui, sans-serif';
 const FM = '"JetBrains Mono", "SF Mono", "Courier New", monospace';
 
@@ -496,7 +498,7 @@ function Panel1({ inputType, onChooseInput, a, b }) {
         {revealed && (
           <p
             style={{
-              fontFamily: FD,
+              fontFamily: FB,
               fontStyle: "italic",
               fontSize: "15px",
               color: INK,
@@ -1230,7 +1232,7 @@ function Panel4({ W, D, a, b, inputLabel }) {
                 {isCurrent && (
                   <span
                     style={{
-                      fontFamily: FD,
+                      fontFamily: FB,
                       fontStyle: "italic",
                       fontSize: 11,
                       color: TEAL,
@@ -1642,7 +1644,7 @@ function Panel5({ W, D, setW, setD, a, b, inputLabel, trials }) {
         {matchingTrials.length === 0 ? (
           <p
             style={{
-              fontFamily: FD,
+              fontFamily: FB,
               fontStyle: "italic",
               fontSize: 14,
               color: MUTED,
@@ -1691,7 +1693,7 @@ function Panel5({ W, D, setW, setD, a, b, inputLabel, trials }) {
             </p>
             <p
               style={{
-                fontFamily: FD,
+                fontFamily: FB,
                 fontStyle: "italic",
                 fontSize: 13,
                 color: MUTED,
@@ -1711,7 +1713,7 @@ function Panel5({ W, D, setW, setD, a, b, inputLabel, trials }) {
 
       <p
         style={{
-          fontFamily: FD,
+          fontFamily: FB,
           fontStyle: "italic",
           fontSize: 15,
           color: INK,
@@ -1943,7 +1945,7 @@ function Panel3({ trials, a, b }) {
                   x={xOf(dwMax) - 8}
                   y={yOf(a + b * Math.log2(dwMax + 1)) - 10}
                   textAnchor="end"
-                  fontFamily={FD}
+                  fontFamily={FB}
                   fontStyle="italic"
                   fontSize="13"
                   fill={RED}
@@ -1978,7 +1980,7 @@ function Panel3({ trials, a, b }) {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              fontFamily: FD,
+              fontFamily: FB,
               fontStyle: "italic",
               fontSize: 15,
               color: MUTED,
@@ -2016,7 +2018,7 @@ function Panel3({ trials, a, b }) {
             </button>
             <p
               style={{
-                fontFamily: FD,
+                fontFamily: FB,
                 fontStyle: "italic",
                 fontSize: 15,
                 color: MUTED,
@@ -2032,7 +2034,7 @@ function Panel3({ trials, a, b }) {
         {showCurve && (
           <p
             style={{
-              fontFamily: FD,
+              fontFamily: FB,
               fontStyle: "italic",
               fontSize: 16,
               color: INK,
@@ -2479,7 +2481,7 @@ function Panel6({ trials, a, b, inputLabel, clearTrials }) {
                 x={xOfMorph(36) - 8}
                 y={yOf(a + b * Math.log2(37)) - 10}
                 textAnchor="end"
-                fontFamily={FD}
+                fontFamily={FB}
                 fontStyle="italic"
                 fontSize="13"
                 fill={RED}
@@ -2509,7 +2511,7 @@ function Panel6({ trials, a, b, inputLabel, clearTrials }) {
                   x={ufX2 - 8}
                   y={ufY2 - 8}
                   textAnchor="end"
-                  fontFamily={FD}
+                  fontFamily={FB}
                   fontSize="13"
                   fontStyle="italic"
                   fill={RED}
@@ -2538,7 +2540,7 @@ function Panel6({ trials, a, b, inputLabel, clearTrials }) {
                   x={labX2 - 8}
                   y={labY2 + 18}
                   textAnchor="end"
-                  fontFamily={FD}
+                  fontFamily={FB}
                   fontSize="13"
                   fontStyle="italic"
                   fill={TEAL}
@@ -2568,7 +2570,7 @@ function Panel6({ trials, a, b, inputLabel, clearTrials }) {
               x={m.left + iw / 2}
               y={m.top + ih / 2}
               textAnchor="middle"
-              fontFamily={FD}
+              fontFamily={FB}
               fontStyle="italic"
               fontSize="14"
               fill={MUTED}
@@ -2654,7 +2656,7 @@ function Panel6({ trials, a, b, inputLabel, clearTrials }) {
         {mode === "dw" && trials.length > 0 && (
           <p
             style={{
-              fontFamily: FD,
+              fontFamily: FB,
               fontStyle: "italic",
               fontSize: "15px",
               color: MUTED,
@@ -2680,7 +2682,7 @@ function Panel6({ trials, a, b, inputLabel, clearTrials }) {
             </button>
             <p
               style={{
-                fontFamily: FD,
+                fontFamily: FB,
                 fontStyle: "italic",
                 fontSize: "15px",
                 color: MUTED,
@@ -2703,7 +2705,7 @@ function Panel6({ trials, a, b, inputLabel, clearTrials }) {
             </button>
             <p
               style={{
-                fontFamily: FD,
+                fontFamily: FB,
                 fontStyle: "italic",
                 fontSize: "15px",
                 color: MUTED,
@@ -2719,7 +2721,7 @@ function Panel6({ trials, a, b, inputLabel, clearTrials }) {
         {mode === "id" && stage === 2 && (
           <p
             style={{
-              fontFamily: FD,
+              fontFamily: FB,
               fontStyle: "italic",
               fontSize: "16px",
               color: INK,
@@ -3271,7 +3273,7 @@ function MiniScatter({ trials, a, b, D_v, D_h, btnW, wMin, wMax }) {
               x={xOf(wMax) - 6}
               y={hY - 5}
               textAnchor="end"
-              fontFamily={FD}
+              fontFamily={FB}
               fontSize="11"
               fontStyle="italic"
               fill={TEAL}
@@ -3290,7 +3292,7 @@ function MiniScatter({ trials, a, b, D_v, D_h, btnW, wMin, wMax }) {
             <text
               x={xOf(wMin) + 6}
               y={yOf(a + b * Math.log2(D_v / wMin + 1)) - 6}
-              fontFamily={FD}
+              fontFamily={FB}
               fontSize="11"
               fontStyle="italic"
               fill={RED}
@@ -3727,7 +3729,7 @@ function Panel9({ a, b, trials, setTrials }) {
 
       <p
         style={{
-          fontFamily: FD,
+          fontFamily: FB,
           fontStyle: "italic",
           fontSize: 16,
           color: INK,
@@ -3809,7 +3811,7 @@ export default function FittsLawComic() {
   return (
     <div className="comic-root">
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Karla:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,500;0,700;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap');
 
         .comic-root {
           background: ${PAPER};
@@ -3966,7 +3968,7 @@ export default function FittsLawComic() {
           margin: 0 0 4px;
         }
         .stat-value {
-          font-family: ${FD};
+          font-family: ${FM};
           font-weight: 500;
           color: ${INK};
           margin: 0;

@@ -4090,7 +4090,7 @@ export default function FittsLawComic() {
           Interactive Demo for <em>Fitts' Law</em>
         </h1>
         <p className="comic-intro">
-          An interactive walkthrough of Fitts' Law: how target size and distance shape the time it takes to point and click.
+          An interactive data comic of Fitts' Law: how target size and distance shape the time it takes to point and click.
         </p>
 
         <Panel1 inputType={inputType} onChooseInput={chooseInput} a={a} b={b} />
@@ -4109,7 +4109,7 @@ export default function FittsLawComic() {
         </div>
 
         <p className="comic-footer">
-          MT = a + b · log₂(D/W + 1)
+          Demo Created By Zezhong Wang · 2026
         </p>
       </div>
     </div>

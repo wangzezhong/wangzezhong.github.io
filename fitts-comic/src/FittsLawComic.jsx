@@ -3822,16 +3822,16 @@ export default function FittsLawComic() {
         }
         .comic-container { max-width: 880px; margin: 0 auto; }
         .comic-title {
-          font-family: ${FD};
+          font-family: ${FB};
           font-size: 44px;
-          font-weight: 500;
+          font-weight: 700;
           letter-spacing: -0.01em;
-          line-height: 1.05;
+          line-height: 1.1;
           margin: 0 0 8px;
           color: ${INK};
         }
         .comic-title em {
-          font-style: italic;
+          font-style: normal;
           color: ${RED};
         }
         .comic-sub {
@@ -3843,15 +3843,15 @@ export default function FittsLawComic() {
           margin: 0 0 36px;
         }
         .comic-intro {
-          font-family: ${FD};
-          font-style: italic;
-          font-size: 18px;
+          font-family: ${FB};
+          font-size: 17px;
           color: ${INK};
-          line-height: 1.5;
+          line-height: 1.55;
           margin: 0 0 40px;
           max-width: 60ch;
           padding-left: 14px;
           border-left: 2px solid ${RED};
+          font-weight: 500;
         }
 
         .panel-frame {
@@ -4090,9 +4090,7 @@ export default function FittsLawComic() {
           Interactive Demo for <em>Fitts' Law</em>
         </h1>
         <p className="comic-intro">
-          Your finger, your mouse, your controller. Every day they do the same thing: send a cursor to a target.
-          It looks simple, but there's a law
-          behind it keeping the beat. We'll take it apart, one panel at a time.
+          An interactive walkthrough of Fitts' Law: how target size and distance shape the time it takes to point and click.
         </p>
 
         <Panel1 inputType={inputType} onChooseInput={chooseInput} a={a} b={b} />

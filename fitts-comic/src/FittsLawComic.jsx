@@ -4055,6 +4055,17 @@ export default function FittsLawComic() {
           text-align: center;
           margin: 40px 0 0;
         }
+        .comic-footer a {
+          color: ${INK};
+          text-decoration: none;
+          border-bottom: 1px solid ${MUTED};
+          padding-bottom: 1px;
+          transition: color 0.15s, border-color 0.15s;
+        }
+        .comic-footer a:hover {
+          color: ${RED};
+          border-bottom-color: ${RED};
+        }
 
         input[type="range"] {
           -webkit-appearance: none;
@@ -4109,7 +4120,8 @@ export default function FittsLawComic() {
         </div>
 
         <p className="comic-footer">
-          Demo Created By Zezhong Wang · 2026
+          Demo Created By{" "}
+          <a href="https://zezhongwang.com/">Zezhong Wang</a> · 2026
         </p>
       </div>
     </div>

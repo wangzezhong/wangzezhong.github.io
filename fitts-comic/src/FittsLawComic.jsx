@@ -181,55 +181,109 @@ function DotsCanvas({
       className="dot-arena"
       style={{ height: `${height}px` }}
     >
-      {/* distance rule */}
+      {/* distance rule. Drawn ABOVE the dots so the full center-to-center
+          span reads visually as one continuous line, not just the gap
+          between the two circle edges. Dashed to read as a measurement
+          annotation rather than a structural line. */}
       <div
         style={{
           position: "absolute",
           top: `${centerY}px`,
           left: `${leftX}px`,
           width: `${usableD}px`,
-          height: "1px",
-          background: RULE,
+          height: 0,
+          borderTop: `1px dashed ${INK}`,
+          opacity: 0.55,
           transform: "translateY(-50%)",
           pointerEvents: "none",
+          zIndex: 5,
         }}
       />
+      {/* center markers at each endpoint, makes "D is measured center to
+          center" unambiguous */}
       {showAnnotations && (
         <>
-          {/* D label */}
           <div
             style={{
               position: "absolute",
-              top: `${centerY + 14}px`,
-              left: `${leftX + usableD / 2}px`,
-              transform: "translateX(-50%)",
-              fontFamily: FM,
-              fontSize: "10px",
-              color: MUTED,
-              letterSpacing: "0.12em",
+              top: `${centerY}px`,
+              left: `${leftX}px`,
+              width: "5px",
+              height: "5px",
+              background: INK,
+              borderRadius: "50%",
+              transform: "translate(-50%, -50%)",
               pointerEvents: "none",
+              zIndex: 6,
+              opacity: 0.75,
             }}
-          >
-            ← D = {Math.round(usableD)} px →
-          </div>
-          {/* W label */}
+          />
           <div
             style={{
               position: "absolute",
-              top: `${centerY - W / 2 - 18}px`,
+              top: `${centerY}px`,
               left: `${rightX}px`,
-              transform: "translateX(-50%)",
-              fontFamily: FM,
-              fontSize: "10px",
-              color: MUTED,
-              letterSpacing: "0.12em",
+              width: "5px",
+              height: "5px",
+              background: INK,
+              borderRadius: "50%",
+              transform: "translate(-50%, -50%)",
               pointerEvents: "none",
+              zIndex: 6,
+              opacity: 0.75,
             }}
-          >
-            W = {W} px
-          </div>
+          />
         </>
       )}
+      {showAnnotations && (() => {
+        // The D label normally sits just below the distance line. But when
+        // the dots are large AND close together, the label lands inside the
+        // circles and gets hidden. In that case push it below the dots.
+        const labelGapNeeded = 130;
+        const horizontalRoom = usableD - W;
+        const verticallyInsideDots = W > 28; // label height ≈ 12 + 14 offset
+        const labelHidden = verticallyInsideDots && horizontalRoom < labelGapNeeded;
+        const dLabelTop = labelHidden
+          ? centerY + W / 2 + 10
+          : centerY + 14;
+        return (
+          <>
+            {/* D label */}
+            <div
+              style={{
+                position: "absolute",
+                top: `${dLabelTop}px`,
+                left: `${leftX + usableD / 2}px`,
+                transform: "translateX(-50%)",
+                fontFamily: FM,
+                fontSize: "10px",
+                color: MUTED,
+                letterSpacing: "0.12em",
+                pointerEvents: "none",
+                zIndex: 7,
+              }}
+            >
+              ← D = {Math.round(usableD)} px →
+            </div>
+            {/* W label */}
+            <div
+              style={{
+                position: "absolute",
+                top: `${centerY - W / 2 - 18}px`,
+                left: `${rightX}px`,
+                transform: "translateX(-50%)",
+                fontFamily: FM,
+                fontSize: "10px",
+                color: MUTED,
+                letterSpacing: "0.12em",
+                pointerEvents: "none",
+              }}
+            >
+              W = {W} px
+            </div>
+          </>
+        );
+      })()}
       {/* dot A */}
       <button
         type="button"
@@ -439,7 +493,7 @@ function Panel1({ inputType, onChooseInput, a, b }) {
               fontStyle: "italic",
             }}
           >
-            The browser can't tell these two apart. Let it know, since it'll affect the predicted numbers below.
+            The browser sees both as a mouse pointer. Let it know which one you're on, since it'll affect the predicted numbers below.
           </span>
         </div>
       )}
@@ -555,7 +609,7 @@ function Panel2({ W, setW, D, setD, addTrial, trials }) {
           name="Distance D"
           value={D}
           setValue={setDSafe}
-          min={Math.max(D_MIN_ABS, W)}
+          min={D_MIN_ABS}
           max={D_MAX_ABS}
           step={10}
         />
@@ -564,7 +618,7 @@ function Panel2({ W, setW, D, setD, addTrial, trials }) {
           value={W}
           setValue={setWSafe}
           min={W_MIN_ABS}
-          max={Math.min(W_MAX_ABS, D)}
+          max={W_MAX_ABS}
           step={2}
         />
       </div>
@@ -799,13 +853,13 @@ function InterceptIllustration() {
       <line x1="20" y1="6" x2="20" y2="68" stroke={MUTED} strokeWidth="1" />
       <line x1="20" y1="68" x2="174" y2="68" stroke={MUTED} strokeWidth="1" />
       {/* larger a, line shifted higher */}
-      <line x1="20" y1="34" x2="170" y2="12" stroke={TEAL} strokeWidth="1.8" />
-      <circle cx="20" cy="34" r="2.6" fill={TEAL} />
-      <text x="116" y="11" fontFamily={FM} fontSize="9" fontWeight="600" fill={TEAL}>larger a</text>
+      <line x1="20" y1="30" x2="170" y2="18" stroke={TEAL} strokeWidth="1.8" />
+      <circle cx="20" cy="30" r="2.6" fill={TEAL} />
+      <text x="170" y="11" textAnchor="end" fontFamily={FM} fontSize="9" fontWeight="600" fill={TEAL}>larger a</text>
       {/* smaller a, parallel line shifted lower */}
-      <line x1="20" y1="58" x2="170" y2="36" stroke={INK} strokeOpacity="0.45" strokeWidth="1.6" />
+      <line x1="20" y1="58" x2="170" y2="46" stroke={INK} strokeOpacity="0.45" strokeWidth="1.6" />
       <circle cx="20" cy="58" r="2.6" fill={INK} fillOpacity="0.55" />
-      <text x="116" y="48" fontFamily={FM} fontSize="9" fill={MUTED}>smaller a</text>
+      <text x="170" y="39" textAnchor="end" fontFamily={FM} fontSize="9" fill={MUTED}>smaller a</text>
       <text x="170" y="80" textAnchor="end" fontFamily={FM} fontSize="9" fill={MUTED}>ID</text>
       <text x="6" y="11" fontFamily={FM} fontSize="9" fill={MUTED}>MT</text>
     </svg>
@@ -827,11 +881,11 @@ function SlopeIllustration() {
       {/* both lines share the same intercept */}
       <circle cx="20" cy="58" r="2.6" fill={TEAL} />
       {/* larger b, steeper */}
-      <line x1="20" y1="58" x2="170" y2="10" stroke={TEAL} strokeWidth="1.8" />
-      <text x="134" y="11" fontFamily={FM} fontSize="9" fontWeight="600" fill={TEAL}>larger b</text>
+      <line x1="20" y1="58" x2="170" y2="16" stroke={TEAL} strokeWidth="1.8" />
+      <text x="170" y="9" textAnchor="end" fontFamily={FM} fontSize="9" fontWeight="600" fill={TEAL}>larger b</text>
       {/* smaller b, less steep */}
-      <line x1="20" y1="58" x2="170" y2="38" stroke={INK} strokeOpacity="0.45" strokeWidth="1.6" />
-      <text x="134" y="34" fontFamily={FM} fontSize="9" fill={MUTED}>smaller b</text>
+      <line x1="20" y1="58" x2="170" y2="40" stroke={INK} strokeOpacity="0.45" strokeWidth="1.6" />
+      <text x="170" y="33" textAnchor="end" fontFamily={FM} fontSize="9" fill={MUTED}>smaller b</text>
       <text x="170" y="80" textAnchor="end" fontFamily={FM} fontSize="9" fill={MUTED}>ID</text>
       <text x="6" y="11" fontFamily={FM} fontSize="9" fill={MUTED}>MT</text>
     </svg>
@@ -906,7 +960,7 @@ function Panel4({ W, D, a, b, inputLabel }) {
   return (
     <Panel
       number="04 · The formula"
-      caption="That curve from the last panel? Fitts first wrote it down in 1954, then MacKenzie refined it in 1989 into the form below. Let's pull it apart: what each variable means, and the typical numbers for different devices."
+      caption="That curve from the last panel? Fitts first wrote it down in 1954, then MacKenzie reformulated it in 1989 into the form below. Let's pull it apart: what each variable means, and the typical numbers for different devices."
       accent="teal"
     >
       <div className="formula">
@@ -1122,7 +1176,7 @@ function Panel4({ W, D, a, b, inputLabel }) {
                 lineHeight: 1.55,
               }}
             >
-              How many more ms you need for each extra bit of difficulty. Steeper slope: difficulty drags you down more; shallower slope: you stay cool. 1/b is the device's "movement bandwidth" (bit/s).
+              How many more ms you need for each extra bit of difficulty. Steeper slope: difficulty drags you down more; shallower slope: difficulty drags you down less. 1/b is the device's "movement bandwidth"; converting from ms to seconds (×1000), that's 1000/b bit/s.
             </p>
             <SlopeIllustration />
             <p
@@ -1457,6 +1511,286 @@ function Panel4({ W, D, a, b, inputLabel }) {
 // then compare with the user's actual data at that config.
 // =========================================================
 
+// Live visualization of MT = a + b · log₂(D/W + 1).
+// The fixed curve / line is drawn for the current device's a, b. A marker
+// dot tracks the current (D, W) along the curve, with dashed projections
+// down to the x-axis and across to the y-axis so the user can read off
+// MT and the current difficulty value directly. Toggle controls whether
+// the x-axis is the D/W ratio (curve) or the ID = log₂(D/W+1) (straight).
+function PredictionCurveChart({ a, b, D, W }) {
+  const wrapperRef = useRef(null);
+  const [containerW, setContainerW] = useState(640);
+  const [axisMode, setAxisMode] = useState("dw"); // "dw" | "id"
+
+  useEffect(() => {
+    if (!wrapperRef.current) return;
+    const ro = new ResizeObserver((entries) => {
+      for (const e of entries) setContainerW(e.contentRect.width);
+    });
+    ro.observe(wrapperRef.current);
+    return () => ro.disconnect();
+  }, []);
+
+  const h = 240;
+  const m = { top: 24, right: 22, bottom: 44, left: 54 };
+  const iw = Math.max(200, containerW - m.left - m.right);
+  const ih = h - m.top - m.bottom;
+
+  // D/W slider range is roughly 1 to 32.5. Show 0 to 35 to display the full
+  // concave shape, including the part the user can't reach. ID covers ~0 to 5.2.
+  const xMaxDW = 35;
+  const xMaxID = 5.5;
+  const xMax = axisMode === "dw" ? xMaxDW : xMaxID;
+
+  // y-scale adapts to the device. Trackpad (b ≈ 200) tops out around 1220 ms
+  // at max difficulty, so a fixed 1000 would clip the curve. Take the higher
+  // of the two modes' maxima, add ~10% headroom, round up to a clean 100.
+  const yMaxRaw = Math.max(
+    a + b * Math.log2(xMaxDW + 1),
+    a + b * xMaxID
+  );
+  const yMax = Math.max(600, Math.ceil((yMaxRaw * 1.1) / 100) * 100);
+
+  const xOf = (x) => m.left + (x / xMax) * iw;
+  const yOf = (y) => m.top + (1 - Math.min(1, y / yMax)) * ih;
+
+  // Current marker position
+  const dwRatio = D / W;
+  const idVal = Math.log2(dwRatio + 1);
+  const currentX = axisMode === "dw" ? dwRatio : idVal;
+  const currentMT = a + b * idVal;
+  const cx = xOf(currentX);
+  const cy = yOf(currentMT);
+
+  // Curve path
+  const curvePath = (() => {
+    const N = 96;
+    let d = "";
+    for (let i = 0; i <= N; i++) {
+      const x = (i / N) * xMax;
+      const mt = axisMode === "dw"
+        ? a + b * Math.log2(x + 1)
+        : a + b * x;
+      d += (i === 0 ? "M " : "L ") + xOf(x).toFixed(1) + " " + yOf(mt).toFixed(1) + " ";
+    }
+    return d;
+  })();
+
+  const xTicks = axisMode === "dw"
+    ? [0, 5, 10, 15, 20, 25, 30, 35]
+    : [0, 1, 2, 3, 4, 5];
+  // Pick a tick step that yields ~5–7 labels for any yMax we might see
+  const yStep =
+    yMax <= 600 ? 100 : yMax <= 1000 ? 200 : yMax <= 1500 ? 250 : 500;
+  const yTicks = [];
+  for (let t = 0; t <= yMax + 0.001; t += yStep) yTicks.push(t);
+
+  const toggleBtnStyle = (active) => ({
+    fontFamily: FM,
+    fontSize: 10,
+    letterSpacing: "0.08em",
+    textTransform: "uppercase",
+    padding: "4px 10px",
+    background: active ? INK : "transparent",
+    color: active ? PAPER : INK,
+    border: `1px solid ${INK}`,
+    cursor: "pointer",
+    borderRadius: 0,
+    fontWeight: 500,
+  });
+
+  return (
+    <div ref={wrapperRef} style={{ marginTop: 14 }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "baseline",
+          marginBottom: 6,
+          flexWrap: "wrap",
+          gap: 8,
+        }}
+      >
+        <p
+          style={{
+            fontFamily: FM,
+            fontSize: 10,
+            letterSpacing: "0.1em",
+            color: MUTED,
+            textTransform: "uppercase",
+            margin: 0,
+          }}
+        >
+          The formula, visualized · drag the sliders above
+        </p>
+        <div style={{ display: "flex", gap: 4 }}>
+          <button
+            onClick={() => setAxisMode("dw")}
+            style={toggleBtnStyle(axisMode === "dw")}
+          >
+            x = D/W
+          </button>
+          <button
+            onClick={() => setAxisMode("id")}
+            style={toggleBtnStyle(axisMode === "id")}
+          >
+            x = ID
+          </button>
+        </div>
+      </div>
+
+      <svg
+        width={containerW}
+        height={h}
+        role="img"
+        aria-label="Fitts' Law prediction curve with a marker at the current D and W"
+        style={{ display: "block" }}
+      >
+        {/* y grid + labels */}
+        {yTicks.map((t) => (
+          <g key={`y-${t}`}>
+            <line
+              x1={m.left}
+              y1={yOf(t)}
+              x2={m.left + iw}
+              y2={yOf(t)}
+              stroke={RULE}
+              strokeDasharray="2 3"
+              opacity="0.45"
+            />
+            <text
+              x={m.left - 8}
+              y={yOf(t) + 3}
+              textAnchor="end"
+              fontFamily={FM}
+              fontSize="10"
+              fill={MUTED}
+            >
+              {t}
+            </text>
+          </g>
+        ))}
+        {/* x ticks + labels */}
+        {xTicks.map((t) => (
+          <g key={`x-${t}`}>
+            <line
+              x1={xOf(t)}
+              y1={m.top + ih}
+              x2={xOf(t)}
+              y2={m.top + ih + 4}
+              stroke={MUTED}
+              opacity="0.55"
+            />
+            <text
+              x={xOf(t)}
+              y={m.top + ih + 16}
+              textAnchor="middle"
+              fontFamily={FM}
+              fontSize="10"
+              fill={MUTED}
+            >
+              {t}
+            </text>
+          </g>
+        ))}
+
+        {/* axes */}
+        <line
+          x1={m.left}
+          y1={m.top + ih}
+          x2={m.left + iw}
+          y2={m.top + ih}
+          stroke={INK}
+          strokeWidth="1"
+        />
+        <line
+          x1={m.left}
+          y1={m.top}
+          x2={m.left}
+          y2={m.top + ih}
+          stroke={INK}
+          strokeWidth="1"
+        />
+
+        {/* axis titles */}
+        <text
+          x={m.left + iw / 2}
+          y={h - 6}
+          textAnchor="middle"
+          fontFamily={FM}
+          fontSize="11"
+          fill={INK}
+        >
+          {axisMode === "dw" ? "D / W (ratio)" : "ID = log₂(D/W + 1)  (bits)"}
+        </text>
+        <text
+          x={14}
+          y={m.top + ih / 2}
+          textAnchor="middle"
+          fontFamily={FM}
+          fontSize="11"
+          fill={INK}
+          transform={`rotate(-90, 14, ${m.top + ih / 2})`}
+        >
+          MT (ms)
+        </text>
+
+        {/* curve / line */}
+        <path d={curvePath} fill="none" stroke={TEAL} strokeWidth="2" />
+
+        {/* projection lines from marker to both axes */}
+        <line
+          x1={cx}
+          y1={cy}
+          x2={cx}
+          y2={m.top + ih}
+          stroke={RED}
+          strokeDasharray="3 3"
+          strokeWidth="1.2"
+          opacity="0.75"
+        />
+        <line
+          x1={m.left}
+          y1={cy}
+          x2={cx}
+          y2={cy}
+          stroke={RED}
+          strokeDasharray="3 3"
+          strokeWidth="1.2"
+          opacity="0.75"
+        />
+
+        {/* axis intersection read-outs */}
+        <text
+          x={m.left - 8}
+          y={cy + 3}
+          textAnchor="end"
+          fontFamily={FM}
+          fontSize="11"
+          fontWeight="600"
+          fill={RED}
+        >
+          {Math.round(currentMT)}
+        </text>
+        <text
+          x={cx}
+          y={m.top + ih + 28}
+          textAnchor="middle"
+          fontFamily={FM}
+          fontSize="11"
+          fontWeight="600"
+          fill={RED}
+        >
+          {axisMode === "dw" ? currentX.toFixed(1) : currentX.toFixed(2)}
+        </text>
+
+        {/* marker dot */}
+        <circle cx={cx} cy={cy} r="5.5" fill={RED} stroke={PAPER} strokeWidth="1.6" />
+      </svg>
+    </div>
+  );
+}
+
 function Panel5({ W, D, setW, setD, a, b, inputLabel, trials }) {
   const id = fittsID(D, W);
   const predictedMT = Math.round(a + b * id);
@@ -1515,7 +1849,7 @@ function Panel5({ W, D, setW, setD, a, b, inputLabel, trials }) {
           name="Distance D"
           value={D}
           setValue={setDSafe}
-          min={Math.max(D_MIN_ABS, W)}
+          min={D_MIN_ABS}
           max={D_MAX_ABS}
           step={10}
         />
@@ -1524,7 +1858,7 @@ function Panel5({ W, D, setW, setD, a, b, inputLabel, trials }) {
           value={W}
           setValue={setWSafe}
           min={W_MIN_ABS}
-          max={Math.min(W_MAX_ABS, D)}
+          max={W_MAX_ABS}
           step={2}
         />
       </div>
@@ -1618,6 +1952,9 @@ function Panel5({ W, D, setW, setD, a, b, inputLabel, trials }) {
           </span>
         </p>
       </div>
+
+      {/* Live chart of the formula with a marker tracking current (D, W) */}
+      <PredictionCurveChart a={a} b={b} D={D} W={W} />
 
       {/* Comparison with user's actual data */}
       <div
@@ -3709,7 +4046,7 @@ function Panel9({ a, b, trials, setTrials }) {
           accent="teal"
         />
         <Stat
-          label="Last row2 → Submit"
+          label="Last Password → Submit"
           value={lastTrial ? `${Math.round(lastTrial.MT)} ms` : "·"}
           accent="red"
         />
@@ -3865,13 +4202,6 @@ export default function FittsLawComic() {
           margin-bottom: 32px;
         }
 
-        .axis-toggle-curve {
-          animation: curveFade 0.5s ease-out;
-        }
-        @keyframes curveFade {
-          from { opacity: 0; }
-          to   { opacity: 1; }
-        }
         @media (max-width: 600px) {
           .panel-frame { padding: 32px 18px 22px; }
           .comic-title { font-size: 32px; }

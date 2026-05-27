@@ -840,75 +840,68 @@ function WidthIcon() {
 // Two small line charts that visualize what a (intercept) and b (slope) do
 // to the MT = a + b · ID line. Both share x = ID, y = MT axes so they read as
 // "same diagram, only the parameter changes."
-const illustrationCaptionStyle = {
-  fontFamily: FB,
-  fontSize: 11,
-  color: MUTED,
-  margin: "6px 0 0",
-  lineHeight: 1.45,
-};
-
 function InterceptIllustration() {
   return (
-    <>
-      <svg
-        width="100%"
-        height="84"
-        viewBox="0 0 180 84"
-        preserveAspectRatio="xMidYMid meet"
-        style={{ display: "block", marginTop: 4 }}
-        aria-hidden="true"
-      >
-        <line x1="20" y1="6" x2="20" y2="68" stroke={MUTED} strokeWidth="1" />
-        <line x1="20" y1="68" x2="174" y2="68" stroke={MUTED} strokeWidth="1" />
-        {/* larger a, line shifted higher */}
-        <line x1="20" y1="30" x2="170" y2="18" stroke={TEAL} strokeWidth="1.8" />
-        <circle cx="20" cy="30" r="2.6" fill={TEAL} />
-        <text x="170" y="11" textAnchor="end" fontFamily={FM} fontSize="9" fontWeight="600" fill={TEAL}>larger a</text>
-        {/* smaller a, parallel line shifted lower */}
-        <line x1="20" y1="58" x2="170" y2="46" stroke={INK} strokeOpacity="0.45" strokeWidth="1.6" />
-        <circle cx="20" cy="58" r="2.6" fill={INK} fillOpacity="0.55" />
-        <text x="170" y="39" textAnchor="end" fontFamily={FM} fontSize="9" fill={MUTED}>smaller a</text>
-        <text x="170" y="80" textAnchor="end" fontFamily={FM} fontSize="9" fill={MUTED}>ID</text>
-        <text x="6" y="11" fontFamily={FM} fontSize="9" fill={MUTED}>MT</text>
-      </svg>
-      <p style={illustrationCaptionStyle}>
-        <span style={{ color: TEAL, fontWeight: 600 }}>Larger a</span> means a slower start.{" "}
-        <span style={{ fontWeight: 600 }}>Smaller a</span> means a quicker one.
-      </p>
-    </>
+    <svg
+      width="100%"
+      height="110"
+      viewBox="0 0 200 110"
+      preserveAspectRatio="xMidYMid meet"
+      style={{ display: "block", marginTop: 4 }}
+      aria-hidden="true"
+    >
+      {/* axes */}
+      <line x1="20" y1="6" x2="20" y2="95" stroke={MUTED} strokeWidth="1" />
+      <line x1="20" y1="95" x2="184" y2="95" stroke={MUTED} strokeWidth="1" />
+
+      {/* larger a, line shifted higher (= higher MT baseline) */}
+      <line x1="20" y1="32" x2="180" y2="28" stroke={TEAL} strokeWidth="1.8" />
+      <circle cx="20" cy="32" r="2.6" fill={TEAL} />
+      <text x="180" y="11" textAnchor="end" fontFamily={FM} fontSize="9" fontWeight="600" fill={TEAL}>larger a</text>
+      <text x="180" y="22" textAnchor="end" fontFamily={FB} fontSize="9" fill={MUTED}>means a slower start</text>
+
+      {/* smaller a, parallel line shifted lower */}
+      <line x1="20" y1="76" x2="180" y2="72" stroke={INK} strokeOpacity="0.45" strokeWidth="1.6" />
+      <circle cx="20" cy="76" r="2.6" fill={INK} fillOpacity="0.55" />
+      <text x="180" y="55" textAnchor="end" fontFamily={FM} fontSize="9" fontWeight="600" fill={INK}>smaller a</text>
+      <text x="180" y="66" textAnchor="end" fontFamily={FB} fontSize="9" fill={MUTED}>means a quicker one</text>
+
+      <text x="180" y="107" textAnchor="end" fontFamily={FM} fontSize="9" fill={MUTED}>ID</text>
+      <text x="6" y="11" fontFamily={FM} fontSize="9" fill={MUTED}>MT</text>
+    </svg>
   );
 }
 
 function SlopeIllustration() {
   return (
-    <>
-      <svg
-        width="100%"
-        height="84"
-        viewBox="0 0 180 84"
-        preserveAspectRatio="xMidYMid meet"
-        style={{ display: "block", marginTop: 4 }}
-        aria-hidden="true"
-      >
-        <line x1="20" y1="6" x2="20" y2="68" stroke={MUTED} strokeWidth="1" />
-        <line x1="20" y1="68" x2="174" y2="68" stroke={MUTED} strokeWidth="1" />
-        {/* both lines share the same intercept */}
-        <circle cx="20" cy="58" r="2.6" fill={TEAL} />
-        {/* larger b, steeper */}
-        <line x1="20" y1="58" x2="170" y2="16" stroke={TEAL} strokeWidth="1.8" />
-        <text x="170" y="9" textAnchor="end" fontFamily={FM} fontSize="9" fontWeight="600" fill={TEAL}>larger b</text>
-        {/* smaller b, less steep */}
-        <line x1="20" y1="58" x2="170" y2="40" stroke={INK} strokeOpacity="0.45" strokeWidth="1.6" />
-        <text x="170" y="33" textAnchor="end" fontFamily={FM} fontSize="9" fill={MUTED}>smaller b</text>
-        <text x="170" y="80" textAnchor="end" fontFamily={FM} fontSize="9" fill={MUTED}>ID</text>
-        <text x="6" y="11" fontFamily={FM} fontSize="9" fill={MUTED}>MT</text>
-      </svg>
-      <p style={illustrationCaptionStyle}>
-        <span style={{ color: TEAL, fontWeight: 600 }}>Larger b</span> means difficulty hurts more.{" "}
-        <span style={{ fontWeight: 600 }}>Smaller b</span> means it hurts less.
-      </p>
-    </>
+    <svg
+      width="100%"
+      height="110"
+      viewBox="0 0 200 110"
+      preserveAspectRatio="xMidYMid meet"
+      style={{ display: "block", marginTop: 4 }}
+      aria-hidden="true"
+    >
+      {/* axes */}
+      <line x1="20" y1="6" x2="20" y2="95" stroke={MUTED} strokeWidth="1" />
+      <line x1="20" y1="95" x2="184" y2="95" stroke={MUTED} strokeWidth="1" />
+
+      {/* both lines share the same intercept */}
+      <circle cx="20" cy="80" r="2.6" fill={TEAL} />
+
+      {/* larger b, steeper */}
+      <line x1="20" y1="80" x2="180" y2="30" stroke={TEAL} strokeWidth="1.8" />
+      <text x="180" y="11" textAnchor="end" fontFamily={FM} fontSize="9" fontWeight="600" fill={TEAL}>larger b</text>
+      <text x="180" y="22" textAnchor="end" fontFamily={FB} fontSize="9" fill={MUTED}>means difficulty hurts more</text>
+
+      {/* smaller b, much less steep (so the second label has room) */}
+      <line x1="20" y1="80" x2="180" y2="76" stroke={INK} strokeOpacity="0.45" strokeWidth="1.6" />
+      <text x="180" y="57" textAnchor="end" fontFamily={FM} fontSize="9" fontWeight="600" fill={INK}>smaller b</text>
+      <text x="180" y="68" textAnchor="end" fontFamily={FB} fontSize="9" fill={MUTED}>means it hurts less</text>
+
+      <text x="180" y="107" textAnchor="end" fontFamily={FM} fontSize="9" fill={MUTED}>ID</text>
+      <text x="6" y="11" fontFamily={FM} fontSize="9" fill={MUTED}>MT</text>
+    </svg>
   );
 }
 

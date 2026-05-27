@@ -1176,7 +1176,7 @@ function Panel4({ W, D, a, b, inputLabel }) {
                 lineHeight: 1.55,
               }}
             >
-              How many more ms you need for each extra bit of difficulty. Steeper slope: difficulty drags you down more; shallower slope: difficulty drags you down less. 1/b is the device's "movement bandwidth"; converting from ms to seconds (×1000), that's 1000/b bit/s.
+              How many more ms you need for each extra bit of difficulty. Steeper slope: difficulty drags you down more; shallower slope: difficulty drags you down less.
             </p>
             <SlopeIllustration />
             <p

@@ -8,21 +8,30 @@
     gtag('config', '{{ site.google_analytics }}');
 
     (function(w, d) {
-      var pushStateEl = d.getElementById('_pushState');
       var timeoutId;
 
-      if (!pushStateEl) return;
+      function bindPushStatePageViews() {
+        var pushStateEl = d.getElementById('_pushState');
 
-      pushStateEl.addEventListener('hy-push-state-load', function() {
-        w.clearTimeout(timeoutId);
-        timeoutId = w.setTimeout(function() {
-          gtag('event', 'page_view', {
-            page_title: d.title,
-            page_location: w.location.href,
-            page_path: w.location.pathname + w.location.search
-          });
-        }, 500);
-      });
+        if (!pushStateEl) return;
+
+        pushStateEl.addEventListener('hy-push-state-load', function() {
+          w.clearTimeout(timeoutId);
+          timeoutId = w.setTimeout(function() {
+            gtag('event', 'page_view', {
+              page_title: d.title,
+              page_location: w.location.href,
+              page_path: w.location.pathname + w.location.search
+            });
+          }, 500);
+        });
+      }
+
+      if (d.readyState === 'loading') {
+        d.addEventListener('DOMContentLoaded', bindPushStatePageViews);
+      } else {
+        bindPushStatePageViews();
+      }
     }(window, document));
   </script>
 {% endif %}

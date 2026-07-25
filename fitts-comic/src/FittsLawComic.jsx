@@ -15,21 +15,22 @@ import { useState, useEffect, useRef, useMemo } from "react";
  * like a dashboard while still reading top-to-bottom as a comic.
  */
 
-// ---------- design tokens ----------
-const PAPER = "#EBE5D7";
-const PANEL = "#F7F2E5";
-const PANEL_DEEP = "#EFE5D2";
-const INK = "#1A1A17";
-const RED = "#B53A1E";
-const TEAL = "#126E7A";
-const MUTED = "#8B8475";
-const RULE = "#1A1A1733";
+// ---------- design tokens (Tally-style: notebook doodles on warm paper) ----------
+const PAPER = "#e0e0df";      // page canvas — warm light gray
+const PANEL = "#ffffff";      // white card surfaces
+const PANEL_DEEP = "#f3f3f3"; // "Mist" — inset arenas and muted surfaces
+const MIST = "#f3f3f3";       // secondary surface (same tier as PANEL_DEEP)
+const WHITE = "#ffffff";
+const INK = "#37352f";        // warm near-black — primary text
+const BLUE = "#0070d7";       // Action Blue — the single accent: controls, highlights, your data
+const MUTED = "#898884";      // Graphite — secondary text
+const RULE = "#37352f26";     // hairline rules
 
-// Two-font system:
-//   FB (Karla, sans-serif) — all prose: titles, captions, body, italic asides
-//   FM (JetBrains Mono)     — all data: axis labels, formulas, buttons, stats
-const FB = '"Karla", "Helvetica Neue", system-ui, sans-serif';
-const FM = '"JetBrains Mono", "SF Mono", "Courier New", monospace';
+// Single-typeface system (Inter everywhere, per the Tally style guide).
+// FB = prose voice, FM = data voice; both resolve to Inter but the two
+// handles are kept so the roles stay separately tunable.
+const FB = '"Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif';
+const FM = '"Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif';
 
 // ---------- Fitts constants (per input type, rough empirical defaults) ----------
 const FITTS_CONSTS = {
@@ -67,7 +68,7 @@ function linearFit(trials) {
 // =========================================================
 
 function Panel({ number, eyebrow, caption, accent = "ink", children }) {
-  const accentBg = accent === "red" ? RED : accent === "teal" ? TEAL : INK;
+  const accentBg = INK; // Tally restyle: uniform ink chips
   return (
     <section className="panel-frame">
       <div className="panel-number" style={{ background: accentBg }}>
@@ -96,14 +97,14 @@ function Slider({ name, value, setValue, min, max, step = 1, unit = "px" }) {
         value={value}
         step={step}
         onChange={(e) => setValue(parseInt(e.target.value))}
-        style={{ width: "100%", accentColor: RED }}
+        style={{ width: "100%", accentColor: BLUE }}
       />
     </div>
   );
 }
 
 function Stat({ label, value, accent = "ink", small = false }) {
-  const color = accent === "red" ? RED : accent === "teal" ? TEAL : INK;
+  const color = accent === "red" ? BLUE : accent === "teal" ? BLUE : INK;
   return (
     <div className="stat">
       <p className="stat-label">{label}</p>
@@ -311,7 +312,7 @@ function DotsCanvas({
               fontFamily: FM,
               fontSize: `${Math.max(7, Math.min(13, W * 0.22))}px`,
               letterSpacing: "0.04em",
-              color: PAPER,
+              color: WHITE,
               pointerEvents: "none",
               opacity: 0.95,
               whiteSpace: "nowrap",
@@ -373,7 +374,7 @@ function DotsCanvas({
               fontFamily: FM,
               fontSize: `${Math.max(7, Math.min(13, W * 0.22))}px`,
               letterSpacing: "0.04em",
-              color: PAPER,
+              color: WHITE,
               pointerEvents: "none",
               opacity: 0.95,
               whiteSpace: "nowrap",
@@ -559,7 +560,7 @@ function Panel1({ inputType, onChooseInput, a, b }) {
               margin: 0,
             }}
           >
-            A is roughly <span style={{ color: RED, fontWeight: 600 }}>{Math.abs(mtB - mtA)} ms</span> faster than B.
+            A is roughly <span style={{ color: BLUE, fontWeight: 600 }}>{Math.abs(mtB - mtA)} ms</span> faster than B.
             Why? Read on.
           </p>
         )}
@@ -702,10 +703,10 @@ function Panel2({ W, setW, D, setD, addTrial, trials }) {
                 fontFamily: FM,
                 fontSize: 12,
                 fontWeight: isActive ? 600 : 500,
-                background: isActive ? TEAL : "transparent",
-                color: isActive ? PAPER : INK,
-                border: `1px solid ${isActive ? TEAL : RULE}`,
-                borderRadius: 999,
+                background: isActive ? BLUE : "transparent",
+                color: isActive ? WHITE : INK,
+                border: `1px solid ${isActive ? BLUE : RULE}`,
+                borderRadius: 7,
                 cursor: "pointer",
                 transition: "all 0.15s ease",
                 outline: "none",
@@ -754,7 +755,7 @@ function StopwatchIcon() {
         cx="24"
         cy="26"
         r="15"
-        fill={PAPER}
+        fill={WHITE}
         stroke={INK}
         strokeWidth="1.8"
       />
@@ -767,7 +768,7 @@ function StopwatchIcon() {
         y1="26"
         x2="32"
         y2="18"
-        stroke={RED}
+        stroke={BLUE}
         strokeWidth="2.2"
         strokeLinecap="round"
       />
@@ -782,12 +783,12 @@ function DistanceIcon() {
       {/* start point */}
       <circle cx="10" cy="24" r="3.5" fill={INK} />
       {/* target (outlined so the D arrow is visible inside it) */}
-      <circle cx="74" cy="24" r="8" fill={PAPER} stroke={INK} strokeWidth="1.5" />
+      <circle cx="74" cy="24" r="8" fill={WHITE} stroke={INK} strokeWidth="1.5" />
       {/* explicit center marker */}
       <circle cx="74" cy="24" r="1.2" fill={INK} />
       {/* distance line, from start point all the way to the target's center */}
-      <line x1="10" y1="24" x2="74" y2="24" stroke={RED} strokeWidth="2.2" />
-      <polygon points="74,24 69,21 69,27" fill={RED} />
+      <line x1="10" y1="24" x2="74" y2="24" stroke={BLUE} strokeWidth="2.2" />
+      <polygon points="74,24 69,21 69,27" fill={BLUE} />
       <text
         x="42"
         y="15"
@@ -795,7 +796,7 @@ function DistanceIcon() {
         fontFamily={FM}
         fontSize="12"
         fontWeight="700"
-        fill={RED}
+        fill={BLUE}
       >
         D
       </text>
@@ -814,14 +815,14 @@ function WidthIcon() {
         cx="46"
         cy="24"
         r="18"
-        fill={PAPER}
+        fill={WHITE}
         stroke={INK}
         strokeWidth="1.6"
       />
       {/* W: width along the direction of approach */}
-      <line x1="28" y1="24" x2="64" y2="24" stroke={RED} strokeWidth="2.2" />
-      <polygon points="64,24 59,21 59,27" fill={RED} />
-      <polygon points="28,24 33,21 33,27" fill={RED} />
+      <line x1="28" y1="24" x2="64" y2="24" stroke={BLUE} strokeWidth="2.2" />
+      <polygon points="64,24 59,21 59,27" fill={BLUE} />
+      <polygon points="28,24 33,21 33,27" fill={BLUE} />
       <text
         x="46"
         y="14"
@@ -829,7 +830,7 @@ function WidthIcon() {
         fontFamily={FM}
         fontSize="12"
         fontWeight="700"
-        fill={RED}
+        fill={BLUE}
       >
         W
       </text>
@@ -855,9 +856,9 @@ function InterceptIllustration() {
       <line x1="20" y1="95" x2="184" y2="95" stroke={MUTED} strokeWidth="1" />
 
       {/* larger a, line shifted higher (= higher MT baseline) */}
-      <line x1="20" y1="32" x2="180" y2="28" stroke={TEAL} strokeWidth="1.8" />
-      <circle cx="20" cy="32" r="2.6" fill={TEAL} />
-      <text x="180" y="11" textAnchor="end" fontFamily={FM} fontSize="9" fontWeight="600" fill={TEAL}>larger a</text>
+      <line x1="20" y1="32" x2="180" y2="28" stroke={BLUE} strokeWidth="1.8" />
+      <circle cx="20" cy="32" r="2.6" fill={BLUE} />
+      <text x="180" y="11" textAnchor="end" fontFamily={FM} fontSize="9" fontWeight="600" fill={BLUE}>larger a</text>
       <text x="180" y="22" textAnchor="end" fontFamily={FB} fontSize="9" fill={MUTED}>means a slower start</text>
 
       {/* smaller a, parallel line shifted lower */}
@@ -887,11 +888,11 @@ function SlopeIllustration() {
       <line x1="20" y1="95" x2="184" y2="95" stroke={MUTED} strokeWidth="1" />
 
       {/* both lines share the same intercept */}
-      <circle cx="20" cy="80" r="2.6" fill={TEAL} />
+      <circle cx="20" cy="80" r="2.6" fill={BLUE} />
 
       {/* larger b, steeper */}
-      <line x1="20" y1="80" x2="180" y2="30" stroke={TEAL} strokeWidth="1.8" />
-      <text x="180" y="11" textAnchor="end" fontFamily={FM} fontSize="9" fontWeight="600" fill={TEAL}>larger b</text>
+      <line x1="20" y1="80" x2="180" y2="30" stroke={BLUE} strokeWidth="1.8" />
+      <text x="180" y="11" textAnchor="end" fontFamily={FM} fontSize="9" fontWeight="600" fill={BLUE}>larger b</text>
       <text x="180" y="22" textAnchor="end" fontFamily={FB} fontSize="9" fill={MUTED}>means difficulty hurts more</text>
 
       {/* smaller b, much less steep (so the second label has room) */}
@@ -914,8 +915,8 @@ function FormulaVariable({ icon, term, english, definition }) {
         gap: 14,
         padding: "14px 16px",
         border: `1px solid ${RULE}`,
-        borderRadius: 2,
-        background: PAPER,
+        borderRadius: 7,
+        background: MIST,
       }}
     >
       <div style={{ flexShrink: 0, paddingTop: 2 }}>{icon}</div>
@@ -933,7 +934,7 @@ function FormulaVariable({ icon, term, english, definition }) {
               fontFamily: FM,
               fontSize: 18,
               fontWeight: 600,
-              color: TEAL,
+              color: BLUE,
             }}
           >
             {term}
@@ -1017,10 +1018,10 @@ function Panel4({ W, D, a, b, inputLabel }) {
         style={{
           marginTop: 20,
           padding: "16px 20px",
-          background: PAPER,
+          background: MIST,
           border: `1px solid ${RULE}`,
-          borderLeft: `3px solid ${TEAL}`,
-          borderRadius: 2,
+          borderLeft: `3px solid ${BLUE}`,
+          borderRadius: 7,
         }}
       >
         <p
@@ -1049,7 +1050,7 @@ function Panel4({ W, D, a, b, inputLabel }) {
               fontFamily: FM,
               fontSize: 18,
               fontWeight: 600,
-              color: TEAL,
+              color: BLUE,
             }}
           >
             ID = log<sub>2</sub>(D / W + 1)
@@ -1084,9 +1085,9 @@ function Panel4({ W, D, a, b, inputLabel }) {
         style={{
           marginTop: 20,
           padding: "18px 20px",
-          background: PAPER,
+          background: MIST,
           border: `1px solid ${RULE}`,
-          borderRadius: 2,
+          borderRadius: 7,
         }}
       >
         <p
@@ -1114,7 +1115,7 @@ function Panel4({ W, D, a, b, inputLabel }) {
                 fontFamily: FM,
                 fontSize: 16,
                 fontWeight: 600,
-                color: TEAL,
+                color: BLUE,
                 margin: "0 0 4px",
               }}
             >
@@ -1152,9 +1153,9 @@ function Panel4({ W, D, a, b, inputLabel }) {
               }}
             >
               You're using{" "}
-              <span style={{ color: TEAL, fontWeight: 600 }}>{inputLabel}</span>
+              <span style={{ color: BLUE, fontWeight: 600 }}>{inputLabel}</span>
               , a ≈{" "}
-              <span style={{ color: TEAL, fontWeight: 600 }}>{a} ms</span>
+              <span style={{ color: BLUE, fontWeight: 600 }}>{a} ms</span>
             </p>
           </div>
           <div>
@@ -1163,7 +1164,7 @@ function Panel4({ W, D, a, b, inputLabel }) {
                 fontFamily: FM,
                 fontSize: 16,
                 fontWeight: 600,
-                color: TEAL,
+                color: BLUE,
                 margin: "0 0 4px",
               }}
             >
@@ -1201,9 +1202,9 @@ function Panel4({ W, D, a, b, inputLabel }) {
               }}
             >
               You're using{" "}
-              <span style={{ color: TEAL, fontWeight: 600 }}>{inputLabel}</span>
+              <span style={{ color: BLUE, fontWeight: 600 }}>{inputLabel}</span>
               , b ≈{" "}
-              <span style={{ color: TEAL, fontWeight: 600 }}>{b} ms/bit</span>
+              <span style={{ color: BLUE, fontWeight: 600 }}>{b} ms/bit</span>
             </p>
           </div>
         </div>
@@ -1289,7 +1290,7 @@ function Panel4({ W, D, a, b, inputLabel }) {
                       width: 6,
                       height: 6,
                       borderRadius: "50%",
-                      background: TEAL,
+                      background: BLUE,
                       marginRight: 8,
                       verticalAlign: "middle",
                     }}
@@ -1302,7 +1303,7 @@ function Panel4({ W, D, a, b, inputLabel }) {
                       fontFamily: FB,
                       fontStyle: "italic",
                       fontSize: 11,
-                      color: TEAL,
+                      color: BLUE,
                       marginLeft: 8,
                     }}
                   >
@@ -1315,7 +1316,7 @@ function Panel4({ W, D, a, b, inputLabel }) {
               <div
                 style={{
                   textAlign: "right",
-                  color: isCurrent ? TEAL : MUTED,
+                  color: isCurrent ? BLUE : MUTED,
                   fontWeight: isCurrent ? 600 : 400,
                 }}
               >
@@ -1350,7 +1351,7 @@ function Panel4({ W, D, a, b, inputLabel }) {
           padding: "12px 16px",
           background: PANEL_DEEP,
           border: `1px dashed ${RULE}`,
-          borderRadius: 2,
+          borderRadius: 7,
         }}
       >
         <p
@@ -1375,11 +1376,11 @@ function Panel4({ W, D, a, b, inputLabel }) {
           }}
         >
           Fitts' original 1954 formula was{" "}
-          <span style={{ fontFamily: FM, color: TEAL }}>log₂(2D/W)</span>
+          <span style={{ fontFamily: FM, color: BLUE }}>log₂(2D/W)</span>
           , with no +1. The problem: when D equals half of W, that becomes log₂(1) = 0; any smaller and it goes negative. Fitts himself never hit this (he deliberately only tested ID ≥ 1 bit), but later HCI experiments did produce negative IDs. MacKenzie 1989 published a short note in the Journal of Motor Behavior changing it to{" "}
-          <span style={{ fontFamily: FM, color: TEAL }}>log₂(D/W + 1)</span>
+          <span style={{ fontFamily: FM, color: BLUE }}>log₂(D/W + 1)</span>
           : this keeps ID ≥ 0 (when D = 0, ID = 0, meaning no distance, no difficulty), and makes Fitts' formula correspond exactly to Shannon's channel-capacity formula{" "}
-          <span style={{ fontFamily: FM, color: TEAL }}>C = log₂(1 + S/N)</span>{" "}
+          <span style={{ fontFamily: FM, color: BLUE }}>C = log₂(1 + S/N)</span>{" "}
           in mathematical structure. Almost all modern HCI papers use this version, known as the{" "}
           <em>Shannon formulation of Fitts' law</em>.
         </p>
@@ -1605,10 +1606,10 @@ function PredictionCurveChart({ a, b, D, W }) {
     textTransform: "uppercase",
     padding: "4px 10px",
     background: active ? INK : "transparent",
-    color: active ? PAPER : INK,
+    color: active ? WHITE : INK,
     border: `1px solid ${INK}`,
     cursor: "pointer",
-    borderRadius: 0,
+    borderRadius: 7,
     fontWeight: 500,
   });
 
@@ -1749,7 +1750,7 @@ function PredictionCurveChart({ a, b, D, W }) {
         </text>
 
         {/* curve / line */}
-        <path d={curvePath} fill="none" stroke={TEAL} strokeWidth="2" />
+        <path d={curvePath} fill="none" stroke={BLUE} strokeWidth="2" />
 
         {/* projection lines from marker to both axes */}
         <line
@@ -1757,7 +1758,7 @@ function PredictionCurveChart({ a, b, D, W }) {
           y1={cy}
           x2={cx}
           y2={m.top + ih}
-          stroke={RED}
+          stroke={BLUE}
           strokeDasharray="3 3"
           strokeWidth="1.2"
           opacity="0.75"
@@ -1767,7 +1768,7 @@ function PredictionCurveChart({ a, b, D, W }) {
           y1={cy}
           x2={cx}
           y2={cy}
-          stroke={RED}
+          stroke={BLUE}
           strokeDasharray="3 3"
           strokeWidth="1.2"
           opacity="0.75"
@@ -1781,7 +1782,7 @@ function PredictionCurveChart({ a, b, D, W }) {
           fontFamily={FM}
           fontSize="11"
           fontWeight="600"
-          fill={RED}
+          fill={BLUE}
         >
           {Math.round(currentMT)}
         </text>
@@ -1792,13 +1793,13 @@ function PredictionCurveChart({ a, b, D, W }) {
           fontFamily={FM}
           fontSize="11"
           fontWeight="600"
-          fill={RED}
+          fill={BLUE}
         >
           {axisMode === "dw" ? currentX.toFixed(1) : currentX.toFixed(2)}
         </text>
 
         {/* marker dot */}
-        <circle cx={cx} cy={cy} r="5.5" fill={RED} stroke={PAPER} strokeWidth="1.6" />
+        <circle cx={cx} cy={cy} r="5.5" fill={BLUE} stroke={WHITE} strokeWidth="1.6" />
       </svg>
     </div>
   );
@@ -1882,7 +1883,7 @@ function Panel5({ W, D, setW, setD, a, b, inputLabel, trials }) {
           padding: "10px 14px",
           background: PANEL_DEEP,
           border: `1px solid ${RULE}`,
-          borderRadius: 2,
+          borderRadius: 7,
           marginTop: 12,
           marginBottom: 12,
         }}
@@ -1907,21 +1908,21 @@ function Panel5({ W, D, setW, setD, a, b, inputLabel, trials }) {
           >
             Device
           </span>
-          <span style={{ color: TEAL, fontWeight: 600 }}>{inputLabel}</span>
+          <span style={{ color: BLUE, fontWeight: 600 }}>{inputLabel}</span>
           {"  ·  "}a ={" "}
-          <span style={{ color: TEAL, fontWeight: 600 }}>{a} ms</span>
+          <span style={{ color: BLUE, fontWeight: 600 }}>{a} ms</span>
           {"  ·  "}b ={" "}
-          <span style={{ color: TEAL, fontWeight: 600 }}>{b} ms/bit</span>
+          <span style={{ color: BLUE, fontWeight: 600 }}>{b} ms/bit</span>
         </p>
       </div>
 
       {/* Step-by-step calculation */}
       <div
         style={{
-          background: PAPER,
+          background: MIST,
           border: `1px solid ${RULE}`,
           padding: "18px 20px",
-          borderRadius: 2,
+          borderRadius: 7,
         }}
       >
         <p
@@ -1946,7 +1947,7 @@ function Panel5({ W, D, setW, setD, a, b, inputLabel, trials }) {
           }}
         >
           <span style={{ color: MUTED }}>Step 1 · compute difficulty ID:</span> log₂({D}/{W} + 1) = log₂({(D / W + 1).toFixed(2)}) ={" "}
-          <span style={{ color: TEAL, fontWeight: 600 }}>
+          <span style={{ color: BLUE, fontWeight: 600 }}>
             {id.toFixed(2)} bits
           </span>
         </p>
@@ -1960,7 +1961,7 @@ function Panel5({ W, D, setW, setD, a, b, inputLabel, trials }) {
           }}
         >
           <span style={{ color: MUTED }}>Step 2 · plug in a and b:</span> MT = {a} + {b} × {id.toFixed(2)} ={" "}
-          <span style={{ color: TEAL, fontWeight: 700, fontSize: "20px" }}>
+          <span style={{ color: BLUE, fontWeight: 700, fontSize: "20px" }}>
             {predictedMT} ms
           </span>
         </p>
@@ -1976,7 +1977,7 @@ function Panel5({ W, D, setW, setD, a, b, inputLabel, trials }) {
           padding: "14px 18px",
           background: PANEL_DEEP,
           border: `1px solid ${RULE}`,
-          borderRadius: 2,
+          borderRadius: 7,
         }}
       >
         <p
@@ -2017,11 +2018,11 @@ function Panel5({ W, D, setW, setD, a, b, inputLabel, trials }) {
               }}
             >
               On this D and W, you clicked{" "}
-              <span style={{ color: RED, fontWeight: 600 }}>
+              <span style={{ color: BLUE, fontWeight: 600 }}>
                 {matchingTrials.length} times
               </span>
               , measured average{" "}
-              <span style={{ color: RED, fontWeight: 700 }}>{userAvg} ms</span>
+              <span style={{ color: BLUE, fontWeight: 700 }}>{userAvg} ms</span>
             </p>
             <p
               style={{
@@ -2033,7 +2034,7 @@ function Panel5({ W, D, setW, setD, a, b, inputLabel, trials }) {
               }}
             >
               Formula predicts{" "}
-              <span style={{ color: TEAL, fontWeight: 700 }}>
+              <span style={{ color: BLUE, fontWeight: 700 }}>
                 {predictedMT} ms
               </span>
               , off by{" "}
@@ -2182,7 +2183,7 @@ function Panel3({ trials, a, b }) {
           height: `${height}px`,
           background: PANEL_DEEP,
           border: `1px solid ${RULE}`,
-          borderRadius: 2,
+          borderRadius: 7,
           overflow: "hidden",
         }}
       >
@@ -2285,7 +2286,7 @@ function Panel3({ trials, a, b }) {
                   .map(([x, y]) => `${x.toFixed(1)},${y.toFixed(1)}`)
                   .join(" ")}
                 fill="none"
-                stroke={RED}
+                stroke={BLUE}
                 strokeWidth="2.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -2298,7 +2299,7 @@ function Panel3({ trials, a, b }) {
                   fontFamily={FB}
                   fontStyle="italic"
                   fontSize="13"
-                  fill={RED}
+                  fill={BLUE}
                 >
                   Look, it curves
                 </text>
@@ -2392,7 +2393,7 @@ function Panel3({ trials, a, b }) {
               lineHeight: 1.5,
             }}
           >
-            Look at this curve: it's <span style={{ color: RED, fontWeight: 600 }}>not a straight line</span>.
+            Look at this curve: it's <span style={{ color: BLUE, fontWeight: 600 }}>not a straight line</span>.
           </p>
         )}
       </div>
@@ -2403,9 +2404,9 @@ function Panel3({ trials, a, b }) {
           style={{
             marginTop: 18,
             padding: "16px 20px",
-            background: PAPER,
+            background: MIST,
             border: `1px solid ${RULE}`,
-            borderRadius: 2,
+            borderRadius: 7,
           }}
         >
           <p
@@ -2418,7 +2419,7 @@ function Panel3({ trials, a, b }) {
             }}
           >
             Did you notice while clicking:
-            <span style={{ color: RED, fontWeight: 500 }}>
+            <span style={{ color: BLUE, fontWeight: 500 }}>
               {" "}
               once D is already far, pulling it farther barely slows you down; once W is already small, shrinking it further barely slows you down either
             </span>
@@ -2434,12 +2435,12 @@ function Panel3({ trials, a, b }) {
             }}
           >
             This is
-            <span style={{ color: TEAL, fontWeight: 600 }}>
+            <span style={{ color: BLUE, fontWeight: 600 }}>
               {" "}
               diminishing returns
             </span>
             . The classic mathematical tool for describing this "fast then flat" relationship is
-            <span style={{ fontFamily: FM, color: TEAL, fontWeight: 600 }}>
+            <span style={{ fontFamily: FM, color: BLUE, fontWeight: 600 }}>
               {" "}
               log
             </span>
@@ -2666,10 +2667,10 @@ function Panel6({ trials, a, b, inputLabel, clearTrials }) {
       : stage === 0
       ? "Now you can fit a line."
       : stage === 1
-      ? "That red line is fit from your data, giving you your own a and b. Overlay the HCI literature's average for " +
+      ? "That blue line is fit from your data, giving you your own a and b. Overlay the HCI literature's average for " +
         inputLabel +
         " (also an a and b pair) and see how well they match."
-      : "Your red line vs the lab's teal dashed line. The difference comes down to those two numbers, a and b. Below: how much they actually differ.";
+      : "Your blue line vs the lab's gray dashed line. The difference comes down to those two numbers, a and b. Below: how much they actually differ.";
 
   return (
     <Panel
@@ -2818,7 +2819,7 @@ function Panel6({ trials, a, b, inputLabel, clearTrials }) {
               <path
                 d={fittsPath}
                 fill="none"
-                stroke={RED}
+                stroke={MUTED}
                 strokeWidth="2.5"
                 strokeOpacity={
                   mode === "id" && stage >= 1
@@ -2834,7 +2835,7 @@ function Panel6({ trials, a, b, inputLabel, clearTrials }) {
                 fontFamily={FB}
                 fontStyle="italic"
                 fontSize="13"
-                fill={RED}
+                fill={MUTED}
                 opacity={
                   mode === "id" && stage >= 1 ? 1 - userFitProgress : 1
                 }
@@ -2852,7 +2853,7 @@ function Panel6({ trials, a, b, inputLabel, clearTrials }) {
                 y1={ufY1}
                 x2={ufX1 + (ufX2 - ufX1) * userFitProgress}
                 y2={ufY1 + (ufY2 - ufY1) * userFitProgress}
-                stroke={RED}
+                stroke={BLUE}
                 strokeWidth="2.5"
                 strokeOpacity={0.85}
               />
@@ -2864,7 +2865,7 @@ function Panel6({ trials, a, b, inputLabel, clearTrials }) {
                   fontFamily={FB}
                   fontSize="13"
                   fontStyle="italic"
-                  fill={RED}
+                  fill={BLUE}
                   opacity={(userFitProgress - 0.75) / 0.25}
                 >
                   Your regression line
@@ -2881,7 +2882,7 @@ function Panel6({ trials, a, b, inputLabel, clearTrials }) {
                 y1={labY1}
                 x2={labX1 + (labX2 - labX1) * labProgress}
                 y2={labY1 + (labY2 - labY1) * labProgress}
-                stroke={TEAL}
+                stroke={MUTED}
                 strokeWidth="2"
                 strokeDasharray="6 4"
               />
@@ -2893,7 +2894,7 @@ function Panel6({ trials, a, b, inputLabel, clearTrials }) {
                   fontFamily={FB}
                   fontSize="13"
                   fontStyle="italic"
-                  fill={TEAL}
+                  fill={MUTED}
                   opacity={(labProgress - 0.75) / 0.25}
                 >
                   Lab average ({inputLabel})
@@ -2909,7 +2910,7 @@ function Panel6({ trials, a, b, inputLabel, clearTrials }) {
               cx={p.x}
               cy={p.y}
               r={3.5}
-              fill={RED}
+              fill={BLUE}
               fillOpacity={0.4}
             />
           ))}
@@ -2949,7 +2950,7 @@ function Panel6({ trials, a, b, inputLabel, clearTrials }) {
               width: "10px",
               height: "10px",
               borderRadius: "50%",
-              background: RED,
+              background: BLUE,
               opacity: 0.4,
             }}
           />
@@ -2961,7 +2962,7 @@ function Panel6({ trials, a, b, inputLabel, clearTrials }) {
               style={{
                 width: "18px",
                 height: "2.5px",
-                background: RED,
+                background: MUTED,
               }}
             />
             Fitts prediction {morphT > 0.5 ? "line" : "curve"}
@@ -2973,7 +2974,7 @@ function Panel6({ trials, a, b, inputLabel, clearTrials }) {
               style={{
                 width: "18px",
                 height: "2.5px",
-                background: RED,
+                background: BLUE,
               }}
             />
             Your regression line
@@ -2985,7 +2986,7 @@ function Panel6({ trials, a, b, inputLabel, clearTrials }) {
               style={{
                 width: "18px",
                 height: "2px",
-                borderTop: `2px dashed ${TEAL}`,
+                borderTop: `2px dashed ${MUTED}`,
               }}
             />
             Lab average
@@ -3064,7 +3065,7 @@ function Panel6({ trials, a, b, inputLabel, clearTrials }) {
                 maxWidth: "44ch",
               }}
             >
-              Next: put your red line next to the lab average and see how well they line up.
+              Next: put your blue line next to the lab average and see how well they line up.
             </p>
           </>
         )}
@@ -3080,7 +3081,7 @@ function Panel6({ trials, a, b, inputLabel, clearTrials }) {
               maxWidth: "60ch",
             }}
           >
-            <span style={{ color: TEAL, fontWeight: 600 }}>How they differ:</span>{" "}
+            <span style={{ color: BLUE, fontWeight: 600 }}>How they differ:</span>{" "}
             {interpretation || "Not enough data to see a clear difference. Click more or try more setups."}{" "}
             Next, in Panel 06, we use this formula to make a prediction and see how accurate it is.
           </p>
@@ -3112,9 +3113,9 @@ function ToggleTab({ active, onClick, label }) {
         fontSize: "11px",
         letterSpacing: "0.08em",
         padding: "8px 14px",
-        background: active ? TEAL : "transparent",
-        color: active ? PAPER : INK,
-        border: `1px solid ${active ? TEAL : INK + "66"}`,
+        background: active ? BLUE : "transparent",
+        color: active ? WHITE : INK,
+        border: `1px solid ${active ? BLUE : INK + "66"}`,
         cursor: "pointer",
         transition:
           "background 0.18s, color 0.18s, border-color 0.18s",
@@ -3199,7 +3200,7 @@ function Panel8({ a, b }) {
     <Panel
       number="07 · Circle vs square"
       eyebrow="The real face of W"
-      caption="Two buttons that look equivalent: one circle, one rectangle. Move your cursor around them and watch what happens to the red slice bars."
+      caption="Two buttons that look equivalent: one circle, one rectangle. Move your cursor around them and watch what happens to the blue slice bars."
       accent="teal"
     >
       <div
@@ -3209,7 +3210,7 @@ function Panel8({ a, b }) {
           height: `${canvasHeight}px`,
           background: PANEL_DEEP,
           border: `1px solid ${RULE}`,
-          borderRadius: 2,
+          borderRadius: 7,
           overflow: "hidden",
           cursor: "crosshair",
           userSelect: "none",
@@ -3252,7 +3253,7 @@ function Panel8({ a, b }) {
             cx={circleCx}
             cy={circleCy}
             r={circleRadius}
-            fill={PAPER}
+            fill={WHITE}
             stroke={INK}
             strokeWidth="1"
           />
@@ -3263,10 +3264,10 @@ function Panel8({ a, b }) {
             y={rectCy - rectH / 2}
             width={rectW}
             height={rectH}
-            fill={PAPER}
+            fill={WHITE}
             stroke={INK}
             strokeWidth="1"
-            rx="2"
+            rx="7"
           />
 
           {/* Circle's effective W chord (always = diameter, rotated to approach) */}
@@ -3276,9 +3277,9 @@ function Panel8({ a, b }) {
               y={circleCy - 5}
               width={W_circle}
               height={10}
-              fill={RED}
+              fill={BLUE}
               fillOpacity={0.35}
-              stroke={RED}
+              stroke={BLUE}
               strokeWidth="1.5"
               strokeOpacity={0.85}
               transform={`rotate(${angleDeg_circle}, ${circleCx}, ${circleCy})`}
@@ -3292,9 +3293,9 @@ function Panel8({ a, b }) {
               y={rectCy - 5}
               width={W_rect}
               height={10}
-              fill={RED}
+              fill={BLUE}
               fillOpacity={0.35}
-              stroke={RED}
+              stroke={BLUE}
               strokeWidth="1.5"
               strokeOpacity={0.85}
               transform={`rotate(${angleDeg_rect}, ${rectCx}, ${rectCy})`}
@@ -3373,7 +3374,7 @@ function Panel8({ a, b }) {
             textTransform: "uppercase",
           }}
         >
-          Move the cursor · compare the two red slice bars
+          Move the cursor · compare the two blue slice bars
         </div>
       </div>
 
@@ -3389,9 +3390,9 @@ function Panel8({ a, b }) {
         <div
           style={{
             padding: "12px 14px",
-            background: PAPER,
+            background: MIST,
             border: `1px solid ${RULE}`,
-            borderRadius: 2,
+            borderRadius: 7,
           }}
         >
           <p
@@ -3415,7 +3416,7 @@ function Panel8({ a, b }) {
             }}
           >
             Effective W ={" "}
-            <span style={{ color: RED, fontWeight: 600 }}>
+            <span style={{ color: BLUE, fontWeight: 600 }}>
               {Math.round(W_circle)} px
             </span>{" "}
             <span style={{ color: MUTED, fontSize: 11, fontStyle: "italic" }}>
@@ -3426,9 +3427,9 @@ function Panel8({ a, b }) {
         <div
           style={{
             padding: "12px 14px",
-            background: PAPER,
+            background: MIST,
             border: `1px solid ${RULE}`,
-            borderRadius: 2,
+            borderRadius: 7,
           }}
         >
           <p
@@ -3452,7 +3453,7 @@ function Panel8({ a, b }) {
             }}
           >
             Effective W ={" "}
-            <span style={{ color: RED, fontWeight: 600 }}>
+            <span style={{ color: BLUE, fontWeight: 600 }}>
               {insideRect ? "·" : `${Math.round(W_rect)} px`}
             </span>{" "}
             <span style={{ color: MUTED, fontSize: 11, fontStyle: "italic" }}>
@@ -3615,7 +3616,7 @@ function MiniScatter({ trials, a, b, D_v, D_h, btnW, wMin, wMax }) {
               y1={hY}
               x2={xOf(wMax)}
               y2={hY}
-              stroke={TEAL}
+              stroke={MUTED}
               strokeWidth="1.5"
               strokeDasharray="5 3"
             />
@@ -3626,7 +3627,7 @@ function MiniScatter({ trials, a, b, D_v, D_h, btnW, wMin, wMax }) {
               fontFamily={FB}
               fontSize="11"
               fontStyle="italic"
-              fill={TEAL}
+              fill={MUTED}
             >
               Horizontal prediction · W is constant
             </text>
@@ -3635,7 +3636,7 @@ function MiniScatter({ trials, a, b, D_v, D_h, btnW, wMin, wMax }) {
             <path
               d={vCurvePath}
               fill="none"
-              stroke={RED}
+              stroke={BLUE}
               strokeWidth="1.5"
               strokeDasharray="5 3"
             />
@@ -3645,7 +3646,7 @@ function MiniScatter({ trials, a, b, D_v, D_h, btnW, wMin, wMax }) {
               fontFamily={FB}
               fontSize="11"
               fontStyle="italic"
-              fill={RED}
+              fill={BLUE}
             >
               Vertical prediction · W = height
             </text>
@@ -3659,9 +3660,9 @@ function MiniScatter({ trials, a, b, D_v, D_h, btnW, wMin, wMax }) {
             cx={xOf(t.submitH)}
             cy={yOf(t.MT)}
             r="4.5"
-            fill={t.layout === "vertical" ? RED : TEAL}
+            fill={t.layout === "vertical" ? BLUE : MUTED}
             fillOpacity="0.78"
-            stroke={t.layout === "vertical" ? RED : TEAL}
+            stroke={t.layout === "vertical" ? BLUE : MUTED}
             strokeWidth="0.5"
           />
         ))}
@@ -3807,11 +3808,11 @@ function Panel9({ a, b, trials, setTrials }) {
 
   const fieldStyle = (filled, isNext) => ({
     position: "absolute",
-    background: isNext ? RED : filled ? "#E5DED0" : PAPER,
+    background: isNext ? BLUE : filled ? PAPER : WHITE,
     border: `1px solid ${
-      isNext ? RED : filled ? INK + "33" : INK + "55"
+      isNext ? BLUE : filled ? INK + "33" : INK + "55"
     }`,
-    borderRadius: 3,
+    borderRadius: 7,
     cursor: isNext ? "pointer" : "default",
     display: "flex",
     alignItems: "center",
@@ -3819,7 +3820,7 @@ function Panel9({ a, b, trials, setTrials }) {
     padding: "0 6px",
     fontFamily: FB,
     fontSize: 12,
-    color: isNext ? PAPER : filled ? MUTED : INK + "99",
+    color: isNext ? WHITE : filled ? MUTED : INK + "99",
     fontWeight: 400,
     transition:
       "background 0.18s, border-color 0.18s, color 0.18s, left 0.3s ease, top 0.3s ease, width 0.3s ease, height 0.3s ease",
@@ -3881,7 +3882,7 @@ function Panel9({ a, b, trials, setTrials }) {
           height: `${canvasHeight}px`,
           background: PANEL_DEEP,
           border: `1px solid ${RULE}`,
-          borderRadius: 2,
+          borderRadius: 7,
           overflow: "hidden",
           userSelect: "none",
         }}
@@ -3944,11 +3945,11 @@ function Panel9({ a, b, trials, setTrials }) {
             width: `${submitBox.w}px`,
             height: `${submitBox.h}px`,
             background:
-              step === 3 ? TEAL : step === 2 ? RED : PAPER,
+              step === 3 ? INK : step === 2 ? BLUE : WHITE,
             border: `1px solid ${
-              step === 3 ? TEAL : step === 2 ? RED : INK
+              step === 3 ? INK : step === 2 ? BLUE : INK
             }`,
-            borderRadius: 3,
+            borderRadius: 7,
             cursor: step === 2 ? "pointer" : "default",
             display: "flex",
             alignItems: "center",
@@ -3957,7 +3958,7 @@ function Panel9({ a, b, trials, setTrials }) {
             fontFamily: FM,
             fontSize: Math.max(8, Math.min(12, submitH * 0.26)),
             letterSpacing: "0.08em",
-            color: step === 2 || step === 3 ? PAPER : INK,
+            color: step === 2 || step === 3 ? WHITE : INK,
             fontWeight: 500,
             transition:
               "height 0.25s ease, width 0.3s ease, left 0.3s ease, top 0.25s ease, background 0.18s, border-color 0.18s, color 0.18s",
@@ -4015,7 +4016,7 @@ function Panel9({ a, b, trials, setTrials }) {
               fontFamily: FM,
               fontSize: 13,
               fontWeight: 500,
-              color: RED,
+              color: BLUE,
               opacity: sliderEnabled ? 1 : 0.5,
             }}
           >
@@ -4032,7 +4033,7 @@ function Panel9({ a, b, trials, setTrials }) {
           onChange={(e) => setSubmitH(parseInt(e.target.value))}
           style={{
             width: "100%",
-            accentColor: RED,
+            accentColor: BLUE,
             opacity: sliderEnabled ? 1 : 0.4,
           }}
         />
@@ -4087,7 +4088,7 @@ function Panel9({ a, b, trials, setTrials }) {
           lineHeight: 1.55,
         }}
       >
-        In the vertical layout, Submit's height is the W you approach it through. Drag the slider left and your red dots climb up and to the right. In the horizontal layout, you slide in from the left, so W is its width (unchanged), and no matter how you drag the slider, your teal dots stay glued to that flat horizontal line.
+        In the vertical layout, Submit's height is the W you approach it through. Drag the slider left and your blue dots climb up and to the right. In the horizontal layout, you slide in from the left, so W is its width (unchanged), and no matter how you drag the slider, your gray dots stay glued to that flat horizontal line.
       </p>
 
       <p
@@ -4161,90 +4162,143 @@ export default function FittsLawComic() {
   return (
     <div className="comic-root">
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,500;0,700;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400..800;1,14..32,400..500&display=swap');
+
+        ::selection { background: rgba(0, 112, 215, 0.18); }
 
         .comic-root {
           background: ${PAPER};
           color: ${INK};
           min-height: 100vh;
           font-family: ${FB};
-          padding: 28px 16px 80px;
+          padding: 40px 16px 96px;
           line-height: 1.55;
-          font-size: 14px;
+          font-size: 15px;
+          letter-spacing: -0.2px;
         }
-        .comic-container { max-width: 880px; margin: 0 auto; }
+        .comic-container { max-width: 920px; margin: 0 auto; }
+
+        /* ---- hero: centered editorial masthead with margin doodles ---- */
+        .comic-hero {
+          position: relative;
+          text-align: center;
+          padding-top: 16px;
+          margin-bottom: 64px;
+        }
         .comic-title {
           font-family: ${FB};
-          font-size: 44px;
-          font-weight: 700;
-          letter-spacing: -0.01em;
-          line-height: 1.1;
-          margin: 0 0 8px;
+          font-size: 64px;
+          font-weight: 800;
+          letter-spacing: -1.98px;
+          line-height: 1.04;
+          margin: 0 0 14px;
           color: ${INK};
         }
         .comic-title em {
           font-style: normal;
-          color: ${RED};
+          color: inherit;
+          position: relative;
+          white-space: nowrap;
         }
+        /* hand-drawn magenta squiggle under the keyword */
+        .comic-title em::after {
+          content: "";
+          position: absolute;
+          left: 3%;
+          right: 5%;
+          bottom: -8px;
+          height: 10px;
+          background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='10' viewBox='0 0 120 10' preserveAspectRatio='none'%3E%3Cpath d='M2 7 Q 12 2 24 6 T 46 6 T 68 6 T 90 6 T 116 5' fill='none' stroke='%230070d7' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center / 100% 10px;
+          pointer-events: none;
+        }
+        /* byline as a small dark badge (Tally badge-pill language) */
         .comic-sub {
+          display: inline-block;
           font-family: ${FM};
-          font-size: 11px;
-          letter-spacing: 0.15em;
-          text-transform: uppercase;
-          color: ${MUTED};
-          margin: 0 0 36px;
+          font-size: 13px;
+          font-weight: 500;
+          letter-spacing: -0.2px;
+          color: ${WHITE};
+          background: #000000;
+          border-radius: 7px;
+          padding: 6px 14px;
+          margin: 10px 0 24px;
+        }
+        .comic-sub a {
+          color: ${WHITE};
+          text-decoration: none;
+          border-bottom: 1.5px solid rgba(255, 255, 255, 0.55);
+          padding-bottom: 1px;
+          transition: border-color 0.15s;
+        }
+        .comic-sub a:hover {
+          border-bottom-color: ${WHITE};
+        }
+        .comic-sub::before {
+          content: "\\2726";
+          color: ${WHITE};
+          margin-right: 8px;
         }
         .comic-intro {
           font-family: ${FB};
-          font-size: 17px;
-          color: ${INK};
-          line-height: 1.55;
-          margin: 0 0 40px;
-          max-width: 60ch;
-          padding-left: 14px;
-          border-left: 2px solid ${RED};
-          font-weight: 500;
+          font-size: 18px;
+          font-weight: 400;
+          color: #777672;
+          line-height: 1.5;
+          letter-spacing: -0.56px;
+          margin: 0 auto;
+          max-width: 56ch;
         }
 
+        /* ---- panels: white cards with the warm four-stack shadow ---- */
         .panel-frame {
           background: ${PANEL};
-          border: 1px solid ${INK};
-          border-radius: 2px;
-          padding: 36px 28px 28px;
+          border: none;
+          border-radius: 10px;
+          padding: 44px 28px 28px;
           position: relative;
-          margin-bottom: 32px;
+          margin-bottom: 48px;
+          box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 1px 0px,
+                      rgba(61, 59, 53, 0.16) 0px 0px 0px 1px,
+                      rgba(61, 59, 53, 0.08) 0px 3px 9px 0px,
+                      rgba(61, 59, 53, 0.08) 0px 2px 5px 0px;
         }
 
         @media (max-width: 600px) {
-          .panel-frame { padding: 32px 18px 22px; }
-          .comic-title { font-size: 32px; }
-          .comic-intro { font-size: 15px; }
+          .panel-frame { padding: 40px 18px 22px; }
+          .comic-title { font-size: 38px; letter-spacing: -1.2px; }
+          .comic-intro { font-size: 16px; }
         }
+        /* floating ink chip, like a sticker on the card edge */
         .panel-number {
           position: absolute;
-          top: -1px;
-          left: -1px;
-          color: ${PAPER};
+          top: -13px;
+          left: 22px;
+          color: ${WHITE};
           font-family: ${FM};
-          font-size: 10px;
-          letter-spacing: 0.18em;
-          padding: 6px 14px;
-          font-weight: 500;
+          font-size: 11px;
+          letter-spacing: 0.1em;
+          padding: 6px 13px;
+          font-weight: 600;
           text-transform: uppercase;
+          border-radius: 7px;
+          box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px 0px;
         }
         .panel-caption {
           font-family: ${FB};
-          font-size: 19px;
-          line-height: 1.5;
+          font-size: 20px;
+          line-height: 1.45;
+          letter-spacing: -0.62px;
           max-width: 60ch;
           margin: 0 0 22px;
-          font-weight: 500;
+          font-weight: 600;
           color: ${INK};
         }
         .panel-eyebrow {
           font-family: ${FM};
-          font-size: 10px;
-          letter-spacing: 0.18em;
+          font-size: 11px;
+          font-weight: 600;
+          letter-spacing: 0.14em;
           text-transform: uppercase;
           color: ${MUTED};
           margin: 0 0 10px;
@@ -4254,7 +4308,7 @@ export default function FittsLawComic() {
           position: relative;
           background: ${PANEL_DEEP};
           border: 1px solid ${RULE};
-          border-radius: 2px;
+          border-radius: 10px;
           overflow: hidden;
           user-select: none;
         }
@@ -4270,17 +4324,17 @@ export default function FittsLawComic() {
           outline-offset: 3px;
         }
         .dot:focus-visible {
-          outline: 2px solid ${TEAL};
+          outline: 2px solid ${BLUE};
         }
         .dot:active { transform: scale(0.94); }
         .dot.dot-active {
-          background: ${RED};
-          border: 1px solid ${RED};
-          box-shadow: 0 0 0 3px rgba(181, 58, 30, 0.16);
+          background: ${BLUE};
+          border: 1px solid ${BLUE};
+          box-shadow: 0 0 0 3px rgba(0, 112, 215, 0.2);
         }
         .dot.dot-idle {
-          background: ${PANEL};
-          border: 1px solid ${INK}66;
+          background: ${WHITE};
+          border: 1px solid #77767299;
         }
         .dot.dot-pulse {
           animation: pulseScale 0.18s ease;
@@ -4298,21 +4352,24 @@ export default function FittsLawComic() {
           margin: 16px 0 0;
         }
         .stat {
-          background: ${PAPER};
-          border: 1px solid ${RULE};
+          background: ${MIST};
+          border-radius: 7px;
           padding: 10px 12px;
         }
         .stat-label {
           font-family: ${FM};
-          font-size: 9px;
-          letter-spacing: 0.14em;
+          font-size: 10px;
+          font-weight: 600;
+          letter-spacing: 0.1em;
           text-transform: uppercase;
           color: ${MUTED};
           margin: 0 0 4px;
         }
         .stat-value {
           font-family: ${FM};
-          font-weight: 500;
+          font-weight: 600;
+          letter-spacing: -0.4px;
+          font-variant-numeric: tabular-nums;
           color: ${INK};
           margin: 0;
           line-height: 1.1;
@@ -4327,30 +4384,33 @@ export default function FittsLawComic() {
         }
         .slider-name {
           font-family: ${FM};
-          font-size: 12px;
-          letter-spacing: 0.06em;
+          font-size: 13px;
+          font-weight: 500;
+          letter-spacing: -0.3px;
           color: ${INK};
         }
         .slider-value {
           font-family: ${FM};
           font-size: 13px;
-          font-weight: 500;
-          color: ${RED};
+          font-weight: 600;
+          font-variant-numeric: tabular-nums;
+          color: ${BLUE};
         }
 
         .formula {
           font-family: ${FM};
           color: ${INK};
-          background: ${PAPER};
+          background: ${MIST};
           padding: 22px 24px;
-          border: 1px solid ${RULE};
+          border-radius: 10px;
           text-align: center;
           overflow-x: auto;
         }
         .formula-large {
           font-family: ${FM};
           font-size: 24px;
-          letter-spacing: -0.01em;
+          font-weight: 600;
+          letter-spacing: -0.7px;
         }
         @media (max-width: 560px) {
           .formula-large { font-size: 18px; }
@@ -4367,56 +4427,55 @@ export default function FittsLawComic() {
 
         .comic-button {
           font-family: ${FM};
-          font-size: 11px;
-          letter-spacing: 0.1em;
-          text-transform: uppercase;
-          background: transparent;
-          border: 1px solid ${INK};
-          color: ${INK};
-          padding: 7px 14px;
-          cursor: pointer;
-          transition: background 0.15s, color 0.15s;
+          font-size: 14px;
           font-weight: 500;
+          letter-spacing: -0.3px;
+          background: ${WHITE};
+          border: 1px solid #37352f2e;
+          color: ${INK};
+          padding: 7px 16px;
+          border-radius: 7px;
+          cursor: pointer;
+          transition: background 0.15s, color 0.15s, border-color 0.15s;
         }
         .comic-button:hover {
-          background: ${INK};
-          color: ${PAPER};
+          background: ${MIST};
+          border-color: #77767299;
         }
         .comic-button.primary {
-          background: ${RED};
-          color: ${PAPER};
-          border-color: ${RED};
+          background: ${BLUE};
+          color: ${WHITE};
+          border-color: ${BLUE};
         }
         .comic-button.primary:hover {
-          background: ${INK};
-          border-color: ${INK};
+          background: #005bb0;
+          border-color: #005bb0;
         }
         .comic-footer {
           font-family: ${FM};
-          font-size: 10px;
-          letter-spacing: 0.16em;
-          text-transform: uppercase;
+          font-size: 13px;
+          letter-spacing: -0.2px;
           color: ${MUTED};
           text-align: center;
-          margin: 40px 0 0;
+          margin: 56px 0 0;
         }
         .comic-footer a {
-          color: ${INK};
+          color: #45433e;
           text-decoration: none;
-          border-bottom: 1px solid ${MUTED};
+          border-bottom: 1.5px solid #45433e;
           padding-bottom: 1px;
           transition: color 0.15s, border-color 0.15s;
         }
         .comic-footer a:hover {
-          color: ${TEAL};
-          border-bottom-color: ${TEAL};
+          color: ${INK};
+          border-bottom-color: ${INK};
         }
 
         input[type="range"] {
           -webkit-appearance: none;
           appearance: none;
           height: 4px;
-          background: ${RULE};
+          background: #d6d5d3;
           border-radius: 2px;
           outline: none;
         }
@@ -4425,29 +4484,33 @@ export default function FittsLawComic() {
           appearance: none;
           width: 16px; height: 16px;
           border-radius: 50%;
-          background: ${RED};
+          background: ${BLUE};
           cursor: pointer;
-          border: 2px solid ${PANEL};
-          box-shadow: 0 0 0 1px ${RED};
+          border: 2px solid ${WHITE};
+          box-shadow: 0 0 0 1px ${BLUE};
         }
         input[type="range"]::-moz-range-thumb {
           width: 16px; height: 16px;
           border-radius: 50%;
-          background: ${RED};
+          background: ${BLUE};
           cursor: pointer;
-          border: 2px solid ${PANEL};
-          box-shadow: 0 0 0 1px ${RED};
+          border: 2px solid ${WHITE};
+          box-shadow: 0 0 0 1px ${BLUE};
         }
       `}</style>
 
       <div className="comic-container">
-        <p className="comic-sub">By Zezhong Wang · 2026</p>
-        <h1 className="comic-title">
-          Interactive Demo for <em>Fitts' Law</em>
-        </h1>
-        <p className="comic-intro">
-          An interactive data comic of Fitts' Law: how target size and distance shape the time it takes to point and click.
-        </p>
+        <header className="comic-hero">
+          <h1 className="comic-title">
+            Interactive Demo for <em>Fitts' Law</em>
+          </h1>
+          <p className="comic-sub">
+            By <a href="https://zezhongwang.com/">Zezhong Wang</a> · 2026
+          </p>
+          <p className="comic-intro">
+            An interactive data comic of Fitts' Law: how target size and distance shape the time it takes to point and click.
+          </p>
+        </header>
 
         <Panel1 inputType={inputType} onChooseInput={chooseInput} a={a} b={b} />
         <Panel2 W={W} setW={setW} D={D} setD={setD} addTrial={addTrial} trials={trials} />

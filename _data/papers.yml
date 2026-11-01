@@ -3,6 +3,69 @@ papers:
     year: 2026
     paper-type: inproceedings
     selected: yes
+    title: "Diegetic Data Stories for Climate Communication"
+    authors: "Zezhong Wang, Sheelagh Carpendale"
+    booktitle: Visualising Climate 2026
+    booktitle-url: 
+    doc-url: /assets/papersPDF/VisualisingClimate2026_Diegetic_Data_Stories.pdf
+    img: "wang2026diegetic.png"
+    img_alt: "wang2026diegetic.png"
+    weblink: https://dc4cc.github.io
+    videolink: 
+    venue: Conference
+    bibtex: |
+             @inproceedings{Wang2026Diegetic,
+             author    = {Wang, Zezhong and Carpendale, Sheelagh},
+             title     = {Diegetic Data Stories for Climate Communication},
+             year      = {2026},
+             booktitle = {Visualising Climate 2026}
+             }
+  - layout: paper
+    year: 2026
+    paper-type: inproceedings
+    selected: yes
+    title: "Toward Visual Methods: Reflections on How Visuals Enrich Empirical Research"
+    authors: "Zezhong Wang, Sheelagh Carpendale, Samuel Huron"
+    booktitle: IEEE VIS 2026 BELIV Workshop
+    booktitle-url: 
+    doc-url: /assets/papersPDF/BELIV2026_Toward_Visual_Methods.pdf
+    img: "wang2026visualmethods.png"
+    img_alt: "wang2026visualmethods.png"
+    weblink: https://visualmethods.pages.dev
+    videolink: 
+    venue: Conference
+    bibtex: |
+             @inproceedings{Wang2026VisualMethods,
+             author    = {Wang, Zezhong and Carpendale, Sheelagh and Huron, Samuel},
+             title     = {Toward Visual Methods: Reflections on How Visuals Enrich Empirical Research},
+             year      = {2026},
+             booktitle = {IEEE VIS 2026 BELIV Workshop}
+             }
+  - layout: paper
+    year: 2026
+    paper-type: inproceedings
+    selected: yes
+    title: "Epistemic Tensions: Reframing A Visualization Co-Design through Entanglement Theory"
+    authors: "Wei Wei, Foroozan Daneshzand, Zezhong Wang, Erica Mattson, Jenny Farkas, Sarah Storteboom, Charles Perin, Sheelagh Carpendale"
+    booktitle: IEEE VIS 2026 BELIV Workshop
+    booktitle-url: 
+    doc-url: /assets/papersPDF/BELIV2026_Epistemic_Tensions.pdf
+    img: "wei2026entanglement.png"
+    img_alt: "wei2026entanglement.png"
+    weblink: 
+    videolink: 
+    venue: Conference
+    bibtex: |
+             @inproceedings{Wei2026Epistemic,
+             author    = {Wei, Wei and Daneshzand, Foroozan and Wang, Zezhong and Mattson, Erica and Farkas, Jenny and Storteboom, Sarah and Perin, Charles and Carpendale, Sheelagh},
+             title     = {Epistemic Tensions: Reframing A Visualization Co-Design through Entanglement Theory},
+             year      = {2026},
+             booktitle = {IEEE VIS 2026 BELIV Workshop}
+             }
+  - layout: paper
+    year: 2026
+    paper-type: inproceedings
+    selected: yes
     title: "AI4VIS EthiCards: A Card-Based Approach to Exploring Ethics in AI for Data Visualization Applications"
     authors: "Zezhong Wang, Shan Hao, Sheelagh Carpendale"
     booktitle: Computer Graphics Forum
@@ -15,13 +78,13 @@ papers:
     venue: Conference
     bibtex: |
              @inproceedings{Wang2026EthiCards,
-             author    = {Wang, Zezhong and Carpendale, Sheelagh},
+             author    = {Wang, Zezhong and Hao, Shan and Carpendale, Sheelagh},
              title     = {AI4VIS EthiCards: A Card-Based Approach to Exploring Ethics in AI for Data Visualization Applications},
              year      = {2026},
-             booktitle = {Computer Graphics Forum}
+             booktitle = {Computer Graphics Forum},
              volume    = {45},
              number    = {3}
-             
+             }
   - layout: paper
     year: 2026
     paper-type: inproceedings
@@ -43,6 +106,7 @@ papers:
              title     = {Just-in-Time Data Literacy Through Conversational Data Comics},
              year      = {2026},
              booktitle = {CHI 2026 Workshop on Data Literacy}
+             }
   - layout: paper
     year: 2025
     paper-type: inproceedings
@@ -63,12 +127,13 @@ papers:
              title     = {Input Data Comics: Exploring a Narrative Approach to Input Visualization},
              year      = {2025},
              booktitle = {IEEE VIS 2025 Input Visualization Workshop}
+             }
   - layout: paper
     year: 2025
     paper-type: inproceedings
     selected: yes
     title: "Flirting Charts: Expressive Motion Design in Information Visualization Inspired by Animal Courtship Performances"
-    authors: "Zezhong Wang, Shan Hao, Carpendale Sheelagh"
+    authors: "Zezhong Wang, Shan Hao, Sheelagh Carpendale"
     booktitle: IEEE VIS 2025 alt.vis
     booktitle-url: 
     doc-url: /assets/papersPDF/VIS25_Poster_Courtship_preprint.pdf
@@ -290,7 +355,7 @@ papers:
     paper-type: inproceedings
     selected: yes
     title: "Gen4DS: Workshop on Data Storytelling in an Era of Generative AI"
-    authors: "Xingyu Lan, Leni Yang, Zezhong Wang, Danqing Shi, Sheelagh Carpendale"
+    authors: "Xingyu Lan, Leni Yang, Zezhong Wang, Yun Wang, Danqing Shi, Sheelagh Carpendale"
     booktitle: IEEE VIS 2024 (Gen4DS)
     booktitle-url: 
     doc-url: https://arxiv.org/pdf/2404.01622

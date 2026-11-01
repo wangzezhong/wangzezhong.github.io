@@ -25,7 +25,7 @@ ul.pubList li {
 @media screen and (min-width: 901px) {
   .pubWrapper {
     display: grid !important;
-    grid-template-columns: 260px 1fr !important; /* Fixed width prevents image column from expanding */
+    grid-template-columns: 360px 1fr !important; /* Fixed width prevents image column from expanding */
     grid-column-gap: 20px !important;
     margin-bottom: 35px !important;
   }
@@ -33,7 +33,7 @@ ul.pubList li {
     grid-column: 2 !important;
   }
   .pubImage img {
-    max-width: 260px !important;
+    max-width: 360px !important;
     width: 100% !important;
     height: auto !important;
     border-radius: 6px !important;
@@ -81,5 +81,216 @@ ul.pubList li {
   -webkit-mask-position: center;
   mask-position: center;
   transform: translateY(0.12em);
+}
+
+/* 5. News year timeline: pure CSS tabs (radio + label + panel), no JS needed.
+   The checked radio decides which year's panel is visible. */
+.news-timeline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  position: relative;
+  margin-top: 1rem;
+}
+.news-radio {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+.news-year {
+  position: relative;
+  padding: 1.25rem 1.1rem 0;
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--gray, rgba(128,128,128,.8));
+  cursor: pointer;
+  user-select: none;
+  transition: color .15s ease;
+}
+/* the line that runs through the dots */
+.news-year::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--border-color, rgba(128,128,128,.35));
+}
+.news-year:first-of-type::after { left: 50%; }
+.news-year:last-of-type::after { right: 50%; }
+/* the dot for each year */
+.news-year::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 11px;
+  height: 11px;
+  margin-left: -5.5px;
+  border-radius: 50%;
+  border: 2px solid var(--gray, rgba(128,128,128,.8));
+  background: var(--body-bg, #fff);
+  box-sizing: border-box;
+  z-index: 1;
+  transition: background .15s ease, border-color .15s ease;
+}
+.news-year:hover { color: inherit; }
+.news-radio:checked + .news-year {
+  color: var(--accent-color, rgb(79,177,186));
+  font-weight: 700;
+}
+.news-radio:checked + .news-year::before {
+  background: var(--accent-color, rgb(79,177,186));
+  border-color: var(--accent-color, rgb(79,177,186));
+}
+.news-radio:focus-visible + .news-year {
+  outline: 2px solid var(--accent-color, rgb(79,177,186));
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+.news-panel {
+  display: none;
+  order: 99;
+  flex-basis: 100%;
+  width: 100%;
+  margin-top: 0.75rem;
+}
+.news-radio:checked + .news-year + .news-panel { display: block; }
+
+/* 6. Publications: sticky year timeline (top) + year dividers in the list.
+   The bar sticks under the navbar; papers.md has a small script that keeps it
+   below the auto-hiding navbar and highlights the year currently in view. */
+.pub-timeline-bar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--body-bg, #fff);
+  margin: 0 0 0.25rem;
+  padding: 0.35rem 0 0.7rem;
+  border-bottom: 1px solid transparent;
+  transition: border-color .2s ease;
+}
+/* hy-push-state uses overflow:hidden, which disables position:sticky for anything inside it.
+   On the publications page only, switch it to overflow:clip (same clipping, no scroll container). */
+#_pushState:has(.pub-timeline-bar) { overflow: clip !important; }
+.pub-timeline-bar.is-stuck {
+  border-bottom-color: var(--border-color, rgba(128,128,128,.35));
+}
+.pub-timeline {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 4px 0 2px; /* room for the enlarged active dot, since overflow-x:auto also clips vertically */
+  scrollbar-width: none;
+}
+.pub-timeline::-webkit-scrollbar { display: none; }
+.pub-timeline a.pub-tl-year {
+  position: relative;
+  flex: 0 0 auto;
+  padding: 1.25rem 1.1rem 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--gray, rgba(128,128,128,.8));
+  text-decoration: none !important;
+  border-bottom: 0 !important;
+  box-shadow: none !important;
+  background-image: none !important;
+  transition: color .15s ease;
+}
+.pub-timeline a.pub-tl-year::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--border-color, rgba(128,128,128,.35));
+}
+.pub-timeline a.pub-tl-year:first-child::after { left: 50%; }
+.pub-timeline a.pub-tl-year:last-child::after { right: 50%; }
+.pub-timeline a.pub-tl-year::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 11px;
+  height: 11px;
+  margin-left: -5.5px;
+  border-radius: 50%;
+  border: 2px solid var(--gray, rgba(128,128,128,.8));
+  background: var(--body-bg, #fff);
+  box-sizing: border-box;
+  z-index: 1;
+  transition: background .15s ease, border-color .15s ease, transform .15s ease;
+}
+.pub-timeline a.pub-tl-year:hover { color: var(--body-color, inherit); }
+.pub-timeline a.pub-tl-year.is-active {
+  color: var(--accent-color, rgb(79,177,186));
+  font-weight: 700;
+}
+.pub-timeline a.pub-tl-year.is-active::before {
+  background: var(--accent-color, rgb(79,177,186));
+  border-color: var(--accent-color, rgb(79,177,186));
+  transform: scale(1.15);
+}
+.pub-timeline a.pub-tl-year:focus-visible {
+  outline: 2px solid var(--accent-color, rgb(79,177,186));
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+.pub-year-group { scroll-margin-top: 150px; }
+.pub-year-heading {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 2.25rem 0 1.5rem;
+  font-family: var(--font-family-heading, inherit);
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: var(--gray, rgba(128,128,128,.8));
+}
+.pub-year-heading::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--border-color, rgba(128,128,128,.35));
+}
+.pub-year-group:first-of-type .pub-year-heading { margin-top: 1.25rem; }
+@media screen and (max-width: 900px) {
+  .pub-timeline a.pub-tl-year { padding: 1.25rem 0.8rem 0; font-size: 0.85rem; }
+  .pub-timeline {
+    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 20px, #000 calc(100% - 20px), transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0, #000 20px, #000 calc(100% - 20px), transparent 100%);
+  }
+  .pub-year-heading { font-size: 1.3rem; }
+}
+
+/* 7. Home page featured projects: the first card spans the full width as a hero card,
+   the rest stay in the 2-column grid. Only applies on the welcome (home) layout. */
+.layout-welcome .columns-break > .column:first-child {
+  width: 100% !important;
+  max-width: 100% !important;
+  flex: 0 0 100% !important;
+}
+.layout-welcome .columns-break > .column:first-child .project-card-img::before {
+  padding-top: 42.45% !important; /* matches the 1920x815 wide cover image */
+}
+
+/* 8. Visual Methods uses a wide (1920x815) cover. Give its project-page hero the same ratio,
+   and anywhere else it sits in a 16:9 card, show the whole image on a matching grey. */
+.img-wrapper.lead:has(img[src*="/projects/VisualMethods"])::before {
+  padding-top: 42.45% !important;
+}
+.project-card-img:has(img[src*="/projects/VisualMethods"]) {
+  background: linear-gradient(#dfdfe0, #d5d5d8);
+}
+.project-card-img img[src*="/projects/VisualMethods"] {
+  object-fit: contain !important;
 }
 </style>

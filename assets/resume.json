@@ -1,3 +1,3 @@
 ---
 ---
-{{ site.data.resume | jsonify }}
+{% comment %} Resume data is hidden for now. To publish it again, replace {} below with: site.data.resume | jsonify (inside double curly braces). {% endcomment %}{}

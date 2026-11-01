@@ -96,7 +96,10 @@
     {% when "dissertation" %}
     Dissertation, {{ include.paper.institution }}.
     {% endcase %}
-    {{ include.paper.year }}.
+    {% comment %} Skip the year when the venue name already contains it, e.g. "Visualising Climate 2026". {% endcomment %}
+    {% assign year_str = include.paper.year | append: "" %}
+    {% assign venue_str = include.paper.booktitle | append: " " | append: include.paper.journal %}
+    {% unless venue_str contains year_str %}{{ include.paper.year }}.{% endunless %}
     {% if include.paper.note %}
     {{ include.paper.note }}
     {% endif %}

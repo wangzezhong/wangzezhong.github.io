@@ -58,8 +58,8 @@ menu:
 #    url:               /projects/
    - title:             Publications
      url:               /papers/
-   - title:             Portfolio
-     url:               https://zezhongwang.com/assets/Design-Portfolio_Zezhing_Wang.pdf
+#   - title:             Portfolio
+#     url:               https://zezhongwang.com/assets/Design-Portfolio_Zezhing_Wang.pdf
 #   - title:             Résumé*
 #     url:               /resume/
 #   - title:             Documentation
@@ -327,9 +327,11 @@ exclude:
   # GitHub Actions workflow and copied into _site/fitts-comic/. Don't let
   # Jekyll process the source tree.
   - fitts-comic
+  # Theme license files: kept in the repo for GPL compliance, but not published as pages.
+  - LICENSE.md
+  - NOTICE.md
 include:
   - .well-known
-  - LICENSE.md
 
 
 # Plugins

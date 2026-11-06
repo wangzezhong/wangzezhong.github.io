@@ -77,6 +77,34 @@ To cite this work:
   </div>
 </div>
 
+---
 
+### Diegetic Data Stories
+
+Looking across two of our climate data comics, _Pasta or Disaster_ (permafrost) and _The Monster Eats Algae_ (eutrophication in freshwater), we articulate **diegetic data stories**: data stories in which empirically grounded data, visualizations, and scientific arguments are told from within a storyworld, as in-world events, characters, and conflicts, rather than through captions, sidebars, or narration addressed to the reader. The paper offers climate data communicators a vocabulary of seven design strategies on two axes.
+
+**Structural axis**: moves that shape the whole story's plot, conflict, and characters.
+
+- **Misconception-as-Conflict**: a character voices a misconception or misreading, and an explainer character resolves it on stage. _(Pasta or Disaster)_
+- **Detection-as-Plot**: the data investigation itself is the engine of the story; each measurement is a clue, sampling is field investigation, and visualizations are evidence assembly. _(The Monster Eats Algae)_
+- **Instrument-as-Character**: each measurement modality is embodied as a character with a profession, a personality, and limits. _(The Monster Eats Algae)_
+
+**Explanation axis**: local moves that anchor a single scientific concept in a concrete, in-world event, object, or scene, rather than in captions, sidebars, or annotated charts.
+
+- **Real-Event Grounding**: the storyworld is grounded in real, documented events, named in the panels or restaged without names. _(both comics)_
+- **In-world Experiment as Demonstration**: a scientific principle is shown through a relatable in-world physical experiment that doubles as a normal scene activity. _(both comics)_
+- **In-world Visualization Production**: characters produce visualizations in-frame with the materials at hand, not via sidebars or captions. _(both comics)_
+- **Felt-Phenomenon Anchor**: harm or mechanism is given an embodied, sensory form in the storyworld before, or instead of, being stated as a number. _(both comics)_
+
+<img src="/assets/paperFigures/wang2026diegetic.png"
+     alt="The cast of The Monster Eats Algae: six lake animals, each paired with one real way of measuring the lake, such as field water sampling, satellite remote sensing, and microscope cell counts."
+     width="100%"
+     style="border-radius: 5px;"
+     >
+<p style="font-size: 0.8em; opacity: 0.75; margin-top: 0.4rem;">The cast of <i>The Monster Eats Algae</i>. Each animal of the lake is paired with one real way of measuring the Manitoba Great Lakes. Cast sheet by Zezhong Wang, CC BY-NC-ND 4.0.</p>
+
+To cite this work:
+
+**Diegetic Data Stories for Climate Communication** Zezhong Wang, Sheelagh Carpendale. _Visualising Climate 2026_ [📄**PDF**](/assets/papersPDF/VisualisingClimate2026_Diegetic_Data_Stories.pdf){:target="_blank" rel="noopener noreferrer"}
 
 ---

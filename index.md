@@ -36,7 +36,7 @@ I am a postdoctoral fellow at [ixLab](https://ixlab.cs.sfu.ca/), [Simon Fraser U
 <label for="news-2026" class="news-year">2026</label>
 <div class="news-panel" markdown="1">
 
-* Three full papers accepted! Two at the IEEE VIS 2026 BELIV Workshop: [Toward Visual Methods: Reflections on How Visuals Enrich Empirical Research](/assets/papersPDF/BELIV2026_Toward_Visual_Methods.pdf) and [Epistemic Tensions: Reframing A Visualization Co-Design through Entanglement Theory (led by Wei Wei)](/assets/papersPDF/BELIV2026_Epistemic_Tensions.pdf); and one at Visualising Climate 2026: [Diegetic Data Stories for Climate Communication](/assets/papersPDF/VisualisingClimate2026_Diegetic_Data_Stories.pdf). See you in Italy and Paris!
+* Three papers accepted! Two at the IEEE VIS 2026 BELIV Workshop: [Toward Visual Methods: Reflections on How Visuals Enrich Empirical Research](/assets/papersPDF/BELIV2026_Toward_Visual_Methods.pdf) and [Epistemic Tensions: Reframing A Visualization Co-Design through Entanglement Theory (led by Wei Wei)](/assets/papersPDF/BELIV2026_Epistemic_Tensions.pdf); and one at Visualising Climate 2026: [Diegetic Data Stories for Climate Communication](/assets/papersPDF/VisualisingClimate2026_Diegetic_Data_Stories.pdf). See you in Italy and Paris!
 
 * Paper [AI4VIS EthiCards: A Card-Based Approach to Exploring Ethics in AI for Data Visualization Applications](/assets/papersPDF/AI_VIS_EthiCards_EuroVis2026-Preprint.pdf) was accepted by EuroVis 2026.
 

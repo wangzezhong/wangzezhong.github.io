@@ -6,3 +6,6 @@ vendor
 fitts-comic/node_modules
 fitts-comic/dist
 .DS_Store
+
+# Local reference copy of the Hydejack theme source (the site uses remote_theme); not tracked
+\#jekyll-theme-hydejack/

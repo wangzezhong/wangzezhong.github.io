@@ -5,16 +5,17 @@ caption: An open archive of visual methods for qualitative empirical research in
 description: >
 date: Oct 2026
 image: 
-  path: /assets/img/projects/VisualMethods.png
+  path: /assets/img/social/VisualMethods.jpg
+  width: 1200
+  height: 630
   srcset: 
-    1920w: /assets/img/projects/VisualMethods.png
-    960w:  /assets/img/projects/VisualMethods@0,5.png
-    480w:  /assets/img/projects/VisualMethods@0,25.png
+    1800w: /assets/img/projects/VisualMethods-1800.webp
+    1300w: /assets/img/projects/VisualMethods-1300.webp
 links:
   - title: Project Website 
     url: https://visualmethods.pages.dev/
 accent_color: '#4fb1ba'
-accent_image: /assets/img/projects/VisualMethods-blur.png
+accent_image: /assets/img/projects/VisualMethods-blur.webp
 theme_color: '#193747'
 sitemap: true
 ---
@@ -27,7 +28,7 @@ sitemap: true
 
 In human-computer interaction and visualization research, more and more of what we study and collect is visual in nature: sketches, screenshots, photographs, videos, interfaces, and images of physical objects and spaces. Analyzing visual material has a rich tradition in the social sciences and the arts, yet it is rarely reflected on in information visualization or interface design, even though visual design is often the primary channel for communicating data.
 
-<img src="/assets/img/VisualMethods/sketch-mosaic.jpg"
+<img loading="lazy" decoding="async" src="/assets/img/VisualMethods/sketch-mosaic.webp"
      alt="A researcher analyzing a mosaic of minified sketches from speculative design workshops, pinned to a wall with sticky notes."
      width="100%"
      style="border-radius: 5px;"

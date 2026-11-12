@@ -5,16 +5,17 @@ caption: A set of concise graphical explanations to support understanding data v
 description: >
 date: 17 October 2020
 image: 
-  path: /assets/img/projects/cheatsheetCover.png
+  path: /assets/img/social/CheatSheets.jpg
+  width: 1200
+  height: 630
   srcset: 
-    1920w: /assets/img/projects/cheatsheetCover.png
-    960w:  /assets/img/projects/cheatsheetCover@0,5.png
-    480w:  /assets/img/projects/cheatsheetCover@0,25.png
+    1300w: /assets/img/projects/cheatsheetCover-1300.webp
+    650w: /assets/img/projects/cheatsheetCover-650.webp
 links:
   - title: Project Website 
     url: https://visualizationcheatsheets.github.io/
 accent_color: '#4fb1ba'
-accent_image: /assets/img/projects/cheatsheetCover-blur.png
+accent_image: /assets/img/projects/cheatsheetCover-blur.webp
 theme_color: '#193747'
 sitemap: true
 ---
@@ -34,17 +35,17 @@ This project introduces the concept of 'cheat sheets' for data visualization tec
 
 Poster presented at VIS 2019 was awarded both *‘Best Poster Research’* and *‘Best Poster Design’* awards (InfoVis).
 
-<img src="https://github.com/wangzezhong/wangzezhong.github.io/blob/master/assets/img/projects/Cheatsheet_poster.png?raw=true"
+<a href="/assets/img/projects/Cheatsheet_poster.png" target="_blank" rel="noopener" class="no-push-state" title="Open the full-resolution poster"><img loading="lazy" decoding="async" src="/assets/img/projects/Cheatsheet_poster.webp"
      alt="Cheat Sheet for data visualization techniques -- poster at VIS 2019"
      width="100%"
      height="100%"
-     title="Cheat Sheet for data visualization techniques -- poster at VIS 2019">
+     title="Cheat Sheet for data visualization techniques -- poster at VIS 2019"></a>
 
 
 <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
   <!-- Image 1 -->
   <div style="width: 32%; text-align: center; margin-top: 10px;">
-    <img src="/assets/img/DataComics/anatomy.png"
+    <img loading="lazy" decoding="async" src="/assets/img/DataComics/anatomy.webp"
          alt="Anatomy" 
          style="width: 100%; height: auto; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
          title="click to view Anatomy sheets"
@@ -63,7 +64,7 @@ Poster presented at VIS 2019 was awarded both *‘Best Poster Research’* and *
 
   <!-- Image 2 -->
   <div style="width: 32%; text-align: center; margin-top: 10px;">
-    <img src="/assets/img/DataComics/construction.png" 
+    <img loading="lazy" decoding="async" src="/assets/img/DataComics/construction.webp" 
          alt="Construction" 
          style="width: 100%; height: auto; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
          title="click to view Construction sheets"
@@ -82,7 +83,7 @@ Poster presented at VIS 2019 was awarded both *‘Best Poster Research’* and *
 
   <!-- Image 3 -->
   <div style="width: 32%; text-align: center; margin-top: 10px;">
-    <img src="/assets/img/DataComics/falsefriends.png"
+    <img loading="lazy" decoding="async" src="/assets/img/DataComics/falsefriends.webp"
          alt="False-Friends" 
          style="width: 100%; height: auto; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
          title="click to view False-Friends sheets"
@@ -101,7 +102,7 @@ Poster presented at VIS 2019 was awarded both *‘Best Poster Research’* and *
 
   <!-- Image 4 -->
   <div style="width: 32%; text-align: center; margin-top: 10px;">
-    <img src="/assets/img/DataComics/pitfalls.png"
+    <img loading="lazy" decoding="async" src="/assets/img/DataComics/pitfalls.webp"
          alt="Pitfalls" 
          style="width: 100%; height: auto; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
          title="click to view Pitfalls sheets"
@@ -120,7 +121,7 @@ Poster presented at VIS 2019 was awarded both *‘Best Poster Research’* and *
 
   <!-- Image 5 -->
   <div style="width: 32%; text-align: center; margin-top: 10px;">
-    <img src="/assets/img/DataComics/relative.png" 
+    <img loading="lazy" decoding="async" src="/assets/img/DataComics/relative.webp" 
          alt="Well-known Relative" 
          style="width: 100%; height: auto; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
          title="click to view Well-known Relative sheets"
@@ -139,7 +140,7 @@ Poster presented at VIS 2019 was awarded both *‘Best Poster Research’* and *
 
   <!-- Image 6 -->
   <div style="width: 32%; text-align: center; margin-top: 10px;">
-    <img src="/assets/img/DataComics/visualpatterns.png" 
+    <img loading="lazy" decoding="async" src="/assets/img/DataComics/visualpatterns.webp" 
          alt="Visual Patterns" 
          style="width: 100%; height: auto; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
          title="click to view Visual Patterns sheets"

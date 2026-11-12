@@ -37,6 +37,18 @@ layout: base
   <header>
     <h1 class="page-title">{{ page.title }}{% if page.name_audio %}<button type="button" class="name-audio-btn" data-src="{{ page.name_audio | relative_url }}" aria-label="Play the pronunciation of my name" title="Hear how to say my name"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg></button>{% endif %}</h1>
     {% if page.name_pronunciation %}<p class="name-pronunciation">pronounced <span>{{ page.name_pronunciation }}</span></p>{% endif %}
+    {% if page.show_identity %}
+    {% comment %} Photo, role and social links under the name. Only shown on narrow screens, where the sidebar is tucked away. {% endcomment %}
+    {% assign id_author = site.data.authors.first[1] | default:site.author %}
+    <div class="home-identity">
+      {% if site.logo %}<img src="{{ site.logo | relative_url }}" class="home-identity-avatar" alt="" width="56" height="56" decoding="async" />{% endif %}
+      <div class="home-identity-text">
+        {% assign id_text = site.tagline | default:site.description %}
+        {% if id_text %}<p class="home-identity-role">{{ id_text | strip }}</p>{% endif %}
+        <div class="home-identity-social">{% include components/social.html author=id_author %}</div>
+      </div>
+    </div>
+    {% endif %}
     {% include components/message.html text=page.description hide=page.hide_description %}
   </header>
 

@@ -9,15 +9,11 @@ author1:
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    Zezhong Wang, a postdoc fellow at Simon Fraser University, research focuses on data-driven storytelling, data visualization, and human-data interaction.
+    I am a Postdoctoral Fellow at the ixLab, Simon Fraser University. My research spans human-data interaction, data-driven storytelling, and visual methods, exploring how people can understand, question, and act on data.
 
   # This photo will be used in the about section
   picture:
-    path:            https://placehold.it/128x128
-    # srcset is optional, but can be used to provide higher res versions for retina displays
-    srcset:
-      1x:            https://placehold.it/128x128
-      2x:            https://placehold.it/256x256
+    path:            /assets/img/IMG_7682.webp
 
   # Social media icons in sidebar
   # Comment/uncommet to show/hide

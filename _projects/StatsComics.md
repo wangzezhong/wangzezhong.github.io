@@ -5,16 +5,17 @@ caption: Making data comics for illustrating reports of controlled studies (VIS 
 description: > 
 date: 17 October 2020
 image: 
-  path: /assets/img/projects/statsCover.png
+  path: /assets/img/social/StatsComics.jpg
+  width: 1200
+  height: 630
   srcset: 
-    1920w: /assets/img/projects/statsCover.png
-    960w:  /assets/img/projects/statsCover@0,5.png
-    480w:  /assets/img/projects/statsCover@0,25.png
+    1300w: /assets/img/projects/statsCover-1300.webp
+    650w: /assets/img/projects/statsCover-650.webp
 links:
   - title: Project Website 
     url: https://statscomics.github.io/
 accent_color: '#4fb1ba'
-accent_image: /assets/img/projects/statsCover-blur.png
+accent_image: /assets/img/projects/statsCover-blur.webp
 theme_color: '#193747'
 seo:
   type: ScholarlyArticle
@@ -39,7 +40,7 @@ Inspired by data comics, this paper introduces a novel format for reporting cont
 
 Data comic for [📄Weighted Graph Comparison Techniques for Brain Connectivity Analysis](https://hal.inria.fr/hal-00780999/document). 
 
-<img src="https://github.com/statscomics/statscomics.github.io/blob/master/assets/img/wang2020stats.png?raw=true"
+<img loading="lazy" decoding="async" src="https://github.com/statscomics/statscomics.github.io/blob/master/assets/img/wang2020stats.png?raw=true"
      alt="Example: Data comic for Weighted Graph Comparison Techniques for Brain Connectivity Analysis"
      width="100%"
      height="100%"

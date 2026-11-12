@@ -6,18 +6,19 @@ description: >
     Research on Data Comics: from sequential data storytelling to interactive Human-Data Interaction (HDI) interfaces.
 date: Feb 2026
 image: 
-  path: /assets/img/projects/DCCover.png
+  path: /assets/img/social/DataComics.jpg
+  width: 1200
+  height: 630
+  srcset: 
+    1300w: /assets/img/projects/DCCover-1300.webp
+    650w: /assets/img/projects/DCCover-650.webp
 seo:
   type: ScholarlyArticle
-  srcset: 
-    1920w: /assets/img/projects/DCCover.png
-    960w:  /assets/img/projects/DCCover@0,5.png
-    480w:  /assets/img/projects/DCCover@0,25.png
 links:
   - title: Data Comics Website 
     url: https://datacomics.github.io/
 accent_color: '#4fb1ba'
-accent_image: /assets/img/projects/DCCover-blur.jpg
+accent_image: /assets/img/projects/DCCover-blur.webp
 theme_color: '#193747'
 sitemap: true
 ---
@@ -47,7 +48,7 @@ I started by sketching weekly data comics that documented my life—tracking sle
 <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
   <!-- Image 1 -->
   <div style="width: 32%; text-align: center; margin-top: 10px;">
-    <img src="https://datacomics.github.io/teasers/weekly-sleep.png"
+    <img loading="lazy" decoding="async" src="https://datacomics.github.io/teasers/weekly-sleep.png"
          alt="Data comic showing weekly sleep patterns as a gantt chart integrated into a comic strip" 
          style="width: 100%; height: auto; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
          title="click to open the full comic"
@@ -66,7 +67,7 @@ I started by sketching weekly data comics that documented my life—tracking sle
 
   <!-- Image 2 -->
   <div style="width: 32%; text-align: center; margin-top: 10px;">
-     <img src="https://datacomics.github.io/teasers/migration.png" 
+     <img loading="lazy" decoding="async" src="https://datacomics.github.io/teasers/migration.png" 
           alt="Data comic illustrating global migration trends through sequential panels" 
          style="width: 100%; height: auto; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
          title="click to open the full comic"
@@ -85,7 +86,7 @@ I started by sketching weekly data comics that documented my life—tracking sle
 
   <!-- Image 3 -->
   <div style="width: 32%; text-align: center; margin-top: 10px;">
-    <img src="/assets/img/DataComics/hansrosling.png"
+    <img loading="lazy" decoding="async" src="/assets/img/DataComics/hansrosling.webp"
          alt="Data comic summarizing Hans Rosling's talk on global health" 
          style="width: 100%; height: auto; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
          title="click to open the full comic"
@@ -104,7 +105,7 @@ I started by sketching weekly data comics that documented my life—tracking sle
 
   <!-- Image 4 -->
   <div style="width: 100%; text-align: center; margin-top: 10px;">
-    <img src="https://github.com/wangzezhong/wangzezhong.github.io/blob/master/assets/img/projects/patternExample.jpg?raw=true" 
+    <img loading="lazy" decoding="async" src="/assets/img/projects/patternExample.webp" 
          alt="full set of data comic design pattern cards" 
          style="width: 100%; height: 100%; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
          onclick="window.open('https://drive.google.com/file/d/1i_GKFBl_mIgUVk76G6-v69QOT_7C-F95/view?usp=sharing', '_blank')"
@@ -122,7 +123,7 @@ I started by sketching weekly data comics that documented my life—tracking sle
   </div>
 </div>
 
-<!-- <img src="https://github.com/wangzezhong/wangzezhong.github.io/blob/master/assets/img/projects/patternExample.jpg?raw=true"
+<!-- <img loading="lazy" decoding="async" src="/assets/img/projects/patternExample.webp"
      alt="Data comic design pattern examples"
      width="100%"
      height="100%"
@@ -140,7 +141,7 @@ Using both qualitative and quantitative methods, I designed study materials with
 <div style="width: 100%; text-align: center;">
   <!-- Image 1 -->
   <div style="width: 100%; text-align: center;  margin-top: 10px;">
-    <img src="/assets/img/DataComics/ComicStudyStimuli.jpeg" 
+    <img loading="lazy" decoding="async" src="/assets/img/DataComics/ComicStudyStimuli.webp" 
          alt="Materials designed with controlled conditions for the lab study" 
          style="width: 100%; height: 100%; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
          onclick="window.open('https://datacomics925658343.wordpress.com/study/', '_blank')" 
@@ -159,7 +160,7 @@ Using both qualitative and quantitative methods, I designed study materials with
 
   <!-- Image 2 -->
   <div style="width: 100%; text-align: center;  margin-top: 10px;margin-bottom: 10px">
-    <img src="/assets/img/DataComics/comicstudyteaser.jpg" 
+    <img loading="lazy" decoding="async" src="/assets/img/DataComics/comicstudyteaser.webp" 
          alt="Materials designed with controlled conditions for the in-the-wild study" 
          style="width: 100%; height: 100%; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
          onclick="window.open('https://datacomics925658343.wordpress.com/study/', '_blank')"
@@ -191,7 +192,7 @@ Our cheat sheets cover six core areas: (1) Anatomy (core visual elements), (2) C
 <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
   <!-- Image 1 -->
   <div style="width: 32%; text-align: center; margin-top: 10px;">
-    <img src="/assets/img/DataComics/boxplotIntro.png"
+    <img loading="lazy" decoding="async" src="/assets/img/DataComics/boxplotIntro.webp"
          alt="Box plot data visualization cheat sheet for data comics" 
          style="width: 100%; height: auto; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
          title="click to view the introduction of Box Plot"
@@ -210,7 +211,7 @@ Our cheat sheets cover six core areas: (1) Anatomy (core visual elements), (2) C
 
   <!-- Image 2 -->
   <div style="width: 32%; text-align: center; margin-top: 10px;">
-    <img src="/assets/img/DataComics/matrixIntro.png" 
+    <img loading="lazy" decoding="async" src="/assets/img/DataComics/matrixIntro.webp" 
          alt="Adjacency Matrix network visualization cheat sheet" 
          style="width: 100%; height: auto; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
          title="click to view the introduction of Adjacency Matrix"
@@ -229,7 +230,7 @@ Our cheat sheets cover six core areas: (1) Anatomy (core visual elements), (2) C
 
   <!-- Image 3 -->
   <div style="width: 32%; text-align: center; margin-top: 10px;">
-    <img src="/assets/img/DataComics/pcpIntro.png"
+    <img loading="lazy" decoding="async" src="/assets/img/DataComics/pcpIntro.webp"
          alt="Parallel Coordinates Plot (PCP) visualization cheat sheet" 
          style="width: 100%; height: auto; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
          title="click to view the introduction of Parallel Coordinates Plot"
@@ -266,7 +267,7 @@ Data comics have been successfully used to communicate complex information. For 
 <div style="width: 100%; text-align: center;">
   <!-- Image 1 -->
   <div style="width: 100%; text-align: center; margin-top: 10px;margin-bottom: 10px">
-    <img src="/assets/img/DataComics/statsComicCollections.jpeg" 
+    <img loading="lazy" decoding="async" src="/assets/img/DataComics/statsComicCollections.webp" 
          alt="data comics for reporting controlled user studies in Human-Computer Interaction" 
          style="width: 100%; height: 100%; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
          onclick="window.open('https://statscomics.github.io/', '_blank')" 
@@ -291,7 +292,7 @@ For example, I visually explain how _latent heat_ affects temperature changes in
 <div style="width: 100%; text-align: center;">
   <!-- Image 1 -->
   <div style="width: 100%; text-align: center; margin-top: 10px; margin-bottom: 10px">
-    <img src="/assets/img/DataComics/permafrost-threePage.png"
+    <img loading="lazy" decoding="async" src="/assets/img/DataComics/permafrost-threePage.webp"
          alt="Example pages of data comics for climate change from the comic Pasta or Disaster" 
          style="width: 100%; height: 100%; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
          onclick="window.open('https://dc4cc.github.io/index.html', '_blank')" 
@@ -314,7 +315,7 @@ Through [workshops](https://vishub.net/papers/wang2019teaching.pdf){:target="_bl
 <div style="width: 100%; text-align: center;">
   <!-- Image 1 -->
   <div style="width: 100%; text-align: center; margin-top: 10px; margin-bottom: 10px">
-    <img src="/assets/img/DataComics/workshop.png"
+    <img loading="lazy" decoding="async" src="/assets/img/DataComics/workshop.webp"
          alt="Data comic creation workshop for teaching data visualization and storytelling" 
          style="width: 100%; height: 100%; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
          onclick="window.open('https://vishub.net/papers/wang2019teaching.pdf', '_blank')" 
@@ -337,7 +338,7 @@ More recently, I have been exploring data comics not only as a storytelling medi
 
 <div style="width: 100%; text-align: center; margin-top: 15px; margin-bottom: 25px;">
   <a href="/assets/papersPDF/CHI26Workshop_Conversational_DataComics.pdf" target="_blank" rel="noopener noreferrer">
-    <img src="/assets/img/DataComics/conversationalDataComics.png" alt="Conversational Data Comics" style="width: 100%; height: auto; border-radius: 5px; transition: transform 0.3s ease;" title="click to read the paper" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'">
+    <img loading="lazy" decoding="async" src="/assets/img/DataComics/conversationalDataComics.webp" alt="Conversational Data Comics" style="width: 100%; height: auto; border-radius: 5px; transition: transform 0.3s ease;" title="click to read the paper" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'">
   </a>
 </div>
 

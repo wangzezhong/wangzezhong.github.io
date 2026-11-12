@@ -1,125 +1,94 @@
-<!-- {% if include.paper.doc-url %}<a href="{{ include.paper.doc-url }}">{% endif %}
-  {{ include.paper.title }}{% if include.paper.doc-url %}</a>{% endif %}<br/>
-{% if include.paper.authors %}{{ include.paper.authors }}.{% endif %}  
-{% case include.paper.paper-type %}
-  {% when "inproceedings" %}
-    In <i>{{ include.paper.booktitle }}</i>.
-  {% when "article" %}
-    In <i>{{ include.paper.journal }}</i>,
-      {% if include.paper.volume %}{{ include.paper.volume }}{% endif %}{% if include.paper.number %}({{ include.paper.number }}){% endif %}
-      {% if include.paper.article%}: Article {{ include.paper.article}},{% endif %}
-      {% if include.paper.pages %}: pages {{ include.paper.pages }},{% endif %}.
-  {% when "dissertation" %}
-    Dissertation, {{ include.paper.institution }}.
-{% endcase %} 
-{{ include.paper.year }}. 
-{% if include.paper.note %} 
-  {{ include.paper.note }} 
+{% assign paper = include.paper %}
+{% if paper.img %}
+  {% assign img_stem = paper.img | split: "." | first %}
+  {% capture thumb_path %}/assets/paperFigures/thumbs/{{ img_stem }}.webp{% endcapture %}
+  {% assign thumb_file = site.static_files | where: "path", thumb_path | first %}
+  {% if thumb_file %}{% assign img_src = thumb_path %}{% else %}{% capture img_src %}/assets/paperFigures/{{ paper.img }}{% endcapture %}{% endif %}
+  {% assign alt_raw = paper.img_alt | default: "" | downcase %}
+  {% if alt_raw == "" or alt_raw contains ".png" or alt_raw contains ".jp" %}
+    {% capture img_alt %}Teaser figure for {{ paper.title }}{% endcapture %}
+  {% else %}
+    {% assign img_alt = paper.img_alt %}
+  {% endif %}
 {% endif %}
-
- -->
+{% assign doc_lc = paper.doc-url | default: "" | downcase %}
 
 <div class="pubWrapper" itemscope itemtype="http://schema.org/ScholarlyArticle">
   <div class="pubImageWrapper">
     <div class="pubImage">
-      {% if include.paper.img %}
-      <img src="/assets/paperFigures/{{ include.paper.img }}" alt="{{ include.paper.img_alt }}" itemprop="image">
-      {% endif %}
-    </div>
-    <!-- Links appear below the image with a 10px gap -->
-    <div class="pubLinks">
-      {% if include.paper.weblink %}
-      <a href="{{ include.paper.weblink }}" target="_blank"
-        style="font-size:0.8em; border-bottom: 1px solid currentColor; padding-bottom: 1px; color: inherit; margin-right: 10px; display: inline-flex; align-items: center; white-space: nowrap; text-decoration: none;">
-        <!-- Globe icon for WEB -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
-          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-          class="feather feather-globe" style="margin-right: 4px;">
-          <circle cx="12" cy="12" r="10"></circle>
-          <line x1="2" y1="12" x2="22" y2="12"></line>
-          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-        </svg>
-        Website
-      </a>
-      {% endif %}
-      {% if include.paper.videolink %}
-      <a href="{{ include.paper.videolink }}" target="_blank"
-        style="font-size:0.8em; border-bottom: 1px solid currentColor; padding-bottom: 1px; color: inherit; margin-right: 10px; display: inline-flex; align-items: center; white-space: nowrap; text-decoration: none;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
-          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-          class="feather feather-play" style="margin-right: 4px;">
-          <polygon points="5 3 19 12 5 21 5 3"></polygon>
-        </svg>
-        Video
-      </a>
-      {% endif %}
-      {% if include.paper.poster %}
-      <a href="{{ include.paper.poster }}" target="_blank"
-        style="font-size:0.8em; border-bottom: 1px solid currentColor; padding-bottom: 1px; color: inherit; margin-right: 10px; display: inline-flex; align-items: center; white-space: nowrap; text-decoration: none;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
-          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-          class="feather feather-file-text" style="margin-right: 4px;">
-          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-          <polyline points="14 2 14 8 20 8"></polyline>
-          <line x1="16" y1="13" x2="8" y2="13"></line>
-          <line x1="16" y1="17" x2="8" y2="17"></line>
-          <polyline points="10 9 9 9 8 9"></polyline>
-        </svg>
-        Poster
-      </a>
+      {% if paper.img %}
+      <img src="{{ img_src | relative_url }}" alt="{{ img_alt | strip | escape }}" loading="lazy" decoding="async" itemprop="image">
       {% endif %}
     </div>
   </div>
 
   <div class="pubText">
-    {% if include.paper.doc-url %}
-    <a href="{{ include.paper.doc-url }}" style="font-weight: bold" target="_blank" itemprop="url">
-      <span itemprop="headline">{{ include.paper.title }}</span>
-    </a>
+    {% if paper.doc-url %}
+    <a href="{{ paper.doc-url }}" class="pubTitle" target="_blank" itemprop="url"><span itemprop="headline">{{ paper.title }}</span></a>
     {% else %}
-    <span style="font-weight: bold" itemprop="headline">{{ include.paper.title }}</span>
+    <span class="pubTitle" itemprop="headline">{{ paper.title }}</span>
     {% endif %}
     <br />
-    {% if include.paper.awards %}
-    <span style="font-weight: bold; color:#4fb1ba">{{ include.paper.awards }}</span><br />
+    {% if paper.awards %}
+    <span class="pubAward">{{ paper.awards }}</span><br />
     {% endif %}
-    {% if include.paper.authors %}<span itemprop="author">{{ include.paper.authors }}</span>.{% endif %}
-    {% case include.paper.paper-type %}
+    {% if paper.authors %}<span itemprop="author">{{ paper.authors | replace: "Zezhong Wang", "<strong>Zezhong Wang</strong>" }}</span>.{% endif %}
+    {% case paper.paper-type %}
     {% when "inproceedings" %}
-    In <i>{{ include.paper.booktitle }}</i>.
+    In <i>{{ paper.booktitle }}</i>.
     {% when "article" %}
-    In <i>{{ include.paper.journal }}</i>,
-    {% if include.paper.volume %}{{ include.paper.volume }}{% endif %}{% if include.paper.number %}({{
-    include.paper.number }}){% endif %}
-    {% if include.paper.article %}: Article {{ include.paper.article }},{% endif %}
-    {% if include.paper.pages %}: pages {{ include.paper.pages }},{% endif %}.
+    In <i>{{ paper.journal }}</i>,
+    {% if paper.volume %}{{ paper.volume }}{% endif %}{% if paper.number %}({{ paper.number }}){% endif %}
+    {% if paper.article %}: Article {{ paper.article }},{% endif %}
+    {% if paper.pages %}: pages {{ paper.pages }},{% endif %}.
     {% when "dissertation" %}
-    Dissertation, {{ include.paper.institution }}.
+    Dissertation, {{ paper.institution }}.
     {% endcase %}
     {% comment %} Skip the year when the venue name already contains it, e.g. "Visualising Climate 2026". {% endcomment %}
-    {% assign year_str = include.paper.year | append: "" %}
-    {% assign venue_str = include.paper.booktitle | append: " " | append: include.paper.journal %}
-    {% unless venue_str contains year_str %}{{ include.paper.year }}.{% endunless %}
-    {% if include.paper.note %}
-    {{ include.paper.note }}
+    {% assign year_str = paper.year | append: "" %}
+    {% assign venue_str = paper.booktitle | append: " " | append: paper.journal %}
+    {% unless venue_str contains year_str %}{{ paper.year }}.{% endunless %}
+    {% if paper.note %}
+    {{ paper.note }}
     {% endif %}
-    {% if include.paper.otherbooktitile %}<br />Also in <i>{{ include.paper.otherbooktitile }}.</i>{% endif %}
-    {% if include.paper.otherawards %}
-    <br /><span style="font-weight: bold; color:#4fb1ba">{{ include.paper.otherawards }}</span>
+    {% if paper.otherbooktitile %}<br />Also in <i>{{ paper.otherbooktitile }}.</i>{% endif %}
+    {% if paper.otherawards %}
+    <br /><span class="pubAward">{{ paper.otherawards }}</span>
     {% endif %}
-    <br />
-    {% if include.paper.bibtex %}
-    <a href="javascript:void(0)" class="copyBibtex" data-bibtex="{{ include.paper.bibtex | xml_escape }}"
-      style="font-size:0.9em; border-bottom: 1px solid currentColor; padding-bottom: 1px; color: inherit; text-decoration: none; display: inline-flex; align-items: center;">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-        class="feather feather-copy">
-        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-      </svg>
-      Copy BibTeX
-    </a>
-    <span class="copyConfirmation" style="margin-left:10px; color:#4fb1ba;">BibTeX code copied!</span>
-    {% endif %}
+
+    {% comment %} One row of actions under each entry: PDF, website, video, poster, BibTeX. {% endcomment %}
+    <div class="pubActions">
+      {% if paper.doc-url %}
+      <a href="{{ paper.doc-url }}" target="_blank" class="no-mark-external">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+        {% if doc_lc contains ".pdf" %}PDF{% elsif doc_lc contains "doi.org" %}DOI{% else %}Paper{% endif %}
+      </a>
+      {% endif %}
+      {% if paper.weblink %}
+      <a href="{{ paper.weblink }}" target="_blank" class="no-mark-external">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+        Website
+      </a>
+      {% endif %}
+      {% if paper.videolink %}
+      <a href="{{ paper.videolink }}" target="_blank" class="no-mark-external">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+        Video
+      </a>
+      {% endif %}
+      {% if paper.poster %}
+      <a href="{{ paper.poster }}" target="_blank" class="no-mark-external no-push-state">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+        Poster
+      </a>
+      {% endif %}
+      {% if paper.bibtex %}
+      <a href="javascript:void(0)" class="copyBibtex" role="button" data-bibtex="{{ paper.bibtex | xml_escape }}">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+        Copy BibTeX
+      </a>
+      <span class="copyConfirmation" aria-live="polite">BibTeX copied!</span>
+      {% endif %}
+    </div>
   </div>
 </div>

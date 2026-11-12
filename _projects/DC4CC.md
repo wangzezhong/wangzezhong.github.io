@@ -5,16 +5,17 @@ caption: Engage the public to understand climate change with validated science a
 description: >
 date: Feb 2025
 image: 
-  path: /assets/img/projects/dc4cc.png
+  path: /assets/img/social/DC4CC.jpg
+  width: 1200
+  height: 630
   srcset: 
-    1920w: /assets/img/projects/dc4cc.png
-    960w:  /assets/img/projects/dc4cc@0,5.png
-    480w:  /assets/img/projects/dc4cc@0,25.png
+    1300w: /assets/img/projects/dc4cc-1300.webp
+    650w: /assets/img/projects/dc4cc-650.webp
 links:
   - title: Project Website 
     url: https://dc4cc.github.io/index.html
 accent_color: '#4fb1ba'
-accent_image: /assets/img/projects/dc4cc-blur.png
+accent_image: /assets/img/projects/dc4cc-blur.webp
 theme_color: '#193747'
 sitemap: true
 ---
@@ -37,19 +38,19 @@ This project is supported by the Government of Canada’s New Frontiers in Resea
 
 Poster presented at Graphic Interface 2023:
 
-<img src="/assets/img/DC4CC/dc4ccPoster.jpg"
+<a href="/assets/img/DC4CC/dc4ccPoster.jpg" target="_blank" rel="noopener" class="no-push-state" title="Open the full-resolution poster"><img loading="lazy" decoding="async" src="/assets/img/DC4CC/dc4ccPoster.webp"
      alt="Poster of Data Comics for Climate Change presented at Graphic Interface 2023."
      width="100%"
      height="100%"
      style="border-radius: 5px;"
-     >
+     ></a>
 
 ---
 
 <div style="display: flex; align-items: flex-start; margin: 10px;">
   <!-- Image container -->
   <div style="width: 30%; margin-right: 20px;">
-    <img src="/assets/img/DC4CC/pastaCover.png"
+    <img loading="lazy" decoding="async" src="/assets/img/DC4CC/pastaCover.webp"
          alt="Cover page of the Pasta or Disaster comic" 
          style="width: 100%; height: auto; transition: transform 0.3s ease; cursor: pointer; border-radius: 5px;" 
          title="click to view the comic"
@@ -96,7 +97,7 @@ Looking across two of our climate data comics, _Pasta or Disaster_ (permafrost) 
 - **In-world Visualization Production**: characters produce visualizations in-frame with the materials at hand, not via sidebars or captions. _(both comics)_
 - **Felt-Phenomenon Anchor**: harm or mechanism is given an embodied, sensory form in the storyworld before, or instead of, being stated as a number. _(both comics)_
 
-<img src="/assets/paperFigures/wang2026diegetic.png"
+<img loading="lazy" decoding="async" src="/assets/paperFigures/wang2026diegetic.webp"
      alt="The cast of The Monster Eats Algae: six lake animals, each paired with one real way of measuring the lake, such as field water sampling, satellite remote sensing, and microscope cell counts."
      width="100%"
      style="border-radius: 5px;"

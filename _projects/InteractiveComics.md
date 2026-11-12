@@ -5,16 +5,17 @@ caption: Bring interactions to static data comics (VIS 2021)
 description: >
 date: 1 July 2021
 image: 
-  path: /assets/img/projects/Interactive.png
+  path: /assets/img/social/InteractiveComics.jpg
+  width: 1200
+  height: 630
   srcset: 
-    1920w: /assets/img/projects/Interactive.png
-    960w:  /assets/img/projects/Interactive@0,5.png
-    480w:  /assets/img/projects/Interactive@0,25.png
+    1300w: /assets/img/projects/Interactive-1300.webp
+    650w: /assets/img/projects/Interactive-650.webp
 links:
   - title: Project Website 
     url: https://interactivedatacomics.github.io/
 accent_color: '#4fb1ba'
-accent_image: /assets/img/projects/Interactive-blur.png
+accent_image: /assets/img/projects/Interactive-blur.webp
 theme_color: '#193747'
 sitemap: true
 ---

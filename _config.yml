@@ -4,7 +4,7 @@ future: true
 
 # Uncomment and set the URL of your site (with protocol, e.g. `https://`)
 # NOTE: You don't need to provide this property when hosting on GitHub Pages or Netlify.
-url:                   https://zezhongwang.com/
+url:                   https://zezhongwang.com
 
 # Uncomment and set the "base URL" of your site.
 # When your site is in a subdirectory, set to `/<name of directory>`,
@@ -39,7 +39,7 @@ keywords:              [Zezhong, Wang, Data Comics, Data Storytelling, Informati
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo:                  /assets/img/IMG_7682.png
+logo:                  /assets/img/IMG_7682.webp
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
@@ -101,7 +101,7 @@ remote_theme: hydecorp/hydejack@v9
 # ----------------------------------------------------------------------------------------
  
 # Sidebar image and theme color of the site.
-accent_image:          /assets/img/sidebar-bg.jpg
+accent_image:          /assets/img/sidebar-bg.webp
 accent_color:          rgb(79,177,186)
 
 # This is used for the `theme-color` meta tag,
@@ -125,6 +125,17 @@ font_heading:          Roboto Slab, Helvetica, Arial, sans-serif
 font_code:             Fira Code, Menlo, Monaco, Consolas, monospace;
 
 defaults:
+  # Share image (og:image) for pages that do not set their own, e.g. the home page and Publications.
+  # Each project sets its own cover in _projects/*.md.
+  - scope:
+      path:            ""
+      type:            pages
+    values:
+      image:
+        path:          /assets/img/social/default.jpg
+        width:         1200
+        height:        630
+
   # You can use this to provide a default accent color and background for
   # all pages under a given path:
   - scope:

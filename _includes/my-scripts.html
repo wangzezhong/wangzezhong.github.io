@@ -53,3 +53,27 @@ The snippet below will run the code on every `hy-push-state-load` event instead.
   });
 </script>
 {% endcomment %}
+
+<script>
+/* Plays the name pronunciation when the speaker button in the sidebar is clicked. */
+(function () {
+  var audio = null;
+  document.addEventListener('click', function (e) {
+    var btn = e.target && e.target.closest ? e.target.closest('.name-audio-btn') : null;
+    if (!btn) { return; }
+    e.preventDefault();
+    var src = btn.getAttribute('data-src');
+    if (!audio || audio.getAttribute('data-src') !== src) {
+      audio = new Audio(src);
+      audio.setAttribute('data-src', src);
+    }
+    var stop = function () { btn.classList.remove('is-playing'); };
+    audio.onended = stop;
+    audio.onpause = stop;
+    audio.currentTime = 0;
+    btn.classList.add('is-playing');
+    var p = audio.play();
+    if (p && p.catch) { p.catch(stop); }
+  });
+})();
+</script>

@@ -2,6 +2,8 @@
 
 layout: welcome
 title:  Zezhong Wang (王澤中)
+name_pronunciation: dzuh-johng wahng
+name_audio: /assets/audio/zezhong-wang.mp3
 cover:  false
 selected_projects:
   - _projects/VisualMethods.md

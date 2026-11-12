@@ -293,4 +293,31 @@ ul.pubList li {
 .project-card-img img[src*="/projects/VisualMethods"] {
   object-fit: contain !important;
 }
+
+/* 9. Name pronunciation on the home page: speaker button after the title, respelling below it. */
+.page-title .name-audio-btn { vertical-align: middle; margin-left: 0.4rem; position: relative; top: -0.08em; }
+.name-audio-btn {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0.3rem;
+  line-height: 0;
+  color: inherit;
+  opacity: 0.75;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: opacity .15s ease, transform .15s ease;
+}
+.name-audio-btn:hover { opacity: 1; }
+.name-audio-btn:focus-visible { opacity: 1; outline: 2px solid currentColor; outline-offset: 2px; }
+.name-audio-btn.is-playing { opacity: 1; transform: scale(1.15); }
+.name-pronunciation {
+  margin: -0.5rem 0 1.2rem;
+  font-size: 0.85rem;
+  opacity: 0.75;
+  letter-spacing: 0.02em;
+}
+.name-pronunciation span { font-weight: 600; letter-spacing: 0.05em; }
 </style>
